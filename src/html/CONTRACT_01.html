@@ -1,0 +1,290 @@
+@@include('head.html')
+<body>
+    <div class="wrap">
+        <!-- 헤더영역 -->
+        @@include('header.html')
+        <!-- //헤더영역 -->
+
+        <!-- 콘텐츠 -->
+        <div class="container">
+            <div class="co-inner">
+                <nav>
+                    <h2 class="nav-tit">계약 선택</h2>
+                    <ol class="nav-list">
+                        <li class="passed">개인 사업자 계약</li>
+                        <li class="passed">휴대폰 본인 인증</li>
+                        <li class="passed">공동 대표자 가입 확인</li>
+                        <li class="passed">사업자 등록 번호 조회</li>
+                    </ol>
+                    <h2 class="nav-tit">계약 정보</h2>
+                    <ol class="nav-list">
+                        <li class="ing">사업자/대표자 정보</li>
+                        <li>정보 이용/제공 동의</li>
+                        <li>전자 계약 서비스 선택</li>
+                        <li>부속 서류 등록</li>
+                        <li>전자 계약서 서명</li>
+                        <li>계약서 승인 요청</li>
+                        <li>계약서 제출</li>
+                    </ol>
+                </nav>
+
+                <article class="contents">
+                    <section class="content">
+                        <div class="inner">
+                            <div class="top-title">
+                                <h1 class="tit-h1">계약 정보</h1>
+                                <p class="desc">
+                                    <span class="color01">[특정 금융거래정보의 보고 및 이용 등에 관한 법률]</span> 제5조의2에 따라 고객님께서 회사와 거래 시에는 고객확인 및 검증을 위하여 아래의 내용을 기재하셔야 하며, 제공하신 정보는 동법에서 정한 용도 외의 목적으로 사용되지 않습니다. 회사는 기재된 정보확인 및 검증을 위해 추가적인 문서 및 자료 제출을 요청할 수 있으며, 이를 거부하거나 검증이 불가능한 경우 거래가 제한되거나 거절될 수 있습니다.
+                                </p>
+                            </div>
+
+                            <h2 class="tit-h2">사업자 정보 <small><span class="star-mark"></span> 표시는 필수 입력 사항입니다.</small></h2>
+
+                            <div class="c-title">등록하실 사업자 정보 확인 후 다음 단계를 입력해주세요. </div>
+                            <div class="n-ele normal">
+                                <label class="input-radio">
+                                    <input type="radio" name="b-info">
+                                    <span>개인</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" name="b-info">
+                                    <span>법인</span>
+                                </label>
+                            </div>
+
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> 상호명</div>
+                                    <div class="input-text">
+                                        <input type="text" value="(주)코나아이" disabled="disabled">
+                                    </div>
+                                </div>
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> 사업자등록번호</div>
+                                    <div class="input-text">
+                                        <input type="text" value="109-81-5365" disabled="disabled">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> 사업장 소재지</div>
+                                    <select name="" id="" class="selectbox">
+                                        <option value="">국내</option>
+                                    </select>
+                                </div>
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> 영업게시일</div>
+                                    <div class="input-text">
+                                        <input type="text" class="date" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> 전화번호</div>
+                                    <div class="input-text">
+                                        <input type="text" placeholder="전화번호">
+                                    </div>
+                                </div>
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> E-mail</div>
+                                    <div class="input-text">
+                                        <input type="text" placeholder="E-mail">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-title"><span class="star-mark"></span> 사업장 주소</div>
+                            <div class="n-ele ty3">
+                                <div class="eles">
+                                    <div class="input-text">
+                                        <input type="text" value="53365">
+                                    </div>
+                                </div>
+                                <div class="eles">
+                                    <div class="input-text">
+                                        <input type="text" value="서울시 영등포구 여의도동 은행로 3(익스콘벤처타워) 8층">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> 업종</div>
+                                    <select name="" id="" class="selectbox">
+                                        <option value="">업종을 선택해주세요.</option>
+                                    </select>
+                                </div>
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> 주요 취급 품목</div>
+                                    <select name="" id="" class="selectbox">
+                                        <option value="">품목을 선택해주세요.</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="c-title"><span class="star-mark"></span> 가입확인서 수신방법</div>
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <label class="input-checkbox">
+                                        <input type="checkbox">
+                                        <span>우편</span>
+                                    </label>
+                                </div>
+                                <div class="eles">
+                                    <label class="input-checkbox">
+                                        <input type="checkbox">
+                                        <span>E-mail</span>
+                                    </label>
+                                </div>
+                                <div class="eles">
+                                    <label class="input-checkbox">
+                                        <input type="checkbox">
+                                        <span>문자</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="n-ele ty4">
+                                <div class="eles">
+                                    <label class="input-checkbox">
+                                        <input type="checkbox" class="dischk" data-dischk="tf">
+                                        <span>기타</span>
+                                    </label>
+                                </div>
+                                <div class="eles">
+                                    <div class="input-text">
+                                        <input type="text" data-disabled="tf" disabled="disabled">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-title"><span class="star-mark"></span> 결제금융회사</div>
+                            <select name="" id="" class="selectbox">
+                                <option value="">금융회사를 선택해주세요.</option>
+                            </select>
+
+                            <div class="c-title"><span class="star-mark"></span> 예금주명</div>
+                            <div class="n-ele ty5">
+                                <div class="eles">
+                                    <div class="input-text">
+                                        <input type="text" placeholder="(개인) 대표자 또는 공동대표자 명의 계좌">
+                                    </div>
+                                </div>
+                                <div class="eles">
+                                    <div class="input-text">
+                                        <input type="text" placeholder="(법인) 법인명의 계좌">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-title"><span class="star-mark"></span> 계좌번호</div>
+                            <div class="input-text">
+                                <input type="text" placeholder="계좌번호">
+                            </div>
+
+                            <label class="input-checkbox free">
+                                <input type="checkbox">
+                                <span>계약자 명의의 금융회사로 본인 계좌 인증 절차가 필요합니다.</span>
+                            </label>
+                            <div class="btn-area">
+                                <button type="button" class="btn big">재인증</button>
+                                <button type="button" class="btn big ty2">계좌인증</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="content">
+                        <div class="inner">
+                            <h2 class="tit-h2">사업자 정보 <small><span class="star-mark"></span> 표시는 필수 입력 사항입니다.</small></h2>
+
+                            <div class="c-title"><span class="star-mark"></span> 국적</div>
+                            <select name="" id="" class="selectbox">
+                                <option value="">KR : 대한민국</option>
+                            </select>
+
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> 대표자명</div>
+                                    <div class="input-text">
+                                        <input type="text" value="김코나" placeholder="대표자명">
+                                    </div>
+                                </div>
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> 대표자명(영문)</div>
+                                    <div class="input-text">
+                                        <input type="text" placeholder="외국인 일 경우 필수로 입력">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> 생년월일</div>
+                                    <div class="input-text">
+                                        <input type="text" value="2021.01.01">
+                                    </div>
+                                </div>
+                                <div class="eles">
+                                    <div class="c-title">성별</div>
+                                    <div class="input-text">
+                                        <input type="text" placeholder="외국인 일 경우 필수로 입력">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span> 전화번호</div>
+                                    <div class="input-text">
+                                        <input type="text" value="010-0987-7890" placeholder="전화번호">
+                                    </div>
+                                </div>
+                                <div class="eles">
+                                    <div class="c-title">휴대폰번호</div>
+                                    <div class="input-text">
+                                        <input type="text" value="010-0987-7890" placeholder="휴대폰번호">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-title"><span class="star-mark"></span> 거주지 주소</div>
+                            <div class="n-ele ty3">
+                                <div class="eles">
+                                    <div class="input-text">
+                                        <input type="text" value="53365" readonly="readonly">
+                                    </div>
+                                </div>
+                                <div class="eles">
+                                    <div class="input-text">
+                                        <input type="text" value="서울시 영등포구 여의도동 은행로 3(익스콘벤처타워) 8층" readonly="readonly">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="tit-h2">모집인 정보</h2>
+                            <div class="c-title">모집인</div>
+                            <div class="input-text">
+                                <input type="text" placeholder="모집인">
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <!-- // 콘텐츠 -->
+
+        <div class="f-btn-area">
+            <div class="inner">
+                <div class="btn-area">
+                    <button type="button" class="btn big ty1">이전</button>
+                    <button type="button" class="btn big ty2" disabled="disabled">다음</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
