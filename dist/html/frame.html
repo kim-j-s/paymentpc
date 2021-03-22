@@ -8,8 +8,10 @@
     <meta name="x-apple-disable-message-reformatting">
     <title>온라인 전자 계약서</title>
     <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../js/commonui.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript">
@@ -27,7 +29,7 @@
         <!-- 헤더영역 -->
         <header>
             <div class="inner">
-                [로고 이미지 필요] 온라인 전자 계약서
+                <h1>온라인 전자 계약서</h1>
             </div>
         </header>
         <!-- //헤더영역 -->
@@ -36,18 +38,30 @@
         <div class="container">
             <div class="co-inner">
                 <nav>
-                    <h2 class="tit-h2 nav">계약 선택</h2>
+                    <h2 class="nav-tit">계약 선택</h2>
                     <ol class="nav-list">
-                        <li class="passed"></li>
-                        <li class="ing"></li>
-                        <li></li>
-                        <li></li>
+                        <li class="passed">개인 사업자 계약</li>
+                        <li class="ing">휴대폰 본인 인증</li>
+                        <li>공동 대표자 가입 확인</li>
+                        <li>사업자 등록 번호 조회</li>
+                    </ol>
+                    <h2 class="nav-tit">계약 정보</h2>
+                    <ol class="nav-list">
+                        <li>사업자/대표자 정보</li>
+                        <li>정보 이용/제공 동의</li>
+                        <li>전자 계약 서비스 선택</li>
+                        <li>부속 서류 등록</li>
+                        <li>전자 계약서 서명</li>
+                        <li>계약서 승인 요청</li>
+                        <li>계약서 제출</li>
                     </ol>
                 </nav>
                 <article class="contents">
                     <section class="content">
                         <div class="inner">
-                            <h1 class="tit-h1">계약 선택</h1>
+                            <div class="top-title">
+                                <h1 class="tit-h1">계약 선택</h1>
+                            </div>
                         </div>
                     </section>
                 </article>
@@ -57,7 +71,8 @@
         <div class="f-btn-area">
             <div class="inner">
                 <div class="btn-area">
-                    버튼영역
+                    <button type="button" class="btn big ty1">이전</button>
+                    <button type="button" class="btn big ty2">다음</button>
                 </div>
             </div>
         </div>
