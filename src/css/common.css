@@ -181,6 +181,10 @@
 	    border-top: 1px solid #d6dde8;
 	    border-bottom: 1px solid #d6dde8;
 	}
+	.tit-h2.brd.ty1{
+		padding-top: 0;
+		border-top: 0;
+	}
 	.tit-h2.chk-add .input-checkbox{
 		position: absolute;
 		top: 50%;
@@ -444,9 +448,11 @@
 	}
 
 
-	.brd-box +  .input-checkbox{
+	.brd-box +  .input-checkbox,
+	.desc +  .input-checkbox{
 		margin-top: 9px;
 	}
+
 
 
 	.input-text {
@@ -492,6 +498,9 @@
 	}
 	.tit-h2 + .brd-box{
 		margin-top: 9px;
+	}
+	.input-checkbox + .brd-box{
+		margin-top: 30px;
 	}
 
 
@@ -751,6 +760,9 @@
 	}
 	* + .desc{
 		margin-top: 9px;
+	}
+	.c-title + .desc{
+		margin-top: 0px;
 	}
 
 
