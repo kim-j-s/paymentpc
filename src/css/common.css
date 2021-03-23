@@ -32,6 +32,7 @@
 	    flex: 1 1 auto;
 	    background: #f7f9fc;
 	    background: #ddd;
+	    overflow: auto;
 	}
 	.co-inner{
 	    width: 768px;
@@ -91,14 +92,27 @@
 	    display: flex;
 	    flex-direction: row;
 	}
-	.tit-h2 + .n-ele,
-	.n-ele + .n-ele{
+	* + .n-ele{
 		margin-top: 9px;
 	}
 	.n-ele > *{
 	    flex: 1 1 100%;
 	    align-self: flex-start;
 	}
+	.n-ele > .flex-none{
+		flex: none;
+	}
+	.n-ele > .text{
+		font-weight: 400;
+		font-size: 15px;
+		color: #888;
+		align-self: center;
+	}
+	/*
+	.n-ele > .text + *{
+		margin-left: 0;
+	}
+	*/
 	.n-ele > * + *{
 	    margin-left: 12px;
 	}
@@ -168,6 +182,10 @@
 		    padding: 30px 0;
 		    border-top: 1px solid #f7f9fc;
 		    border-bottom: 1px solid #f7f9fc;
+
+
+		    border-top: 1px solid #333;
+		    border-bottom: 1px solid #333;
 		}
 		.brd-ele + .brd-ele{
 			margin-top: 0;
@@ -193,6 +211,9 @@
 
 	.mt50{
 		margin-top: 50px !important;
+	}
+	.ml0{
+		margin-left: 0 !important;
 	}
 	.pt11{
 		padding-top: 11px !important;
@@ -284,7 +305,7 @@
 	.c-title > .star-mark:before{
 		font-size: 15px;
 	}
-	.selectbox{
+	.selectbox > select{
 	    display: block;
 	    width: 100%;
 	    height: 60px;
@@ -298,6 +319,20 @@
 		-webkit-appearance:none; /* Safari and Chrome */
 		appearance:none;
 		letter-spacing: -0.5px;
+	}
+	.selectbox.word-add {
+	    display: flex;
+	    flex-direction: row;
+	}
+	.selectbox.word-add > *{
+		align-self: center;
+	}
+	.selectbox.word-add .sub-txt{
+		flex: none;
+		padding: 0 12px;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
 	}
 	select::-ms-expand {display:none}
 
@@ -356,19 +391,25 @@
 	.input-radio > input:checked + span::after {
 	    border: 1px solid #e15d5d;
 	}
-	.input-radio > span .tit-txt{
+
+
+
+	.input-radio > span .tit-txt,
+	.input-checkbox > span .tit-txt{
 		display: block;
 		margin-bottom: 25px;
 		font-weight: 500;
 		font-size: 18px;
 	}
-	.input-radio > span .txt{
+	.input-radio > span .txt,
+	.input-checkbox > span .txt{
 		display: block;
 		margin-top: 9px;
 		font-size: 12px;
 		line-height: 18px;
 	}
-	.input-radio > span .txt02{
+	.input-radio > span .txt02,
+	.input-checkbox > span .txt02{
 		display: block;
 		font-size: 15px;
 		line-height: 22px;
@@ -519,6 +560,7 @@
 
 
 	.brd-box +  .input-checkbox,
+	.n-txt01 +  .input-checkbox,
 	.desc +  .input-checkbox{
 		margin-top: 9px;
 	}
@@ -583,8 +625,11 @@
 	.inp-width01{
 		width: 140px !important;
 	}
+	.inp-width02{
+		width: 106px !important;
+	}
 
-
+	
 	.textarea{}
 	.textarea > textarea{
 	    display: block;
@@ -598,11 +643,28 @@
 	    border-radius: 5px;
 	    resize: none;
 	}
+	* + .textarea{
+		margin-top: 9px;
+	}
+	.c-title + .textarea{
+		margin-top: 0;
+	}
 
 	.brd-box{
 	    padding: 21px 18px;
 	    border: 1px solid #f0f0f0;
 	    border-radius: 5px;
+	}
+	.brd-box + .brd-box{
+		margin-top: 9px;
+	}
+	.brd-box.scroll-in{
+		max-height: 140px;
+		padding: 21px 18px 0 18px;
+		overflow: auto;
+	}
+	.brd-box.scroll-in > .inner{
+		padding-bottom: 21px;
 	}
 	.tit-h2 + .brd-box{
 		margin-top: 9px;
@@ -732,6 +794,9 @@
 	.bg-box .desc + .n-txt01 {
 	    margin-top: 0;
 	}
+	.n-txt01 + .n-txt01{
+		margin-top: 0;
+	}
 	* + .n-txt01{
 		margin-top: 9px;
 	}
@@ -770,6 +835,56 @@
 	    line-height: 18px;
 	    color: #888;
 	}
+	.tit-h2 + .txt-cont{
+	    margin-top: 30px;
+	}
+	
+
+
+	* + .tbl-div {
+	    margin-top: 9px;
+	}
+	.tbl-div {
+	    position: relative;
+	    border-top: 1px solid #acb8cf;
+	    border-bottom: 1px solid #acb8cf;
+	}
+	.tbl-div table {}
+	.tbl-div table thead th {
+	    height: 20px;
+	    padding: 6px 0;
+	    border: 1px solid #acb8cf;
+	    font-weight: 400;
+	    font-size: 15px;
+	    color: #333;
+	    word-break: break-all;
+	}
+	.tbl-div table tr th:first-child,
+	.tbl-div table tr td:first-child {
+	    border-left: none;
+	}
+
+	.tbl-div table tr th:last-child,
+	.tbl-div table tr td:last-child {
+	    border-right: none;
+	}
+	.tbl-div table td {
+	    padding: 8px 20px;
+	    border: 1px solid #acb8cf;
+	    border-bottom: none;
+	    word-break: break-all;
+	    text-align: center;
+	}
+	.tbl-div table td.none,
+	.tbl-div.only table td.none {
+	    border-bottom: none;
+	}
+	.tbl-div table thead tr:first-child th {
+	    border-top: none;
+	}
+
+
+
 
 /* // words */
 
