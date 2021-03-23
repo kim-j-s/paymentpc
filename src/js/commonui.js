@@ -33,8 +33,11 @@ $(function(){
     // 파일첨부
     fileInit();
 
+    // dp select
+    dpSelect();
+
     // auto Email
-    autoEmail()
+    autoEmail();
 
 
     //script
@@ -91,6 +94,25 @@ function fileLoad(){
         });
     });
 }
+
+
+
+// dp select
+function dpSelect() {
+    var $dps = $('.dp-select');
+    var $dpnone = $('.dp-trg');
+    $dps.on('change', function(){
+        var val = $(this).val();
+        console.log(val);
+        if (val == 'display') {
+            $dpnone.show();
+        } else {
+            $dpnone.hide();
+        }
+    })
+
+}
+
 
 
 // auto Email
