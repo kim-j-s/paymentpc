@@ -30,6 +30,8 @@ $(function(){
 	// input disabled true / false
 	disChk();
 
+    // 파일첨부
+    fileInit();
 
     // auto Email
     autoEmail()
@@ -46,19 +48,49 @@ $(function(){
 // input disabled true / false
 function disChk(){
 	var $disChk = $('.dischk');
+    var $disChkOff = $('.dischk-off');
     $disChk.on('change', function() {
         var data = $(this).data('dischk');
         if ( $(this).prop('checked') )
         {
             $('[data-disabled="'+ data +'"]').prop('disabled',false);
-            
         } else {
+            $('[data-disabled="'+ data +'"]').prop('disabled',true);
+        }
+    });
+
+    $disChkOff.on('change', function() {
+        var data = $(this).data('dischk');
+        if ( $(this).prop('checked') )
+        {
             $('[data-disabled="'+ data +'"]').prop('disabled',true);
         }
     });
 }
 
 
+// 파일첨부
+var $fileBox = null;
+function fileInit(){
+    $fileBox = $('.inp-file');
+    fileLoad();
+}
+function fileLoad(){
+    $.each($fileBox, function(idx){
+        var $this = $fileBox.eq(idx),
+        $btnUpload = $this.find('[type="file"]'),
+        $label = $this.find('.file-label');
+        $btnUpload.on('change', function(){
+            var $target = $(this),
+            fileName = $target.val();
+            $fileText = $target.closest('.inp-file').find('.file-name');
+            $fileText.val(fileName);
+        });
+        $btnUpload.on('focusin focusout', function(e){
+            e.type == 'focusin' ? $label.addClass('file-focus') : $label.removeClass('file-focus');
+        });
+    });
+}
 
 
 // auto Email

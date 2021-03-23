@@ -14,13 +14,13 @@ table { border-collapse:collapse; border-spacing:0; table-layout:fixed; width:10
 button {margin:0; padding:0; border:0; font:inherit; color:inherit; background:transparent; overflow:visible; cursor:pointer; line-height:1; outline: none;}
 a:link, a:visited, a:hover, a,active, a:focus { text-decoration:none; cursor:pointer;}
 legend, caption {overflow: hidden;position: absolute;top: 0;left: 0;width: 1px;height: 1px;font-size: 0;line-height: 0}
-textarea { resize:vertical; font:inherit; overflow-y:auto; }
+textarea { resize:vertical; font:inherit; overflow-y:auto; outline: none; box-sizing: border-box;}
 input, select { color:inherit; font:inherit; vertical-align: middle; -webkit-box-sizing:border-box; box-sizing:border-box;}
 address, i { font-style:normal; }
 table { border-collapse:collapse; table-layout:fixed; }
 img, select, input, button { vertical-align:middle; }
 em { font-style:normal; }
-input { font-family: 'Noto Sans Kr', sans-serif;}
+input { font-family: 'Noto Sans Kr', sans-serif; outline: none;}
 label {cursor:pointer;}
 input::-webkit-input-placeholder,
 input::-webkit-input-placeholder,
@@ -42,7 +42,7 @@ textarea{-webkit-appearance:none;}
   color: #888;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: rgba(136, 136 ,136 , 1);
+  color: rgba(136, 136 ,136 , 1) !important;
 }
 :-moz-placeholder { /* Firefox 18- */
   color: #888;
