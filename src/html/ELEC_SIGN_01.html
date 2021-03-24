@@ -1,0 +1,138 @@
+@@include('head.html')
+<body>
+    <div class="wrap">
+        <!-- 헤더영역 -->
+        @@include('header.html')
+        <!-- //헤더영역 -->
+
+        <!-- 콘텐츠 -->
+        <div class="container">
+            <div class="co-inner">
+                <nav>
+                    <h2 class="nav-tit">계약 선택</h2>
+                    <ol class="nav-list">
+                        <li class="passed">개인 사업자 계약</li>
+                        <li class="passed">휴대폰 본인 인증</li>
+                        <li class="passed">공동 대표자 가입 확인</li>
+                        <li class="passed">사업자 등록 번호 조회</li>
+                    </ol>
+                    <h2 class="nav-tit">계약 정보</h2>
+                    <ol class="nav-list">
+                        <li class="passed">사업자/대표자 정보</li>
+                        <li class="passed">정보 이용/제공 동의</li>
+                        <li class="passed">전자 계약 서비스 선택</li>
+                        <li class="passed">부속 서류 등록</li>
+                        <li class="ing">전자 계약서 서명</li>
+                        <li>계약서 승인 요청</li>
+                        <li>계약서 제출</li>
+                    </ol>
+                </nav>
+                <article class="contents">
+                    <section class="content">
+                        <div class="inner">
+                            <div class="top-title">
+                                <h1 class="tit-h1">전자 계약서 서명</h1>
+                            </div>
+
+                            <div class="brd-ele">
+                                <dl class="txt-cont">
+                                    <dt>계약기간</dt>
+                                    <dd class="color01">
+                                        계약기간은 신청 후 승인일로 부터 1년입니다.<br>
+                                        "KONA"브랜드에 대한 결제서비스를 모두 수용함을 확약하며, 계약해지 의사를 별도 통지(유선, 서면등) 하지 않으면 계약기간은 자동으로 1년씩 연장 됩니다.당사(본인)는 별도로 교부된 가맹점 약관을 승인하고, 코나카드 가맹점 가입을 신청합니다.
+                                    </dd>
+                                </dl>
+                            </div>
+
+                            <div class="brd-ele">
+                                <h2 class="tit-h2">가맹점</h2>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>상호명</div>
+                                        <div class="input-text">
+                                            <input type="text" value="(주)코나아이" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>사업자 번호</div>
+                                        <div class="input-text">
+                                            <input type="text" value="109-81-53365" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title"><span class="star-mark"></span>사업장 주소</div>
+                                <div class="n-ele ty3">
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" value="53365" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" value="서울시 영등포구 여의도동 은행로 3(익스콘벤처타워) 8층" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>대표자명</div>
+                                        <div class="input-text">
+                                            <input type="text" value="김코나" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>서명/인</div>
+                                        <button type="button" class="btn reg">서명을 등록해주세요.</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="brd-ele">
+                                <div class="eles">
+                                    <div class="c-title">계약 신청일</div>
+                                </div>
+                                <div class="eles t-right">
+                                    <span>
+                                        <span class="f-roboto">2021</span>년 <span class="f-roboto">3</span>월 <span class="f-roboto">4</span>일
+                                    </span>
+                                </div>
+                            </div>
+
+
+<style>
+.btn.reg{
+    display: block;
+    width: 100%;
+    padding: 20px 60px 20px 18px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #888;
+    text-align: left;
+    border: 1px solid #acb8cf;
+    border-radius: 5px;
+    background: url(../img/ico-plus.png) no-repeat right 18px center;
+}
+</style>
+
+
+
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <!-- // 콘텐츠 -->
+        <div class="f-btn-area">
+            <div class="inner">
+                <div class="btn-area">
+                    <button type="button" class="btn big ty1">이전</button>
+                    <button type="button" class="btn big ty2">다음</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
