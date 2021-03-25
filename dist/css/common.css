@@ -113,15 +113,19 @@
 	        -ms-flex-direction: row;
 	            flex-direction: row;
 	}
-	
+
+	* + .n-ele{
+		margin-top: 9px;
+	}
+	.tit-h2 + .n-ele{
+		margin-top: 12px;
+	}
 	.btn-area + .n-ele,
 	.n-txt01 + .n-ele,
 	.n-ele + .n-ele{
 		margin-top: 20px;
 	}
-	* + .n-ele{
-		margin-top: 9px;
-	}
+	
 	.n-ele > *{
 	    -webkit-box-flex: 1;
 	    -webkit-flex: 1 1 100%;
@@ -225,8 +229,14 @@
 		.brd-ele{
 		    margin: 30px 0;
 		    padding: 30px 0;
+		    /*
 		    border-top: 1px solid #eee;
 		    border-bottom: 1px solid #eee;
+		    */
+
+
+		    border-top: 1px solid #333;
+		    border-bottom: 1px solid #333;
 		}
 		.brd-ele + .brd-ele{
 			margin-top: 0;
@@ -327,7 +337,6 @@
 		margin-top: 30px;
 	}
 	.c-title{
-		/*padding: 0 0 9px 0;*/
 		font-weight: 400;
 		font-size: 15px;
 		color: #000;
@@ -902,6 +911,9 @@
 	    width: 4px;
 	    border-bottom: 1px solid #000;
 	}
+	* + .list02{
+		margin-top: 9px;
+	}
 	.list02{}
 	.list02 > li + li{
 	    margin-top: 12px;    
@@ -1043,6 +1055,13 @@
 	    border-top: none;
 	}
 
+	.sub-txt{
+	    font-weight: 500;
+	    font-size: 18px;
+	    line-height: 27px;
+	    color: #000;
+	}
+
 
 
 
@@ -1161,6 +1180,21 @@
 	.btn.big.ty2:hover{
 		background: #cf4242;
 	}
+	.btn.reg{
+	    display: block;
+	    width: 100%;
+	    padding: 20px 60px 20px 18px;
+	    font-weight: 500;
+	    font-size: 15px;
+	    color: #888;
+	    text-align: left;
+	    border: 1px solid #acb8cf;
+	    border-radius: 5px;
+	    background: url(../img/ico-plus.png) no-repeat right 18px center;
+	}
+	.c-title + .btn.reg{
+	    margin-top: 9px;
+	}
 
 	.btn.close{
 		width: 20px;
@@ -1171,6 +1205,9 @@
 		border: 0;
 	}
 
+	.n-ele + .btn-area{
+		margin-top: 12px;
+	}
 	.n-ele + .btn-area{
 		margin-top: 12px;
 	}
@@ -1232,6 +1269,61 @@
 		}
 
 	/* // 약관 */
+
+
+	/* sign */
+
+		.sign-wrap{
+		    text-align: right;
+		}
+		.sign-cont{
+		    display: inline-block;
+		    width: 251px;
+		}
+		.sign-cont > button{
+		    margin-top: 9px;
+		}
+		.sign-area{
+		    position: relative;
+		    height: 120px;
+		    border: 1px solid #acb8cf;
+		    border-radius: 5px;
+		}
+		.sign-area > img{
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    max-width: 100%;
+		    max-height: 100%;
+		    -webkit-transform: translate(-50%, -50%);
+		        -ms-transform: translate(-50%, -50%);
+		            transform: translate(-50%, -50%);
+		}
+
+	/* // sign */
+
+	/* stamp */
+
+		.stamp{
+		    font-size: 0;
+		}
+		.stamp > img{
+		    display: inline-block;
+		    vertical-align: middle;
+		    width: 60px;
+		    height: 60px;
+		}
+		.stamp > .txt{
+		    display: inline-block;
+		    vertical-align: middle;
+		    padding-left: 12px;
+		    font-weight: 400;
+		    font-size: 15px;
+		    color: #000;
+		    line-height: 60px;
+		}
+
+	/* // stamp */
 
 
 /*content*/
