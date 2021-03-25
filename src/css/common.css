@@ -266,8 +266,12 @@
 	.tit-h2.chk-add .input-checkbox{
 		position: absolute;
 		top: 50%;
-		right: 18px;
+		right: 0;
+		margin-top: 0;
 		transform: translateY(-50%);
+	}
+	.tit-h2.brd.chk-add .input-checkbox{
+		right: 18px;
 	}
 
 
