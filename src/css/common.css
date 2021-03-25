@@ -3,6 +3,7 @@
 /* layer */
 
 	.wrap{
+		position: relative;
 	    display: flex;
 	    flex-direction: column;
 	    height: 100%;
@@ -29,18 +30,30 @@
 		background: url(../img/ci.png) no-repeat left center;
 	}
 	.container{
-	    flex: 1 1 auto;
-	    /*margin-bottom: 60px;*/
+	    flex: 1 1 100%;
 	    background: #f3f5f9;
 	    overflow: auto;
 	}
 
 	.co-inner{
+		position: relative;
 	    width: 768px;
-	    height: 100%;
+	    /*height: 100%;*/
+	    min-height: 100%;
 	    margin: 0 auto;
 	    padding-top: 30px;
+	    padding-bottom: 130px;
 	    font-size: 0;
+	}
+	.co-inner:before{
+		content: '';
+		position: absolute;
+		top: 30px;
+		right: 0;
+		width: 574px;
+		height: calc(100% - 160px);
+		background: #fff;
+		border-radius: 5px 0 0 5px;
 	}
 	nav{
 	    display: inline-block;
@@ -49,6 +62,7 @@
 	}
 	.contents{
 		position: relative;
+		z-index: 1;
 	    display: inline-block;
 	    vertical-align: top;
 	    width: calc(100% - 194px);
@@ -75,8 +89,13 @@
 		background: #f3f5f9;
 	}
 	.f-btn-area{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 2;
+		width: 100%;
 	    flex: none;
-	    padding: 30px 0;
+	    padding: 0 0 30px 0;
 	    background: #f3f5f9;
 	}
 	.f-btn-area > .inner{
@@ -233,6 +252,9 @@
 	.pt16{
 		padding-top: 16px !important;
 	}
+	.pt20{
+		padding-top: 20px !important;
+	}
 
 	.t-left{
 		text-align: left !important;
@@ -240,6 +262,8 @@
 	.t-right{
 		text-align: right !important;
 	}
+
+
 
 	.tit-h1{
 	    font-weight: 700;
@@ -297,6 +321,9 @@
 	}
 	* + .c-title{
 		padding-top: 30px;
+	}
+	.input-text + .c-title{
+		padding-top: 20px;
 	}
 	.tit-h2 + .c-title{
 		padding-top: 12px;
@@ -476,6 +503,7 @@
 	    padding: 20px 60px 20px 18px;
 	    font-weight: 400;
 	    font-size: 15px;
+	    border-radius: 5px;
 	    transition: .3s;
 	}
 	.input-checkbox > span::after {
@@ -550,6 +578,7 @@
 		height: 26px;
 		padding: 0;
 		font-size: 0;
+		border-radius: 50%;
 	}
 	.input-checkbox.single > span:before{
 		content: none;
@@ -903,8 +932,25 @@
 	.tit-h2 + .txt-cont{
 	    margin-top: 30px;
 	}
-	
 
+	.txt-cont2{
+	    text-align: center;
+	}
+	.txt-cont2 > dt{
+	    font-weight: 500;
+	    font-size: 18px;
+	    color: #000;
+	}
+	.txt-cont2 > dt + dd{
+	    margin-top: 12px;
+	}
+	.txt-cont2 > dd{
+	    font-weight: 400;
+	    font-size: 15px;
+	    line-height: 24px;
+	    color: #888;
+	    letter-spacing: -0.25px;
+	}
 
 	* + .tbl-div {
 	    margin-top: 9px;
@@ -1062,14 +1108,18 @@
 	}
 	
 	.btn.ty1{
+		border: none;
 		color: #fff;
 		background: #aaa;
+	}
+	.btn.ty1:hover{
+		background: #999;
 	}
 	.btn.ty2{
 		color: #fff;
 		background: #e15d5d;
 	}
-	.btn.big.ty2:hover{
+	.btn.ty2:hover{
 		background: #cf4242;
 	}
 	.btn.reg{
@@ -1152,6 +1202,16 @@
 		margin-top: 12px;
 	}
 	* + .desc{
+		margin-top: 9px;
+	}
+
+	.desc02{
+		font-weight: 400;
+	    font-size: 15px;
+	    line-height: 20px;
+	    color: #888;
+	}
+	* + .desc02{
 		margin-top: 9px;
 	}
 
@@ -1267,7 +1327,7 @@
 		.slide-cont{
 		    overflow: hidden;
 		}
-		.top-title + .slide-top{
+		.top-title.brd + .slide-top{
 			margin-top: 10px;
 		}
 		* + .slide-top{
@@ -1278,8 +1338,17 @@
 			margin-top: 0;
 		}
 
-
 	/* // slide */
+
+	/* 완료 페이지 */
+
+		.comp-cont{
+		    margin-top: 120px;
+		    padding-top: 90px;
+		    background: url(../img/ico-contract.png) no-repeat center top;
+		}
+
+	/* // 완료 페이지 */
 
 
 /*content*/
