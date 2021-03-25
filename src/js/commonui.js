@@ -36,6 +36,9 @@ $(function(){
     // dp select
     dpSelect();
 
+    // slide
+    slide();
+
     // auto Email
     autoEmail();
 
@@ -113,6 +116,22 @@ function dpSelect() {
 
 }
 
+
+// slide
+function slide() {
+    $('.slide-act').on('click', function(){
+        var data = $(this).data('slide');
+        var $trg = $("[data-slidecont='" + data + "']");
+
+        if ( $trg.css('display') == 'block' ){
+            $(this).addClass('on');
+            $trg.stop().slideUp(500);
+        } else {
+            $(this).removeClass('on');
+            $trg.stop().slideDown(500);
+        }
+    })
+}
 
 
 // auto Email
