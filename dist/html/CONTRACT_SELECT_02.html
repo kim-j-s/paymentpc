@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>온라인 전자 계약서</title>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/commonui.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 헤더영역 -->
+        <header>
+            <div class="inner">
+                <h1>온라인 전자 계약서</h1>
+            </div>
+        </header>
+        <!-- //헤더영역 -->
+
+        <!-- 콘텐츠 -->
+        <div class="container">
+            <div class="co-inner">
+                <nav>
+                    <h2 class="nav-tit">계약 선택</h2>
+                </nav>
+
+                <article class="contents">
+                    <section class="content">
+                        <div class="inner">
+                            <div class="top-title">
+                                <h1 class="tit-h1">계약 선택</h1>
+                            </div>
+
+                            <div class="c-title">계약 진행할 지역의 서비스명을 선택해주세요.</div>
+                            <div class="selectbox">
+                                <select name="" id="">
+                                    <option value="">서비스 명을 선택해주세요.</option>
+                                </select>
+                            </div>
+
+                            <div class="c-title">사업자 구분을 선택해 주세요.</div>
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <label class="input-checkbox">
+                                        <input type="checkbox">
+                                        <span>법인 사업자</span>
+                                    </label>
+                                </div>
+                                <div class="eles">
+                                    <label class="input-checkbox">
+                                        <input type="checkbox">
+                                        <span>개인 사업자</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="c-title">가맹점 계약사항을 선택해주세요.</div>
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <label class="input-checkbox">
+                                        <input type="checkbox">
+                                        <span>
+                                            가맹점 계약 조회/변경
+                                            <span class="txt">
+                                                코나카드 가맹점 계약에 대한<br> 계약 사항 변경/수정/해지를 하실 수<br> 있습니다.
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="eles">
+                                    <label class="input-checkbox">
+                                        <input type="checkbox">
+                                        <span>
+                                            가맹점 계약 신규 신청
+                                            <span class="txt">
+                                                코나카드 가맹점 계약을<br> 온라인으로 신규 신청하실 수<br> 있습니다.
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="c-title">가맹점 계약 시 아래 서류들은 미리 준비해주세요.</div>
+                            <div class="brd-box">
+                                <ul class="list01">
+                                    <li>
+                                        <div class="t-cell">
+                                            <span class="t">법인사업자 :&nbsp;</span>
+                                            <span class="txt">
+                                                사업자등록증 사본, 법인등기부등본 사본, 실제소유자 확인서류<br>(주주명부, 출자자/출연자 명부, 정관 등)
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t-cell">
+                                            <span class="t">개인사업자 :&nbsp;</span>
+                                            <span class="txt">
+                                                사업자등록증 사본, 대표자신분증 사본(주민번호마스킹불가)<br>
+                                                외국인등록증 또는 여권사본 (대표자가 외국인일 경우)
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t-cell">
+                                            <span class="t">비영리법인 :&nbsp;</span>
+                                            <span class="txt">설립목적검증서류(정관, 규약, 회칙 등)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t-cell">
+                                            <span class="t">법정대리인 :&nbsp;</span>
+                                            <span class="txt">법정대리인신분증 사본, 가족관계증명서 사본</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t-cell">
+                                            <span class="t">대리인 :&nbsp;</span>
+                                            <span class="txt">대리인신분증 사본, 대리인 권한 확인서류( 위임장, 법인인감증명서 등)</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <!-- // 콘텐츠 -->
+
+        <div class="f-btn-area">
+            <div class="inner">
+                <div class="btn-area">
+                    <button type="button" class="btn big ty2" disabled="disabled">다음</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

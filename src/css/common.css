@@ -53,7 +53,7 @@
 		width: 574px;
 		height: calc(100% - 160px);
 		background: #fff;
-		border-radius: 5px 0 0 5px;
+		border-radius: 10px 0 0 10px;
 	}
 	nav{
 	    display: inline-block;
@@ -66,17 +66,19 @@
 	    display: inline-block;
 	    vertical-align: top;
 	    width: calc(100% - 194px);
-	    height: 100%;
+	    /*height: 100%;*/
 	    background: #fff;
-	    border-radius: 5px 0 0 5px;
+	    border-radius: 10px 0 0 10px;
+	}
+	.content{
+		position: relative;
 	}
 	.content > .inner{
 		padding: 30px;
 		background: #fff;
-		border-radius: 5px 0 0 5px;
+		border-radius: 10px 0 0 10px;
 	}
 	.content + .content{
-		position: relative;
 		margin-top: 30px;
 	}
 	.content + .content:before{
@@ -201,7 +203,6 @@
 		    border-bottom: 1px solid #eee;
 		    */
 
-
 		    border-top: 1px solid #333;
 		    border-bottom: 1px solid #333;
 		}
@@ -219,6 +220,7 @@
 			margin-top: 0;
 			border-top: 0;
 		}
+
 
 		.top-title + .brd-ele{
 			margin-top: 20px;
@@ -261,6 +263,9 @@
 	}
 	.t-right{
 		text-align: right !important;
+	}
+	.t-center{
+		text-align: center !important;
 	}
 
 
@@ -542,7 +547,7 @@
 	
 	.input-checkbox > input:disabled + span {
 		color: #5f6879;
-		background: #f3f5f9;
+		background: #f3f5f9;		
 	}
 	.input-checkbox > input:disabled + span::before {
 	    border-color: #f3f5f9;
@@ -638,6 +643,9 @@
 	}
 	* + .input-checkbox{
 		margin-top: 9px;
+	}
+	.tit-h2 + .input-checkbox{
+		margin-top: 12px;
 	}
 
 
@@ -942,7 +950,7 @@
 	    color: #000;
 	}
 	.txt-cont2 > dt + dd{
-	    margin-top: 12px;
+	    margin-top: 9px;
 	}
 	.txt-cont2 > dd{
 	    font-weight: 400;
@@ -951,6 +959,9 @@
 	    color: #888;
 	    letter-spacing: -0.25px;
 	}
+
+
+
 
 	* + .tbl-div {
 	    margin-top: 9px;
@@ -992,6 +1003,31 @@
 	}
 	.tbl-div table thead tr:first-child th {
 	    border-top: none;
+	}
+
+	.top-title + .tbl-div02{
+	    margin-top: 20px;
+	}
+	.tbl-div02{
+	    padding: 14px 0;
+	    border-top: 1px solid #eee;
+	    border-bottom: 1px solid #eee;
+	}
+	.tbl-div02 table tbody th{
+	    padding: 6px 0;
+	    font-weight: 400;
+	    font-size: 15px;
+	    color: #000;
+	    line-height: 22px;
+	    text-align: left;
+	}
+	.tbl-div02 table tbody td{
+	    padding: 6px 0;
+	    font-weight: 400;
+	    font-size: 15px;
+	    color: #888;
+	    line-height: 19px;
+	    letter-spacing: -0.25px;
 	}
 
 	.sub-txt{

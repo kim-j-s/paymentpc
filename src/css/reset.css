@@ -21,6 +21,7 @@ table { border-collapse:collapse; table-layout:fixed; }
 img, select, input, button { vertical-align:middle; }
 em { font-style:normal; }
 input { font-family: 'Noto Sans Kr', sans-serif; outline: none;}
+input:disabled + span {cursor: default;}
 label {cursor:pointer;}
 input::-webkit-input-placeholder,
 input::-webkit-input-placeholder,
