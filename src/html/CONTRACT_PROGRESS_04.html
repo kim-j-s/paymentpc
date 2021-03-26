@@ -12,35 +12,19 @@
                     <h2 class="nav-tit">계약 선택</h2>
                     <ol class="nav-list">
                         <li class="passed">개인 사업자 계약</li>
-                        <li class="passed">휴대폰 본인 인증</li>
-                        <li class="passed">공동 대표자 가입 확인</li>
-                        <li class="passed">사업자 등록 번호 조회</li>
                     </ol>
                     <h2 class="nav-tit">계약 정보</h2>
                     <ol class="nav-list">
-                        <li class="passed">사업자/대표자 정보</li>
-                        <li class="passed">정보 이용/제공 동의</li>
-                        <li class="ing">전자 계약 서비스 선택</li>
-                        <li>부속 서류 등록</li>
-                        <li>전자 계약서 서명</li>
-                        <li>계약서 승인 요청</li>
-                        <li>계약서 제출</li>
+                        <li class="passed">계약자 정보</li>
+                        <li class="passed">스탬프 발행 서비스 계약</li>
                     </ol>
                 </nav>
                 <article class="contents">
                     <section class="content">
                         <div class="inner">
                             <div class="top-title">
-                                <h1 class="tit-h1">전자 계약 서비스 신청</h1>
+                                <h1 class="tit-h1">스탬프 발행 서비스 계약</h1>
                             </div>
-
-                            <h2 class="tit-h2 brd chk-add">
-                                스탬프 발행 서비스 신청
-                                <label class="input-checkbox single">
-                                    <input type="checkbox">
-                                    <span>확인</span>
-                                </label>
-                            </h2>
 
                             <div class="brd-ele">
                                 <p class="n-txt01">코나아이(주)는 지역화폐 운영대행사로, 아래 정보를 수집 받아 가맹점에서 적립되는 스탬프를 발행합니다.</p>
@@ -58,8 +42,8 @@
                                     <div class="eles flex-none text color01 inp-width02">스탬프</div>
                                     <div class="eles flex-none">
                                         <div class="selectbox word-add">
-                                            <select name="" id="" style="width: 100px">
-                                                <option value="">5</option>
+                                            <select name="" id="" style="width: 100px" disabled="disabled">
+                                                <option value="" selected="selected">5</option>
                                             </select>
                                             <span class="sub-txt">개 적립 시 쿠폰 1매 발급</span>
                                         </div>
@@ -79,7 +63,7 @@
                                     </div>
                                     <div class="eles">
                                         <div class="input-text word-add">
-                                            <input type="text" class="inp-width01 t-right">
+                                            <input type="text" class="inp-width01 t-right" value="10" disabled="disabled">
                                             <span class="sub-txt">%</span>
                                         </div>
                                     </div>
@@ -91,7 +75,7 @@
                                     </div>
                                     <div class="eles">
                                         <div class="input-text word-add">
-                                            <input type="text" class="inp-width01 t-right">
+                                            <input type="text" class="inp-width01 t-right" value="10,000" disabled="disabled">
                                             <span class="sub-txt">원</span>
                                         </div>
                                     </div>
@@ -102,13 +86,13 @@
                                 <div class="n-ele">
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
                                             <span>온라인 쿠폰 (배달,QR 모바일 결제)</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
                                             <span>오프라인 쿠폰 (매장 결제 시)</span>
                                         </label>
                                     </div>
@@ -119,7 +103,7 @@
                                     <div class="eles flex-none text color01 inp-width02">최소 결제금액</div>
                                     <div class="eles flex-none">
                                         <div class="input-text word-add">
-                                            <input type="text" class="inp-width01 t-right">
+                                            <input type="text" class="inp-width01 t-right" value="1,000" disabled="disabled">
                                             <span class="sub-txt">원 이상 결제 시</span>
                                         </div>
                                     </div>
@@ -129,7 +113,7 @@
                                 <div class="n-ele">
                                     <div class="eles flex-none text inp-width02">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox" class="dischk" data-dischk="month">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
                                             <span>개월 수</span>
                                         </label>
                                     </div>
@@ -138,25 +122,8 @@
                                     </div>
                                     <div class="eles">
                                         <div class="input-text word-add">
-                                            <input type="text" class="inp-width01 t-right" data-disabled="month" disabled="disabled">
+                                            <input type="text" class="inp-width01 t-right" value="12" disabled="disabled">
                                             <span class="sub-txt">개월 까지</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="n-ele">
-                                    <div class="eles flex-none text inp-width02">
-                                        <label class="input-checkbox normal">
-                                            <input type="checkbox" class="dischk" data-dischk="day">
-                                            <span>일수</span>
-                                        </label>
-                                    </div>
-                                    <div class="eles flex-none text color01">
-                                        발급일로부터
-                                    </div>
-                                    <div class="eles">
-                                        <div class="input-text word-add">
-                                            <input type="text" class="inp-width01 t-right" data-disabled="day" disabled="disabled">
-                                            <span class="sub-txt">일 까지</span>
                                         </div>
                                     </div>
                                 </div>
@@ -166,7 +133,7 @@
                                     <div class="eles">
                                         <div class="eles">
                                             <label class="input-checkbox normal">
-                                                <input type="checkbox">
+                                                <input type="checkbox" disabled="disabled">
                                                 <span>허용</span>
                                             </label>
                                         </div>
@@ -195,7 +162,7 @@
                                 </div>
                             </div>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked" disabled="disabled">
                                 <span>서비스 이용료에 대한 안내를 받았으며, 관련 약관에 동의합니다.</span>
                             </label>
 
@@ -210,7 +177,7 @@
                                 </div>
                             </div>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked" disabled="disabled">
                                 <span>출금 동의에 대한 내용을 이해하고, 이에 동의합니다.</span>
                             </label>
 
@@ -227,7 +194,7 @@
                                 </div>
                             </div>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked" disabled="disabled">
                                 <span>서비스 약관 내용을 이해하고, 이에 동의합니다.</span>
                             </label>
 
@@ -246,7 +213,7 @@
                             </div>
                             <p class="n-txt01 bl">이용자는 이에 대한 동의를 거부할 수 있으나, 거부할 경우 해당 서비스를 이용하실 수 없습니다.</p>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked" disabled="disabled">
                                 <span>서비스 약관 내용을 이해하고, 이에 동의합니다.</span>
                             </label>
                         </div>
