@@ -12,37 +12,21 @@
                     <h2 class="nav-tit">계약 선택</h2>
                     <ol class="nav-list">
                         <li class="passed">개인 사업자 계약</li>
-                        <li class="passed">휴대폰 본인 인증</li>
-                        <li class="passed">공동 대표자 가입 확인</li>
-                        <li class="passed">사업자 등록 번호 조회</li>
                     </ol>
                     <h2 class="nav-tit">계약 정보</h2>
                     <ol class="nav-list">
-                        <li class="passed">사업자/대표자 정보</li>
-                        <li class="passed">정보 이용/제공 동의</li>
-                        <li class="ing">전자 계약 서비스 선택</li>
-                        <li>부속 서류 등록</li>
-                        <li>전자 계약서 서명</li>
-                        <li>계약서 승인 요청</li>
-                        <li>계약서 제출</li>
+                        <li class="passed">계약자 정보</li>
+                        <li class="passed">배달 서비스 계약</li>
                     </ol>
                 </nav>
                 <article class="contents">
                     <section class="content">
                         <div class="inner">
                             <div class="top-title">
-                                <h1 class="tit-h1">전자 계약 서비스 신청</h1>
+                                <h1 class="tit-h1">배달 및 픽업(포장)서비스 입점 신청서</h1>
                             </div>
 
-                            <h2 class="tit-h2 brd chk-add">
-                                배달 및 픽업(포장)서비스 입점 신청서
-                                <label class="input-checkbox single">
-                                    <input type="checkbox">
-                                    <span>확인</span>
-                                </label>
-                            </h2>
-
-                            <div class="brd-ele ty1">
+                            <div class="brd-ele">
                                 <dl class="txt-cont">
                                     <dt>배달 및 픽업(포장)서비스</dt>
                                     <dd>지역화폐 내 배달 가능 가맹점으로 등록하여 배달과 픽업(포장) 서비스를 신청할 수 있습니다.</dd>
@@ -68,12 +52,31 @@
                             </div>
 
                             <div class="brd-ele">
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title">결제 수수료</div>
+                                        <div class="input-text word-add">
+                                            <input type="text" class="t-right" value="3" disabled="disabled">
+                                            <span class="sub-txt">%</span>
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title">중계 대행 수수료</div>
+                                        <div class="input-text word-add">
+                                            <input type="text" class="t-right" value="3" disabled="disabled">
+                                            <span class="sub-txt">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="brd-ele">
                                 <h2 class="tit-h2">매장 기본 정보</h2>
                                 <div class="n-ele">
                                     <div class="eles">
                                         <div class="c-title"><span class="star-mark"></span>매장명</div>
                                         <div class="input-text">
-                                            <input type="text" placeholder="매장명">
+                                            <input type="text" value="맛잇는 커피 익스콘벤처타워점" disabled="disabled">
                                         </div>
                                     </div>
                                     <div class="eles">
@@ -85,26 +88,32 @@
                                 </div>
 
                                 <div class="c-title"><span class="star-mark"></span>영업시간</div>
-                                @@include('time.html')
+                                @@include('timeselected.html')
 
                                 <div class="c-title"><span class="star-mark"></span>휴무정보</div>
                                 <div class="input-text">
-                                    <input type="text" placeholder="ex) 연중무휴 / 매주 O요일 휴무">
+                                    <input type="text" value="연중무휴" disabled="disabled">
                                 </div>
 
                                 <div class="c-title">고객 편의시설</div>
                                 <div class="textarea">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="ex) 화장실,주차가능,wifi, 단체석 등 (최대 200자 이내로 작성) 매장 편의 시설을 작성해주세요."></textarea>
+                                    <textarea name="" id="" cols="30" rows="10" disabled="disabled">
+남녀화장실,wifi,주차가능,배달,포장 가능
+                                    </textarea>
                                 </div>
 
                                 <div class="c-title">업체 소개</div>
                                 <div class="textarea">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="소개하고 싶은 내용을 최대 1,000자 이내로 작성해주세요."></textarea>
+                                    <textarea name="" id="" cols="30" rows="10" disabled="disabled">
+방금 로스팅한 원두로 다양한 풍미의 커피를 즐길실 수 있습니다.
+                                    </textarea>
                                 </div>
 
                                 <div class="c-title">태그</div>
                                 <div class="textarea">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="업체를 소개할 관련 키워드를 최대 70자 이내로 작성해주세요."></textarea>
+                                    <textarea name="" id="" cols="30" rows="10" disabled="disabled">
+#유럽풍 #여의도 커피 맛집 #로스팅 전문 #가성비커피
+                                    </textarea>
                                 </div>
                             </div>
 
@@ -114,19 +123,19 @@
                                 <div class="n-ele ty6">
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
                                             <span>치킨/피자</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
                                             <span>족발/보쌈</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>중식</span>
                                         </label>
                                     </div>
@@ -134,19 +143,19 @@
                                 <div class="n-ele ty6">
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>분식</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>한식</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>아시안/양식</span>
                                         </label>
                                     </div>
@@ -154,19 +163,19 @@
                                 <div class="n-ele ty6">
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>패스트푸드</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>돈까스/일식/회</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>디저트/카페</span>
                                         </label>
                                     </div>
@@ -174,19 +183,19 @@
                                 <div class="n-ele ty6">
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>야식</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>도시락</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>기타</span>
                                         </label>
                                     </div>
@@ -194,13 +203,13 @@
                                 <div class="n-ele">
                                     <div class="eles flex-none text">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox" class="dischk" data-dischk="etc">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>기타</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <div class="input-text">
-                                            <input type="text" data-disabled="etc" disabled="disabled">
+                                            <input type="text" disabled="disabled">
                                         </div>
                                     </div>                                    
                                 </div>
@@ -212,14 +221,14 @@
                                     <div class="eles">
                                         <div class="c-title"><span class="star-mark"></span>배달 시간</div>
                                         <div class="input-text word-add">
-                                            <input type="text" class="inp-width01 t-right">
+                                            <input type="text" class="inp-width01 t-right" value="30" disabled="disabled">
                                             <span class="sub-txt">분 (평균시간)</span>
                                         </div>
                                     </div>
                                     <div class="eles">
                                         <div class="c-title"><span class="star-mark"></span>배달 거리</div>
                                         <div class="input-text word-add">
-                                            <input type="text" class="inp-width01 t-right">
+                                            <input type="text" class="inp-width01 t-right" value="2" disabled="disabled">
                                             <span class="sub-txt">분 (최대 3km)</span>
                                         </div>
                                     </div>
@@ -227,7 +236,7 @@
 
                                 <div class="c-title"><span class="star-mark"></span>최소 주문 금액</div>
                                 <div class="input-text word-add">
-                                    <input type="text" class="t-right">
+                                    <input type="text" class="t-right" value="10,000" disabled="disabled">
                                     <span class="sub-txt">원 이상</span>
                                 </div>
 
@@ -235,13 +244,13 @@
                                 <div class="n-ele">
                                     <div class="eles flex-none text inp-width01">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox" class="dischk" data-dischk="tip">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
                                             <span>기본료</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <div class="input-text word-add">
-                                            <input type="text" class="inp-width01 t-right" data-disabled="tip" disabled="disabled">
+                                            <input type="text" class="inp-width01 t-right" value="10,000" disabled="disabled">
                                             <span class="sub-txt">원 이상</span>
                                         </div>
                                     </div>
@@ -249,13 +258,13 @@
                                 <div class="n-ele">
                                     <div class="eles flex-none text inp-width01">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox" class="dischk" data-dischk="sur">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
                                             <span>할증 구분</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <div class="input-text">
-                                            <input type="text" data-disabled="sur" disabled="disabled">
+                                            <input type="text" value="OOO동,OOO동 이외 배달시 기본료에서 3천원 추가" disabled="disabled">
                                         </div>
                                     </div>
                                 </div>
@@ -265,7 +274,7 @@
                                 <div class="n-ele">
                                     <div class="eles">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox" class="dischk-off" data-dischk="deli">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
                                             <span>직접배달</span>
                                         </label>
                                     </div>
@@ -273,27 +282,26 @@
                                 <div class="n-ele">
                                     <div class="eles flex-none text">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox" class="dischk" data-dischk="deli">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>배달대행사 (주 이용사항)</span>
                                         </label>
                                     </div>
                                     <div class="eles">
                                         <div class="input-text">
-                                            <input type="text" placeholder="ex) 이용 중인 배달 대행서를 기입해주세요." data-disabled="deli" disabled="disabled">
+                                            <input type="text" placeholder="ex) 이용 중인 배달 대행서를 기입해주세요." disabled="disabled">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="c-title">커텍티드 POS사 (이용 POS사)</div>
                                 <div class="input-text">
-                                    <input type="text" placeholder="ex) 매장천사, 포스피드 등">
+                                    <input type="text" placeholder="ex) 매장천사, 포스피드 등" disabled="disabled">
                                 </div>
 
                                 <div class="c-title">매장 간판 사진</div>
-                                @@include('file.html',{
-                                    "id":"file01"
-                                })
-                                <p class="n-txt01 red">매장명이 포함된 간판 사진 또는 확인할 수 있는 사진을 등록해주세요.</p>
+                                <div class="files">
+                                    <a href="../img/temp/@sign.png">매장사진.png</a>
+                                </div>                                
                             </div>
 
                             <div class="brd-ele">
@@ -301,7 +309,7 @@
                                 <div class="n-ele">
                                     <div class="eles flex-none text inp-width02">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
                                             <span>정액할인</span>
                                         </label>
                                     </div>
@@ -309,13 +317,13 @@
                                         <div class="n-ele">
                                             <div class="eles flex-none" style="width: 100px;">
                                                 <div class="input-text">
-                                                    <input type="text" class="t-right">
+                                                    <input type="text" class="t-right" value="10,000" disabled="disabled">
                                                 </div>
                                             </div>
                                             <div class="eles flex-none text" style="width: 116px;">원 이상 포장 시</div>
                                             <div class="eles flex-none" style="width: 100px;">
                                                 <div class="input-text">
-                                                    <input type="text" class="t-right">
+                                                    <input type="text" class="t-right" value="10,000" disabled="disabled">
                                                 </div>
                                             </div>
                                             <div class="eles text">원 할인</div>
@@ -325,7 +333,7 @@
                                 <div class="n-ele">
                                     <div class="eles flex-none text inp-width02">
                                         <label class="input-checkbox normal">
-                                            <input type="checkbox">
+                                            <input type="checkbox" disabled="disabled">
                                             <span>정률할인</span>
                                         </label>
                                     </div>
@@ -335,7 +343,7 @@
                                             <div class="eles flex-none text" style="width: 116px;">최대 할인금액</div>
                                             <div class="eles flex-none" style="width: 100px;">
                                                 <div class="input-text">
-                                                    <input type="text" class="t-right">
+                                                    <input type="text" class="t-right" disabled="disabled">
                                                 </div>
                                             </div>
                                             <div class="eles text">원 할인</div>
@@ -348,13 +356,13 @@
                                         <div class="n-ele">
                                             <div class="eles flex-none" style="width: 100px;">
                                                 <div class="input-text">
-                                                    <input type="text" class="t-right">
+                                                    <input type="text" class="t-right" disabled="disabled">
                                                 </div>
                                             </div>
                                             <div class="eles flex-none text" style="width: 168px;">원 이상 포장 시 주문 금액의</div>
                                             <div class="eles flex-none ml0" style="width: 60px;">
                                                 <div class="input-text">
-                                                    <input type="text" class="t-right">
+                                                    <input type="text" class="t-right" disabled="disabled">
                                                 </div>
                                             </div>
                                             <div class="eles text">원 할인</div>
@@ -366,7 +374,9 @@
                             <div class="brd-ele">
                                 <h2 class="tit-h2">원산지 정보</h2>
                                 <div class="textarea">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="매장에서 사용중인 모든 식재료에 대한 원산지 정보를 입력해주세요.원산지 정보 ex) 김치(국내산), 돼지고기(칠레산) 등"></textarea>
+                                    <textarea name="" id="" cols="30" rows="10" disabled="disabled">
+김치(국내산),빵(국내산),돼지고기(스페인산),소고기(국내산),햄(미국산),양파(중국산)
+                                    </textarea>
                                 </div>
                             </div>
 
@@ -375,13 +385,13 @@
                             <div class="n-ele">
                                 <div class="eles">
                                     <label class="input-checkbox normal">
-                                        <input type="checkbox">
+                                        <input type="checkbox" disabled="disabled">
                                         <span>배달의 민족</span>
                                     </label>
                                 </div>
                                 <div class="eles">
                                     <label class="input-checkbox normal">
-                                        <input type="checkbox">
+                                        <input type="checkbox" disabled="disabled">
                                         <span>요기요</span>
                                     </label>
                                 </div>
@@ -389,13 +399,13 @@
                             <div class="n-ele">
                                 <div class="eles flex-none text" style="width: 105px;">
                                     <label class="input-checkbox normal">
-                                        <input type="checkbox" class="dischk" data-dischk="service">
+                                        <input type="checkbox" checked="checked" disabled="disabled">
                                         <span>기타</span>
                                     </label>
                                 </div>
                                 <div class="eles">
                                     <div class="input-text">
-                                        <input type="text" data-disabled="service" disabled="disabled">
+                                        <input type="text" value="위메프 배달" disabled="disabled">
                                     </div>
                                 </div>
                             </div>
@@ -416,7 +426,7 @@
                                 </div>
                             </div>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked" disabled="disabled">
                                 <span>서비스에 대한 내용을 이해하고, 이에 동의합니다.</span>
                             </label>
 
@@ -466,7 +476,7 @@
                                 </div>
                             </div>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked" disabled="disabled">
                                 <span>출금 동의에 대한 내용을 이해하고, 이에 동의합니다.</span>
                             </label>
 
@@ -483,7 +493,7 @@
                                 </div>
                             </div>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked" disabled="disabled">
                                 <span>서비스 약관 내용을 이해하고, 이에 동의합니다.</span>
                             </label>
 
@@ -508,7 +518,7 @@
                                 </div>
                             </div>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked" disabled="disabled">
                                 <span>서비스 약관 내용을 이해하고, 이에 동의합니다.</span>
                             </label>
                         </div>
@@ -522,7 +532,7 @@
             <div class="inner">
                 <div class="btn-area">
                     <button type="button" class="btn ty1">이전</button>
-                    <button type="button" class="btn ty2">다음</button>
+                    <button type="button" class="btn ty2" disabled="disabled">확인</button>
                 </div>
             </div>
         </div>

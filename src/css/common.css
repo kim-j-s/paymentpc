@@ -131,6 +131,9 @@
 	* + .n-ele{
 		margin-top: 9px;
 	}
+	.txt-cont + .n-ele{
+		margin-top: 20px;
+	}
 	.tit-h2 + .n-ele{
 		margin-top: 12px;
 	}
@@ -145,9 +148,7 @@
 	    align-self: flex-start;
 	    /*align-self: center;*/
 	}
-	.n-ele > .flex-none{
-		flex: none;
-	}
+	
 	.n-ele > .text{
 		font-weight: 400;
 		font-size: 15px;
@@ -206,6 +207,10 @@
 	}
 	.n-ele .wave + *{
 		margin-left: 0;
+	}
+
+	.flex-none{
+		flex: none !important;
 	}
 
 
@@ -271,6 +276,9 @@
 	.pt20{
 		padding-top: 20px !important;
 	}
+	.pl0{
+		padding-left: 0 !important;
+	}
 
 	.t-left{
 		text-align: left !important;
@@ -280,6 +288,10 @@
 	}
 	.t-center{
 		text-align: center !important;
+	}
+
+	.brd-b-none{
+		border-bottom: none !important;
 	}
 
 
@@ -387,6 +399,12 @@
 		-webkit-appearance:none; /* Safari and Chrome */
 		appearance:none;
 		letter-spacing: -0.5px;
+	}
+	.selectbox > select:disabled{
+		color: #5f6879;
+		border: none;
+		background: #f3f5f9 url(../img/ico-arrow-down.png) no-repeat right 12px center;
+		opacity: 1;
 	}
 	.selectbox.word-add {
 	    display: flex;
@@ -609,6 +627,9 @@
 
 
 	.input-checkbox.normal{
+		display: inline-block;
+		vertical-align: middle;
+		width: auto;
 		margin: 0;
 	}
 	.input-checkbox.normal > span{
@@ -621,6 +642,9 @@
 	.input-checkbox.normal > span:after{
 		top: 0;
 		left: 0;
+	}
+	.input-checkbox.normal > input:disabled + span {
+		background: none;
 	}
 
 	.input-checkbox.mini{
@@ -718,7 +742,7 @@
 		line-height: 18px;
 		transition: 0.5s;
 	}
-	.input-text.word-add :disabled + .sub-txt{
+	.input-text.word-add:disabled + .sub-txt{
 		color: #888;
 	}
 
@@ -751,6 +775,12 @@
 	    border: 1px solid #acb8cf;
 	    border-radius: 5px;
 	    resize: none;
+	}
+	.textarea > textarea[readonly],
+	.textarea > textarea:disabled{
+		color: ##5f6879;
+		border: none;
+		background: #f3f5f9;
 	}
 	* + .textarea{
 		margin-top: 9px;
@@ -870,6 +900,26 @@
 	.list02 > li + li{
 	    margin-top: 12px;    
 	}
+	* + .list03{
+	    margin-top: 9px;
+	}
+	.list03{
+	    border-top: 1px solid #acb8cf;
+	}
+	.list03 > li{
+	    display: flex;
+	    flex-direction: row;
+	    padding: 17px 0;
+	    border-bottom: 1px solid #eee;
+	}
+	.list03 > li > *{
+	    flex: 1 1 auto;
+	    align-self: center;
+	}
+	.list03 > li > * + *{
+	    margin-left: 12px;
+	}
+
 	.t-cell{
 	    display: table;
 	    width: 100%;
@@ -1188,6 +1238,15 @@
 	    border-radius: 5px;
 	    background: url(../img/ico-plus.png) no-repeat right 18px center;
 	}
+	.btn.small{
+		display: inline-block;
+		vertical-align: middle;
+		width: auto;
+		height: 30px;
+		line-height: 28px;
+		padding: 0 12px;
+		font-size: 15px;
+	}
 	.c-title + .btn.reg{
 	    margin-top: 9px;
 	}
@@ -1365,6 +1424,7 @@
 		    border-top: 1px solid #acb8cf;
 		    border-bottom: 1px solid #eee;
 		}
+		
 		.slide-top.etc{
 			padding: 15px 0;
 		}
@@ -1386,6 +1446,9 @@
 		}
 		* + .slide-top{
 			margin-top: 30px;
+		}
+		* + .slide-top.tblty{
+			margin-top: 10px;
 		}
 		.slide-cont .brd-ele:first-child{
 			border-top: 0;
@@ -1444,6 +1507,26 @@
 		}
 
 	/* // domain list */
+
+	/* 첨부파일 */
+
+		* + .files{
+			margin-top: 9px;
+		}
+		.files{
+			
+		}
+		.files a{
+			font-size: 15px;
+			line-height: 22px;
+			color: #000;
+			text-decoration: underline;
+		}
+		.files a + a{
+			margin-left: 12px;
+		}
+
+	/* 첨부파일 */
 
 
 /*content*/

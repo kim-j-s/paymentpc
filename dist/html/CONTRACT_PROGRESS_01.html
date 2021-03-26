@@ -1,8 +1,37 @@
-@@include('head.html')
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>온라인 전자 계약서</title>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/commonui.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+
 <body>
     <div class="wrap">
         <!-- 헤더영역 -->
-        @@include('header.html')
+        <header>
+            <div class="inner">
+                <h1>온라인 전자 계약서</h1>
+            </div>
+        </header>
         <!-- //헤더영역 -->
 
         <!-- 콘텐츠 -->
@@ -15,7 +44,7 @@
                     </ol>
                     <h2 class="nav-tit">계약 정보</h2>
                     <ol class="nav-list">
-                        <li>계약자 정보</li>
+                        <li class="passed">계약자 정보</li>
                     </ol>
                 </nav>
 
@@ -23,7 +52,7 @@
                     <section class="content">
                         <div class="inner">
                             <div class="top-title">
-                                <h1 class="tit-h1">계약 정보</h1>
+                                <h1 class="tit-h1">계약자 정보</h1>
                             </div>
 
                             <div class="tbl-div02 brd-b-none">
@@ -124,7 +153,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                
+
                                 <div class="n-ele">
                                     <div class="eles">
                                         <div class="c-title"><span class="star-mark"></span>결제금융회사</div>
@@ -320,7 +349,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="c-title">배달 서비스 가입</div>
+                                    <div class="c-title">배달 및 픽업(포장)서비스 입점 신청서</div>
                                     <div class="t-right">
                                         <div class="input-checkbox normal">
                                             <input type="checkbox" checked="checked" disabled="disabled">
@@ -339,6 +368,9 @@
                                             <span>미신청</span>
                                         </div>
                                     </div>
+                                    <div class="flex-none">
+                                        <button type="button" class="btn small">서비스 신청</button>
+                                    </div>
                                 </li>
                                 <li>
                                     <div class="c-title">혜택 가맹점 가입 신청</div>
@@ -348,6 +380,9 @@
                                             <span>미신청</span>
                                         </div>
                                     </div>
+                                    <div class="flex-none">
+                                        <button type="button" class="btn small">서비스 신청</button>
+                                    </div>
                                 </li>
                                 <li>
                                     <div class="c-title">가맹점 쿠폰 서비스 가입 신청</div>
@@ -356,6 +391,9 @@
                                             <input type="checkbox">
                                             <span>미신청</span>
                                         </div>
+                                    </div>
+                                    <div class="flex-none">
+                                        <button type="button" class="btn small">서비스 신청</button>
                                     </div>
                                 </li>
                             </ul>
@@ -377,4 +415,5 @@
 
     </div>
 </body>
+
 </html>
