@@ -66,17 +66,34 @@
 	    display: inline-block;
 	    vertical-align: top;
 	    width: calc(100% - 194px);
-	    /*height: 100%;*/
 	    background: #fff;
 	    border-radius: 10px 0 0 10px;
 	}
 	.content{
 		position: relative;
 	}
+	.content:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 10px;
+		height: 10px;
+		background: url(../img/bg-side-t-l.png) no-repeat;
+	}
 	.content > .inner{
 		padding: 30px;
 		background: #fff;
 		border-radius: 10px 0 0 10px;
+	}
+	.content > .inner:after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 10px;
+		height: 10px;
+		background: url(../img/bg-side-b-l.png) no-repeat;
 	}
 	.content + .content{
 		margin-top: 20px;
