@@ -18,7 +18,7 @@ textarea { resize:vertical; font:inherit; overflow-y:auto; outline: none; box-si
 input, select { color:inherit; font:inherit; vertical-align: middle; -webkit-box-sizing:border-box; box-sizing:border-box;}
 address, i { font-style:normal; }
 table { border-collapse:collapse; table-layout:fixed; }
-img, select, input, button { vertical-align:middle; }
+img, select, input, button { vertical-align:middle; outline: none;}
 em { font-style:normal; }
 input { font-family: 'Noto Sans Kr', sans-serif; outline: none;}
 input:hover, input:focus {outline: none;}

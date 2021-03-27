@@ -1,8 +1,37 @@
-@@include('head.html')
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>온라인 전자 계약서</title>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/commonui.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+
 <body>
     <div class="wrap">
         <!-- 헤더영역 -->
-        @@include('header.html')
+        <header>
+            <div class="inner">
+                <h1>온라인 전자 계약서</h1>
+            </div>
+        </header>
         <!-- //헤더영역 -->
 
         <!-- 콘텐츠 -->
@@ -37,7 +66,7 @@
 
                             <div class="c-title">공동 대표자 가맹점 가입 여부 확인</div>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked">
                                 <span>공동 대표자로써 계약을 진행하시겠습니까?</span>
                             </label>
 
@@ -52,19 +81,19 @@
                                 <div class="eles">
                                     <div class="c-title">공동 대표자1</div>
                                     <div class="input-text">
-                                        <input type="text" placeholder="계약자 명">
+                                        <input type="text" value="계약자 명" disabled="disabled">
                                     </div>
                                 </div>
                                 <div class="eles">
                                     <div class="c-title"><span class="star-mark"></span>생년월일</div>
                                     <div class="input-text">
-                                        <input type="text" placeholder="생년월일">
+                                        <input type="text" value="2021.01.01" disabled="disabled">
                                     </div>
                                 </div>
                                 <div class="eles">
                                     <div class="c-title"><span class="star-mark"></span>휴대폰번호</div>
                                     <div class="input-text">
-                                        <input type="text" placeholder="휴대폰번호">
+                                        <input type="text" value="010-0000-0000" disabled="disabled">
                                     </div>
                                 </div>
                             </div>
@@ -76,25 +105,25 @@
                                 <div class="eles">
                                     <div class="c-title">공동 대표자2</div>
                                     <div class="input-text">
-                                        <input type="text" placeholder="계약자 명">
+                                        <input type="text" value="계약자 명" disabled="disabled">
                                     </div>
                                 </div>
                                 <div class="eles">
                                     <div class="c-title"><span class="star-mark"></span>생년월일</div>
                                     <div class="input-text">
-                                        <input type="text" placeholder="생년월일">
+                                        <input type="text" value="2021.01.01" disabled="disabled">
                                     </div>
                                 </div>
                                 <div class="eles">
                                     <div class="c-title"><span class="star-mark"></span>휴대폰번호</div>
                                     <div class="input-text">
-                                        <input type="text" placeholder="휴대폰번호">
+                                        <input type="text" value="010-0000-0000" disabled="disabled">
                                     </div>
                                 </div>
                             </div>
                             <div class="btn-area">
                                 <button type="button" class="btn">휴대폰 본인 인증</button>
-                            </div>                            
+                            </div>
                         </div>
                     </section>
                 </article>
@@ -113,4 +142,5 @@
 
     </div>
 </body>
+
 </html>

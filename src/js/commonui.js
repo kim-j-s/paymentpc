@@ -50,7 +50,6 @@ function dpSelect() {
     var $dpnone = $('.dp-trg');
     $dps.on('change', function(){
         var val = $(this).val();
-        console.log(val);
         if (val == 'display') {
             $dpnone.show();
         } else {
@@ -58,6 +57,22 @@ function dpSelect() {
         }
     })
 }
+
+
+function dpChange() {
+    var $dps = $('.dp-change');
+    $dps.on('change', function(){
+        var val = $(this).val();
+        var data = $(this).data('scobj');
+        if (val == 'etc') {
+            $('[data-sctrg="'+ data +'"]').prop('disabled',false);
+        } else {
+            $('[data-sctrg="'+ data +'"]').prop('disabled',true);
+        }
+    })
+}
+
+
 
 // slide
 function slide() {
@@ -186,6 +201,9 @@ $(function(){
 
     // dp select
     dpSelect();
+
+    // select change
+    dpChange();
 
     // slide
     slide();

@@ -50,24 +50,9 @@
                                 </div>
                                 <div class="eles">
                                     <label class="input-checkbox">
-                                        <input type="checkbox">
+                                        <input type="checkbox" checked="checked" disabled="disabled">
                                         <span>법인</span>
                                     </label>
-                                </div>
-                            </div>
-
-                            <div class="n-ele">
-                                <div class="eles">
-                                    <div class="c-title"><span class="star-mark"></span>상호명</div>
-                                    <div class="input-text">
-                                        <input type="text" value="(주)코나아이" disabled="disabled">
-                                    </div>
-                                </div>
-                                <div class="eles">
-                                    <div class="c-title"><span class="star-mark"></span>사업자등록번호</div>
-                                    <div class="input-text">
-                                        <input type="text" value="109-81-5365" disabled="disabled">
-                                    </div>
                                 </div>
                             </div>
 
@@ -78,6 +63,39 @@
                                         <select name="" id="">
                                             <option value="">국내</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span>비영리법인 여부</div>
+                                    <div class="selectbox">
+                                        <select name="" id="">
+                                            <option value="">예</option>
+                                            <option value="" selected="selected">아니오</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span>법인명</div>
+                                    <div class="input-text">
+                                        <input type="text" value="(주)코나아이" disabled="disabled">
+                                    </div>
+                                </div>
+                                <div class="eles">
+                                    <div class="c-title">법인명(영문)</div>
+                                    <div class="input-text">
+                                        <input type="text" placeholder="외국인법인 일 경우 필수로 입력">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <div class="c-title"><span class="star-mark"></span>법인등록번호</div>
+                                    <div class="input-text">
+                                        <input type="text" value="109-81-53365" disabled="disabled">
                                     </div>
                                 </div>
                                 <div class="eles">
@@ -131,10 +149,10 @@
                                     </div>
                                 </div>
                                 <div class="eles">
-                                    <div class="c-title"><span class="star-mark"></span>주요 취급 품목</div>
+                                    <div class="c-title"><span class="star-mark"></span>업태</div>
                                     <div class="selectbox">
                                         <select name="" id="">
-                                            <option value="">품목을 선택해주세요.</option>
+                                            <option value="">업태를 선택해주세요.</option>
                                         </select>
                                     </div>
                                 </div>
@@ -186,7 +204,7 @@
                             <div class="n-ele ty5">
                                 <div class="eles">
                                     <div class="input-text">
-                                        <input type="text" placeholder="(개인) 대표자 또는 공동대표자 명의 계좌">
+                                        <input type="text" value="(개인) 대표자 또는 공동대표자 명의 계좌" disabled="disabled">
                                     </div>
                                 </div>
                                 <div class="eles">
@@ -199,15 +217,6 @@
                             <div class="c-title"><span class="star-mark"></span>계좌번호</div>
                             <div class="input-text">
                                 <input type="text" placeholder="계좌번호">
-                            </div>
-
-                            <label class="input-checkbox free">
-                                <input type="checkbox">
-                                <span>계약자 명의의 금융회사로 본인 계좌 인증 절차가 필요합니다.</span>
-                            </label>
-                            <div class="btn-area">
-                                <button type="button" class="btn">재인증</button>
-                                <button type="button" class="btn ty2">계좌인증</button>
                             </div>
                         </div>
                     </section>
@@ -233,12 +242,8 @@
                                     </div>
                                     <div class="eles">
                                         <div class="c-title">대표자명(영문)</div>
-                                        <div class="selectbox">
-                                            <select name="" id="">
-                                                <option value="">성별을 선택해주세요.</option>
-                                                <option value="">남자</option>
-                                                <option value="">여자</option>
-                                            </select>
+                                        <div class="input-text">
+                                            <input type="text" placeholder="외국인 일 경우 필수로 입력">
                                         </div>
                                     </div>
                                 </div>
@@ -252,8 +257,12 @@
                                     </div>
                                     <div class="eles">
                                         <div class="c-title">성별</div>
-                                        <div class="input-text">
-                                            <input type="text" placeholder="외국인 일 경우 필수로 입력">
+                                        <div class="selectbox">
+                                            <select name="" id="">
+                                                <option value="">성별을 선택해주세요.</option>
+                                                <option value="">남자</option>
+                                                <option value="">여자</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -289,10 +298,144 @@
                             </div>
 
                             <div class="brd-ele">
-                                <h2 class="tit-h2">모집인 정보</h2>
-                                <div class="c-title">모집인</div>
-                                <div class="input-text">
-                                    <input type="text" placeholder="모집인">
+                                <h2 class="tit-h2">추가 정보</h2>
+
+                                <div class="c-title"><span class="star-mark"></span>거래목적</div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="selectbox">
+                                            <select name="" id="" class="dp-change" data-scobj="sc1">
+                                                <option value="">거래 목적을 선택해주세요.</option>
+                                                <option value="">다양한 결제수단</option>
+                                                <option value="">법인카드 서비스 이용</option>
+                                                <option value="">제휴카드 서비스 이용</option>
+                                                <option value="">복지카드 서비스 이용</option>
+                                                <option value="">기타 상업상 거래</option>
+                                                <option value="etc">기타</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" data-sctrg="sc1" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title"><span class="star-mark"></span>거래자금의 원천</div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="selectbox">
+                                            <select name="" id="" class="dp-change" data-scobj="sc2">
+                                                <option value="">거래자금 원천을 선택해주세요.</option>
+                                                <option value="">사업소득</option>
+                                                <option value="">사업 운전자금</option>
+                                                <option value="">부동산,유가증권 등 자산 처분</option>
+                                                <option value="etc">기타</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" data-sctrg="sc2" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title"><span class="star-mark"></span>설립목적(비영리단체)</div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="selectbox">
+                                            <select name="" id="" class="dp-change" data-scobj="sc3">
+                                                <option value="">설립목적을 선택해주세요.</option>
+                                                <option value="">학술</option>
+                                                <option value="">종교</option>
+                                                <option value="">자선</option>
+                                                <option value="">문화</option>
+                                                <option value="">교육</option>
+                                                <option value="">사회사업</option>
+                                                <option value="etc">기타</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" data-sctrg="sc3" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title"><span class="star-mark"></span>설립목적 검증서류(비영리단체)</div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="selectbox">
+                                            <select name="" id="" class="dp-change" data-scobj="sc4">
+                                                <option value="">검증서류를 선택해주세요.</option>
+                                                <option value="">정관</option>
+                                                <option value="">규약</option>
+                                                <option value="">회칙</option>
+                                                <option value="">비영리법인설립허가증</option>
+                                                <option value="">인허가신청서</option>
+                                                <option value="etc">기타</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" data-sctrg="sc4" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title"><span class="star-mark"></span>상장여부</div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="selectbox">
+                                            <select name="" id="" class="dp-change" data-scobj="sc5">
+                                                <option value="">상장 여부를 선택해주세요.</option>
+                                                <option value="">비상장</option>
+                                                <option value="">코스피</option>
+                                                <option value="">코스닥</option>
+                                                <option value="etc">기타</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" data-sctrg="sc5" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>설립일자</div>
+                                        <div class="input-text">
+                                            <input type="text" class="inp-date" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>종업원수</div>
+                                        <div class="input-text word-add">
+                                            <input type="text" class="t-right">
+                                            <span class="sub-txt">명</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title">종업원수</div>
+                                        <div class="input-text">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title">홈페이지 주소</div>
+                                        <div class="input-text">
+                                            <input type="text">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

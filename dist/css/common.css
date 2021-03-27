@@ -408,6 +408,7 @@
 		color: #000;
 		line-height: 22px;
 	}
+	.selectbox + .c-title,
 	.n-ele + .c-title{
 		padding-top: 20px;
 	}
@@ -460,6 +461,9 @@
 		-webkit-appearance:none; /* Safari and Chrome */
 		appearance:none;
 		letter-spacing: -0.5px;
+	}
+	.selectbox > select:focus{
+		border: 1px solid #000;
 	}
 	.selectbox > select:disabled{
 		color: #5f6879;
