@@ -457,9 +457,6 @@
 	    border: 1px solid #acb8cf;
 	    border-radius: 5px;
 	    background: url(../img/ico-arrow-down.png) no-repeat right 12px center;
-	    -moz-appearance:none; /* Firefox */
-		-webkit-appearance:none; /* Safari and Chrome */
-		appearance:none;
 		letter-spacing: -0.5px;
 	}
 	.selectbox > select:focus{
@@ -1804,12 +1801,76 @@
 /* // layer pop */
 
 
-/*달력*/
-.ui-datepicker .ui-datepicker-title{
-}
+/* 달력 */
 
+	.ui-datepicker{
+		padding: 0 5px 5px 5px;
+		border: 1px solid #acb8cf;
+		overflow: hidden;
+	}
+	.ui-datepicker .ui-datepicker-header{
+		margin: 0 -5px;
+		padding: 6px 0;
+		border-radius: 0;
+		background: #fff;
+		border: none;
+		border-bottom: 1px solid #acb8cf;
+	}
+	.ui-datepicker .ui-datepicker-title{
+		font-size: 15px;
+		color: #000;
+		line-height: 30px;
+	}
+	.ui-datepicker table{
+		margin: 0;
+	}
+	.ui-datepicker select.ui-datepicker-month,
+	.ui-datepicker select.ui-datepicker-year{
+		display: inline-block;
+		width: 80px;
+		height: 30px;
+		padding: 0 30px 0 5px;
+		border: 1px solid #acb8cf;
+		border-radius: 5px;
+		background: #fff url(../img/ico-arrow-down.png) no-repeat right 12px center;
+	}
+	.ui-datepicker select.ui-datepicker-month{
+		margin-left: 10px;
+	}
+	.ui-datepicker select.ui-datepicker-year{
+		margin-right: 5px;
+	}
+	.ui-datepicker .ui-datepicker-prev,
+	.ui-datepicker .ui-datepicker-next{
+		top: 9px;
+		width: 25px;
+		height: 25px;
+		border: none;
+	}
+	.ui-datepicker .ui-datepicker-prev:hover,
+	.ui-datepicker .ui-datepicker-next:hover{
+		background: #fff;
+	}
+	.ui-datepicker .ui-datepicker-prev-hover{
+		left: 2px;
+	}
+	.ui-datepicker .ui-datepicker-next-hover{
+		right: 2px;
+	}
 
-
-.ui-datepicker{
-	border: 1px solid #acb8cf;
-}
+	.ui-datepicker .ui-datepicker-prev span,
+	.ui-datepicker .ui-datepicker-next span{
+		top: 0;
+		left: 0;
+		width: 25px;
+		height: 25px;
+		margin: 0;
+	}
+	.ui-datepicker .ui-datepicker-prev span{
+		background: url(../img/ico-arrow-left.png) no-repeat center center;
+	}
+	.ui-datepicker .ui-datepicker-next span{
+		background: url(../img/ico-arrow-right.png) no-repeat center center;
+	}
+	
+/* // 달력 */
