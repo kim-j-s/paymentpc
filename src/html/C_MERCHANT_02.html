@@ -1,0 +1,532 @@
+@@include('head.html')
+<body>
+    <div class="wrap">
+        <!-- 헤더영역 -->
+        @@include('header.html')
+        <!-- //헤더영역 -->
+
+        <!-- 콘텐츠 -->
+        <div class="container">
+            <div class="co-inner">
+                <nav>
+                    <h2 class="nav-tit">계약 선택</h2>
+                    <ol class="nav-list">
+                        <li class="passed">법인 사업자 계약</li>
+                        <li class="passed">휴대폰 본인 인증</li>
+                        <li class="passed">공동 대표자 가입 확인</li>
+                        <li class="passed">사업자 등록 번호 조회</li>
+                    </ol>
+                    <h2 class="nav-tit">계약 정보</h2>
+                    <ol class="nav-list">
+                        <li class="passed">사업자/대표자 정보</li>
+                        <li class="passed">정보 이용/제공 동의</li>
+                        <li class="ing">전자 계약 서비스 선택</li>
+                        <li>부속 서류 등록</li>
+                        <li>전자 계약서 서명</li>
+                        <li>계약서 승인 요청</li>
+                        <li>계약서 제출</li>
+                    </ol>
+                </nav>
+                <article class="contents">
+                    <section class="content">
+                        <div class="inner">
+                            <div class="top-title">
+                                <h1 class="tit-h1">전자 계약 서비스 신청</h1>
+                            </div>
+
+                            <h2 class="tit-h2 brd chk-add">
+                                배달 및 픽업(포장)서비스 입점 신청서
+                                <label class="input-checkbox single">
+                                    <input type="checkbox" checked="checked">
+                                    <span>확인</span>
+                                </label>
+                            </h2>
+
+                            <div class="brd-ele ty1">
+                                <dl class="txt-cont">
+                                    <dt>배달 및 픽업(포장)서비스</dt>
+                                    <dd>지역화폐 내 배달 가능 가맹점으로 등록하여 배달과 픽업(포장) 서비스를 신청할 수 있습니다.</dd>
+                                </dl>
+
+                                <div class="c-title">
+                                    신청서비스 <small>* 신청 서비스는 복수 선택이 가능합니다.</small>
+                                </div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox" checked="checked">
+                                            <span>배달서비스</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox" checked="checked">
+                                            <span>픽업(포장)서비스</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="brd-ele">
+                                <h2 class="tit-h2">매장 기본 정보</h2>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>매장명</div>
+                                        <div class="input-text">
+                                            <input type="text" placeholder="매장명">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>사업자등록번호</div>
+                                        <div class="input-text">
+                                            <input type="text" value="000-00-0000" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title"><span class="star-mark"></span>영업시간</div>
+                                @@include('time.html')
+
+                                <div class="c-title"><span class="star-mark"></span>휴무정보</div>
+                                <div class="input-text">
+                                    <input type="text" placeholder="ex) 연중무휴 / 매주 O요일 휴무">
+                                </div>
+
+                                <div class="c-title">고객 편의시설</div>
+                                <div class="textarea">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="ex) 화장실,주차가능,wifi, 단체석 등 (최대 200자 이내로 작성) 매장 편의 시설을 작성해주세요."></textarea>
+                                </div>
+
+                                <div class="c-title">업체 소개</div>
+                                <div class="textarea">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="소개하고 싶은 내용을 최대 1,000자 이내로 작성해주세요."></textarea>
+                                </div>
+
+                                <div class="c-title">태그</div>
+                                <div class="textarea">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="업체를 소개할 관련 키워드를 최대 70자 이내로 작성해주세요."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="brd-ele">
+                                <h2 class="tit-h2">매장 운영 정보</h2>
+                                <div class="c-title"><span class="star-mark"></span>주요 상품 카테고리</div>
+                                <div class="n-ele ty6">
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>치킨/피자</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>족발/보쌈</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>중식</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="n-ele ty6">
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>분식</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>한식</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>아시안/양식</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="n-ele ty6">
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>패스트푸드</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>돈까스/일식/회</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>디저트/카페</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="n-ele ty6">
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>야식</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>도시락</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>기타</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="n-ele">
+                                    <div class="eles flex-none text">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox" class="dischk" data-dischk="etc">
+                                            <span>기타</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" data-disabled="etc" disabled="disabled">
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <div class="brd-ele">
+                                <h2 class="tit-h2">배달 정보</h2>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>배달 시간</div>
+                                        <div class="input-text word-add">
+                                            <input type="text" class="inp-width01 t-right">
+                                            <span class="sub-txt">분 (평균시간)</span>
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>배달 거리</div>
+                                        <div class="input-text word-add">
+                                            <input type="text" class="inp-width01 t-right">
+                                            <span class="sub-txt">분 (최대 3km)</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title"><span class="star-mark"></span>최소 주문 금액</div>
+                                <div class="input-text word-add">
+                                    <input type="text" class="t-right">
+                                    <span class="sub-txt">원 이상</span>
+                                </div>
+
+                                <div class="c-title"><span class="star-mark"></span>배달팁</div>
+                                <div class="n-ele">
+                                    <div class="eles flex-none text inp-width01">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox" class="dischk" data-dischk="tip">
+                                            <span>기본료</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="input-text word-add">
+                                            <input type="text" class="inp-width01 t-right" data-disabled="tip" disabled="disabled">
+                                            <span class="sub-txt">원 이상</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="n-ele">
+                                    <div class="eles flex-none text inp-width01">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox" class="dischk" data-dischk="sur">
+                                            <span>할증 구분</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" data-disabled="sur" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="n-txt01 red">법정동 단위로 기존 배달팁 외 추가로 받으실 배달팁 설정이 가능합니다.</p>
+
+                                <div class="c-title"><span class="star-mark"></span>배달대행사</div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox" class="dischk-off" data-dischk="deli">
+                                            <span>직접배달</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="n-ele">
+                                    <div class="eles flex-none text">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox" class="dischk" data-dischk="deli">
+                                            <span>배달대행사 (주 이용사항)</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" placeholder="ex) 이용 중인 배달 대행서를 기입해주세요." data-disabled="deli" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title">커텍티드 POS사 (이용 POS사)</div>
+                                <div class="input-text">
+                                    <input type="text" placeholder="ex) 매장천사, 포스피드 등">
+                                </div>
+
+                                <div class="c-title">매장 간판 사진</div>
+                                @@include('file.html',{
+                                    "id":"file01"
+                                })
+                                <p class="n-txt01 red">매장명이 포함된 간판 사진 또는 확인할 수 있는 사진을 등록해주세요.</p>
+                            </div>
+
+                            <div class="brd-ele">
+                                <h2 class="tit-h2">포장정보</h2>
+                                <div class="n-ele">
+                                    <div class="eles flex-none text inp-width02">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>정액할인</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="n-ele">
+                                            <div class="eles flex-none" style="width: 100px;">
+                                                <div class="input-text">
+                                                    <input type="text" class="t-right">
+                                                </div>
+                                            </div>
+                                            <div class="eles flex-none text" style="width: 116px;">원 이상 포장 시</div>
+                                            <div class="eles flex-none" style="width: 100px;">
+                                                <div class="input-text">
+                                                    <input type="text" class="t-right">
+                                                </div>
+                                            </div>
+                                            <div class="eles text">원 할인</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="n-ele">
+                                    <div class="eles flex-none text inp-width02">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox">
+                                            <span>정률할인</span>
+                                        </label>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="n-ele">
+                                            <div class="eles flex-none" style="width: 100px;"></div>
+                                            <div class="eles flex-none text" style="width: 116px;">최대 할인금액</div>
+                                            <div class="eles flex-none" style="width: 100px;">
+                                                <div class="input-text">
+                                                    <input type="text" class="t-right">
+                                                </div>
+                                            </div>
+                                            <div class="eles text">원 할인</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="n-ele">
+                                    <div class="eles flex-none inp-width02"></div>
+                                    <div class="eles">
+                                        <div class="n-ele">
+                                            <div class="eles flex-none" style="width: 100px;">
+                                                <div class="input-text">
+                                                    <input type="text" class="t-right">
+                                                </div>
+                                            </div>
+                                            <div class="eles flex-none text" style="width: 168px;">원 이상 포장 시 주문 금액의</div>
+                                            <div class="eles flex-none ml0" style="width: 60px;">
+                                                <div class="input-text">
+                                                    <input type="text" class="t-right">
+                                                </div>
+                                            </div>
+                                            <div class="eles text">원 할인</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="brd-ele">
+                                <h2 class="tit-h2">원산지 정보</h2>
+                                <div class="textarea">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="매장에서 사용중인 모든 식재료에 대한 원산지 정보를 입력해주세요.원산지 정보 ex) 김치(국내산), 돼지고기(칠레산) 등"></textarea>
+                                </div>
+                            </div>
+
+                            <h2 class="tit-h2">기존 서비스 정보 활용 동의</h2>
+                            <div class="c-title">기존 이용 중인 배달 서비스</div>
+                            <div class="n-ele">
+                                <div class="eles">
+                                    <label class="input-checkbox normal">
+                                        <input type="checkbox">
+                                        <span>배달의 민족</span>
+                                    </label>
+                                </div>
+                                <div class="eles">
+                                    <label class="input-checkbox normal">
+                                        <input type="checkbox">
+                                        <span>요기요</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="n-ele">
+                                <div class="eles flex-none text" style="width: 105px;">
+                                    <label class="input-checkbox normal">
+                                        <input type="checkbox" class="dischk" data-dischk="service">
+                                        <span>기타</span>
+                                    </label>
+                                </div>
+                                <div class="eles">
+                                    <div class="input-text">
+                                        <input type="text" data-disabled="service" disabled="disabled">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="content">
+                        <div class="inner">
+                            <div class="brd-box scroll-in">
+                                <div class="inner">
+                                    <dl class="txt-cont">
+                                        <dt>가입 신청 동의</dt>
+                                        <dd>
+                                            본인은 별도로 교부된 배달 가맹점 약관을 동의하고, ( ※ 배달 및 픽업서비스 오픈 후 메뉴구성 및 가격은 “가맹점 주”가 확인하며, 확인하지 않아 발생한 손해는 “코나아이”에서 책임지지 않습니다.)<br>
+                                            배달 및 픽업서비스 이용 비용 및 자동이체출금에 대한 안내를 받은 후 배달 및 픽업가맹점 가입을 신청합니다.
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <label class="input-checkbox">
+                                <input type="checkbox" checked="checked">
+                                <span>서비스에 대한 내용을 이해하고, 이에 동의합니다.</span>
+                            </label>
+
+                            <div class="brd-box scroll-in">
+                                <div class="inner">
+                                    <dl class="txt-cont">
+                                        <dt>배달 및 픽업서비스 이용 비용</dt>
+                                        <dd>
+                                            ① “코나아이”는 “이용자”가 “서비스”내의 “결제 서비스”를 통하여 “가맹점”의 상품을 구매하는 경우 결제 금액에 대하여 수수료를 부과합니다.<br>
+                                            - 결제 수수료 : 가맹점의 매출규모에 따라 차등 적용<br>
+
+                                            <div class="tbl-div">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>매출구간</th>
+                                                            <th>결제수수료</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>3억 이하</td>
+                                                            <td>2.1%(VAT 별도)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3억 초과</td>
+                                                            <td>2.7 %(VAT 별도)</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div><br>
+
+                                            - 중계 수수료 : 2.0% (VAT 별도)<br>
+                                            ※ 배달 및 픽업서비스(온라인거래) 이용 시에는 가맹점 가입 시 계약된 결제 수수료와 다르게 상기 수수료로 적용됨
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="brd-box scroll-in">
+                                <div class="inner">
+                                    <dl class="txt-cont">
+                                        <dt>출금동의서</dt>
+                                        <dd>
+                                            본인은 배달 및 픽업서비스이용료 및 배달 대행료 추가 정산을 위한 결제 수단인 “{ASP명}”의 충전을 위한 자동이체 출금에 동의하고, 전자금융거래법 등 관련법률에 따라 ㈜코나아이 자동이체출금에 대한 동의를 받아 금융회사 등에 제공하는 것에 동의 합니다.
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <label class="input-checkbox">
+                                <input type="checkbox" checked="checked">
+                                <span>출금 동의에 대한 내용을 이해하고, 이에 동의합니다.</span>
+                            </label>
+
+                            <div class="brd-box scroll-in">
+                                <div class="inner">
+                                    <dl class="txt-cont">
+                                        <dt>개인정보 수집 및 이용동의</dt>
+                                        <dd>
+                                            수집 및 이용목적 : 자동이체 출금 서비스 제공<br>
+                                            수집항목 : 예금주 이름,생년월일,은행명,계좌번호,예금주연락처,신청인(대표자),이름,예금주와 관계,이메일주소<br>
+                                            보유 및 이용기간 : 서비스 이용 계약 해지시 까지
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <label class="input-checkbox">
+                                <input type="checkbox" checked="checked">
+                                <span>서비스 약관 내용을 이해하고, 이에 동의합니다.</span>
+                            </label>
+
+                            <div class="brd-box scroll-in">
+                                <div class="inner">
+                                    <dl class="txt-cont">
+                                        <dt>개인정보 제3자 제공 동의</dt>
+                                        <dd>
+                                            본인은 신용정보의 이용 및 보호에 관한 법률 제3조 제1항, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 제24조의 2 개인정보 보호법 제17조 등의 관련 법규에 따라 아래와 같은 내용으로 본인의 개인정보를 제공하는 것에 동의 합니다.<br><br>
+                                            제1조 (개인정보를 제공받는자)<br>
+                                            배달 및 픽업서비스 운영을 위한 “코나아이” 협력업체<br><br>
+                                            제2조 (개인정보를 제공받는 자의 이용목적)<br>
+                                            배달 및 픽업서비스 시스템 이용<br><br>
+                                            제3조 (제공 대상 개인정보)<br>
+                                            이름, 상점명, 상점전화번호, 상점주소, 사업자등록번호, {ASP명} 직가맹 ID<br><br>
+                                            제4조 (보유 및 이용기간)<br>
+                                            개인(신용)정보 제공 동의 철회 시 또는 제공된 목적이 달성된 시점까지<br>
+                                            - 신청인은 동의를 거부하실 권리가 있으며, 동의 후에도 언제든지 동의철회가 가능합니다.<br>
+                                            다만, 동의 거부 및 동의 철회 시, 제2조에 명시된 서비스 이용이 제한될 수 있습니다.
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <label class="input-checkbox">
+                                <input type="checkbox" checked="checked">
+                                <span>서비스 약관 내용을 이해하고, 이에 동의합니다.</span>
+                            </label>
+                        </div>
+                    </section>                    
+                </article>
+            </div>
+        </div>
+        <!-- // 콘텐츠 -->
+        
+        <div class="f-btn-area">
+            <div class="inner">
+                <div class="btn-area">
+                    <button type="button" class="btn ty1">이전</button>
+                    <button type="button" class="btn ty2">다음</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>온라인 전자 계약서</title>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/commonui.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 헤더영역 -->
+        <header>
+            <div class="inner">
+                <h1>온라인 전자 계약서</h1>
+            </div>
+        </header>
+        <!-- //헤더영역 -->
+
+        <!-- 콘텐츠 -->
+        <div class="container">
+            <div class="co-inner">
+                <nav>
+                    <h2 class="nav-tit">계약 선택</h2>
+                    <ol class="nav-list">
+                        <li class="passed">법인 사업자 계약</li>
+                    </ol>
+                    <h2 class="nav-tit">계약 정보</h2>
+                    <ol class="nav-list">
+                        <li class="passed">계약자 정보</li>
+                    </ol>
+                </nav>
+
+                <article class="contents">
+                    <section class="content">
+                        <div class="inner">
+                            <div class="top-title">
+                                <h1 class="tit-h1">계약자 정보</h1>
+                            </div>
+
+                            <div class="tbl-div02 brd-b-none">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:140px">
+                                        <col style="*">
+                                        <col style="width:100px">
+                                        <col style="*">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">계약 최초 신청일</th>
+                                            <td>2021.03.11 14:58</td>
+                                            <th scope="row">계약서 승인일</th>
+                                            <td>승인대기</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">계약 최종 업데이트일</th>
+                                            <td colspan="3">2021.03.12 18:58</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 사업자 정보 -->
+                            <div class="slide-top tblty">
+                                <h2 class="tit-h2">사업자 정보</h2>
+                                <button type="button" class="btn slide-act" data-slide="s1">열기</button>
+                            </div>
+
+                            <div class="slide-cont" data-slidecont="s1">
+                                <div class="n-ele mt30">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>상호명</div>
+                                        <div class="input-text">
+                                            <input type="text" value="(주)코나아이" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>전화번호</div>
+                                        <div class="input-text">
+                                            <input type="text" value="02-2168-7500" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>사업자등록번호</div>
+                                        <div class="input-text">
+                                            <input type="text" value="109-81-53365" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>E-mail</div>
+                                        <div class="input-text">
+                                            <input type="text" value="konai@konai.com" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title"><span class="star-mark"></span>사업장 주소</div>
+                                <div class="n-ele ty3">
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" value="53365" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" value="서울시 영등포구 여의도동 은행로 3(익스콘벤처타워) 8층" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>업종</div>
+                                        <div class="input-text">
+                                            <input type="text" value="음식점" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>주요 취급 품목</div>
+                                        <div class="input-text">
+                                            <input type="text" placeholder="커피,음료" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title"><span class="star-mark"></span>가입확인서 수신방법</div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <label class="input-checkbox" style="width: 175px;">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
+                                            <span>문자</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>결제금융회사</div>
+                                        <div class="input-text">
+                                            <input type="text" value="KB국민은행" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>예금주명</div>
+                                        <div class="input-text">
+                                            <input type="text" value="(주)코나아이" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title"><span class="star-mark"></span>계좌번호</div>
+                                <div class="input-text">
+                                    <input type="text" value="109-81-53365" disabled="disabled">
+                                </div>
+                            </div>
+                            <!-- // 사업자 정보 -->
+
+                            <!-- 대표자 정보 -->
+                            <div class="slide-top">
+                                <h2 class="tit-h2">대표자 정보</h2>
+                                <button type="button" class="btn slide-act" data-slide="s2">열기</button>
+                            </div>
+
+                            <div class="slide-cont" data-slidecont="s2">
+                                <div class="n-ele mt30">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>대표자명</div>
+                                        <div class="input-text">
+                                            <input type="text" value="김코나" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>국적</div>
+                                        <div class="input-text">
+                                            <input type="text" value="KR : 대한민국" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title">대표자명(영문)</div>
+                                        <div class="input-text">
+                                            <input type="text" value="" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title">생년월일</div>
+                                        <div class="input-text">
+                                            <input type="text" value="2021.01.01" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>실명번호</div>
+                                        <div class="input-text">
+                                            <input type="text" value="901225-1******" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title">성별</div>
+                                        <div class="input-text">
+                                            <input type="text" value="남" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>전화번호</div>
+                                        <div class="input-text">
+                                            <input type="text" value="02-2098-0987" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>휴대폰번호</div>
+                                        <div class="input-text">
+                                            <input type="text" value="010-0000-0000" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // 대표자 정보 -->
+
+                            <!-- 공동 대표자 가맹점 가입 -->
+                            <div class="slide-top">
+                                <h2 class="tit-h2">공동 대표자 가맹점 가입</h2>
+                                <button type="button" class="btn slide-act" data-slide="s3">열기</button>
+                            </div>
+
+                            <div class="slide-cont" data-slidecont="s3">
+                                <div class="n-ele mt30">
+                                    <div class="eles">
+                                        <div class="c-title">공동 대표자1</div>
+                                        <div class="input-text">
+                                            <input type="text" value="김코나" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>생년월일</div>
+                                        <div class="input-text">
+                                            <input type="text" value="2021.01.01" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-title"><span class="star-mark"></span>휴대폰번호</div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" value="010-0000-0000" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles t-right">
+                                        <div class="stamp">
+                                            <img src="../img/temp/@stamp.png" alt="도장">
+                                            <span class="txt">서명/인</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="n-ele mt30">
+                                    <div class="eles">
+                                        <div class="c-title">공동 대표자2</div>
+                                        <div class="input-text">
+                                            <input type="text" value="김코나" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>생년월일</div>
+                                        <div class="input-text">
+                                            <input type="text" value="2021.01.01" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-title"><span class="star-mark"></span>휴대폰번호</div>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="input-text">
+                                            <input type="text" value="010-0000-0000" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="eles t-right">
+                                        <div class="stamp">
+                                            <img src="../img/temp/@stamp.png" alt="도장">
+                                            <span class="txt">서명/인</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-title">계약기간</div>
+                                <div class="n-ele">
+                                    <div class="eles flex-none" style="width: 150px;">
+                                        <div class="input-text">
+                                            <input type="text" class="inp-date" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="eles text color01">부터</div>
+                                    <div class="eles flex-none" style="width: 150px;">
+                                        <div class="input-text">
+                                            <input type="text" class="inp-date" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="eles text color01">까지</div>
+                                    <div class="eles flex-none" style="width: 70px;">
+                                        <div class="input-text">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="eles text color01">개월</div>
+                                </div>
+                            </div>
+                            <!-- // 공동 대표자 가맹점 가입 -->
+                        </div>
+                    </section>
+
+                    <section class="content">
+                        <div class="inner">
+                            <h2 class="tit-h2">전자 계약 서비스 신청 내역</h2>
+                            <ul class="list03">
+                                <li>
+                                    <div class="c-title">코나카드 가맹점 가입</div>
+                                    <div class="t-right">
+                                        <div class="input-checkbox normal">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
+                                            <span>계약</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-none">
+                                        <button type="button" class="btn small">계약서 확인</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="c-title">배달 및 픽업(포장)서비스 입점 신청서</div>
+                                    <div class="t-right">
+                                        <div class="input-checkbox normal">
+                                            <input type="checkbox" checked="checked" disabled="disabled">
+                                            <span>계약</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-none">
+                                        <button type="button" class="btn small">계약서 확인</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="c-title">스탬프 서비스 가입</div>
+                                    <div class="t-right">
+                                        <div class="input-checkbox normal">
+                                            <input type="checkbox" disabled="disabled">
+                                            <span>미신청</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-none">
+                                        <button type="button" class="btn small">서비스 신청</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="c-title">혜택 가맹점 가입 신청</div>
+                                    <div class="t-right">
+                                        <div class="input-checkbox normal">
+                                            <input type="checkbox" disabled="disabled">
+                                            <span>미신청</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-none">
+                                        <button type="button" class="btn small">서비스 신청</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="c-title">가맹점 쿠폰 서비스 가입 신청</div>
+                                    <div class="t-right">
+                                        <div class="input-checkbox normal">
+                                            <input type="checkbox" disabled="disabled">
+                                            <span>미신청</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-none">
+                                        <button type="button" class="btn small">서비스 신청</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <!-- // 콘텐츠 -->
+
+        <div class="f-btn-area">
+            <div class="inner">
+                <div class="btn-area">
+                    <button type="button" class="btn ty1">이전</button>
+                    <button type="button" class="btn ty2">다음</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

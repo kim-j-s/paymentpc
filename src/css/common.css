@@ -1565,8 +1565,6 @@
 
 /*content*/
 
-
-
 /* layer pop */
 
 	.layer-pop{
@@ -1654,3 +1652,14 @@
 	}
 
 /* // layer pop */
+
+
+/*달력*/
+.ui-datepicker .ui-datepicker-title{
+}
+
+
+
+.ui-datepicker{
+	border: 1px solid #acb8cf;
+}

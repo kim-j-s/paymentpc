@@ -1,8 +1,37 @@
-@@include('head.html')
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>온라인 전자 계약서</title>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/commonui.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+
 <body>
     <div class="wrap">
         <!-- 헤더영역 -->
-        @@include('header.html')
+        <header>
+            <div class="inner">
+                <h1>온라인 전자 계약서</h1>
+            </div>
+        </header>
         <!-- //헤더영역 -->
 
         <!-- 콘텐츠 -->
@@ -11,7 +40,7 @@
                 <nav>
                     <h2 class="nav-tit">계약 선택</h2>
                     <ol class="nav-list">
-                        <li class="passed">개인 사업자 계약</li>
+                        <li class="passed">법인 사업자 계약</li>
                         <li class="passed">휴대폰 본인 인증</li>
                         <li class="passed">공동 대표자 가입 확인</li>
                         <li class="passed">사업자 등록 번호 조회</li>
@@ -37,7 +66,7 @@
                             <h2 class="tit-h2 brd chk-add">
                                 코나카드 가맹점 계약 신청
                                 <label class="input-checkbox single">
-                                    <input type="checkbox">
+                                    <input type="checkbox" checked="checked" disabled="disabled">
                                     <span>확인</span>
                                 </label>
                             </h2>
@@ -67,7 +96,7 @@
                                 </dl>
                             </div>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked">
                                 <span>결제 수수료에 대한 내용을 이해하고, 이에 동의합니다.</span>
                             </label>
 
@@ -81,7 +110,7 @@
                                 </dl>
                             </div>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked">
                                 <span>정산 주기 및 분담률에 대한 내용을 이해하고, 이에 동의합니다.</span>
                             </label>
                         </div>
@@ -93,21 +122,21 @@
                             <div class="c-title">배달 및 픽업(포장)서비스 입점 신청서</div>
                             <p class="desc">지역화폐 내 배달 가능 가맹점으로 등록하여 배달과 픽업(포장) 서비스를 신청할 수 있습니다.</p>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked">
                                 <span>배달 및 픽업(포장) 서비스를 신청하시겠습니까?</span>
                             </label>
 
                             <div class="c-title">스탬프 서비스 신청 여부 확인</div>
-                            <p class="desc">온오프라인에서 고객들의 결제 횟수에 따라 스탬프를 적립해주고  쿠폰을 발행할 수 있는 서비스입니다.</p>
+                            <p class="desc">온오프라인에서 고객들의 결제 횟수에 따라 스탬프를 적립해주고 쿠폰을 발행할 수 있는 서비스입니다.</p>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked">
                                 <span>스탬프 서비스를 신청하시겠습니까?</span>
                             </label>
 
                             <div class="c-title">QR 결제 서비스 신청 여부 확인</div>
                             <p class="desc">매장 내 QR 결제 지원을 위해 신청 시 QR 패널을 제작하여 매장으로 발송해 드리는 서비스입니다.</p>
                             <label class="input-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" checked="checked">
                                 <span>QR 결제 서비스를 신청하시겠습니까?</span>
                             </label>
                         </div>
@@ -116,7 +145,7 @@
             </div>
         </div>
         <!-- // 콘텐츠 -->
-        
+
         <div class="f-btn-area">
             <div class="inner">
                 <div class="btn-area">
@@ -128,4 +157,5 @@
 
     </div>
 </body>
+
 </html>
