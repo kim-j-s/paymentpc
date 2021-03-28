@@ -14,7 +14,7 @@
 	        -ms-flex-direction: column;
 	            flex-direction: column;
 	    height: 100%;
-	    overflow: hidden;
+	    /*overflow: hidden;*/
 	}
 	header{
 	    -webkit-box-flex: 0;
@@ -46,16 +46,17 @@
 	        -ms-flex: 1 1 100%;
 	            flex: 1 1 100%;
 	    background: #f3f5f9;
-	    overflow: auto;
+	    overflow: hidden;
 	}
 
 	.co-inner{
 		position: relative;
 	    width: 768px;
+	    height: 100%;
 	    min-height: 100%;
 	    margin: 0 auto;
 	    padding-top: 30px;
-	    padding-bottom: 110px;
+	    padding-bottom: 30px;
 	    font-size: 0;
 	}
 	.co-inner:before{
@@ -79,8 +80,13 @@
 	    display: inline-block;
 	    vertical-align: top;
 	    width: calc(100% - 194px);
+	    height: 100%;
 	    background: #fff;
 	    border-radius: 10px 0 0 10px;
+	    overflow: auto;
+	}
+	.content:first-child{
+		min-height: 100%;
 	}
 	.content{
 		position: relative;
@@ -124,11 +130,11 @@
 		background: #f3f5f9;
 	}
 	.f-btn-area{
-		position: absolute;
+		/*position: absolute;
 		left: 0;
 		bottom: 0;
 		z-index: 2;
-		width: 100%;
+		width: 100%;*/
 	    -webkit-box-flex: 0;
 	    -webkit-flex: none;
 	        -ms-flex: none;
@@ -140,7 +146,6 @@
 		width: 768px;
 	    margin: 0 auto;
 	}
-
 
 	.n-ele{
 	    display: -webkit-box;
@@ -177,13 +182,11 @@
 	    -webkit-align-self: flex-start;
 	        -ms-flex-item-align: start;
 	            align-self: flex-start;
-	    /*align-self: center;*/
 	}
 	
 	.n-ele > .text{
 		font-weight: 400;
 		font-size: 15px;
-		/*color: #888;*/
 		-webkit-align-self: center;
 		    -ms-flex-item-align: center;
 		        align-self: center;
@@ -266,7 +269,6 @@
 		    -ms-flex: none !important;
 		        flex: none !important;
 	}
-
 
 	/* 상하 보더 */
 
@@ -353,8 +355,6 @@
 		border-bottom: none !important;
 	}
 
-
-
 	.tit-h1{
 	    font-weight: 700;
 	    font-size: 22px;
@@ -389,9 +389,6 @@
 	.tit-h2.brd.chk-add .input-checkbox{
 		right: 18px;
 	}
-
-
-
 
 	.tit-h2 small{
 	    padding-left: 12px;
@@ -494,9 +491,6 @@
 		font-size: 15px;
 		line-height: 18px;
 	}
-	select::-ms-expand {display:none}
-
-	
 
 	.input-radio {
 	    display: block;
@@ -557,8 +551,6 @@
 	    border: 1px solid #e15d5d;
 	}
 
-
-
 	.input-radio > span .tit-txt,
 	.input-checkbox > span .tit-txt{
 		display: block;
@@ -599,7 +591,6 @@
 	.input-radio.normal > span:after{
 		content: none;
 	}
-
 
 	.input-checkbox {
 	    display: block;
@@ -708,8 +699,6 @@
 		top: 0;
 		left: 0;
 	}
-
-
 	.input-checkbox.normal{
 		display: inline-block;
 		vertical-align: middle;
@@ -769,7 +758,6 @@
 	.tit-h2 + .input-checkbox{
 		margin-top: 12px;
 	}
-
 
 	.input-text{
 	    position: relative;
@@ -860,7 +848,6 @@
 	* + .input-text {
 		margin-top: 9px;
 	}
-
 	
 	.textarea{}
 	.textarea > textarea{
@@ -883,15 +870,13 @@
 	}
 	* + .textarea{
 		margin-top: 9px;
-	}
-	
+	}	
 
 	.brd-box{
 	    padding: 21px 18px;
 	    border: 1px solid #f0f0f0;
 	    border-radius: 5px;
-	}
-	
+	}	
 	* + .brd-box{
 		margin-top: 9px;
 	}
@@ -909,7 +894,6 @@
 	.input-checkbox + .brd-box{
 		margin-top: 30px;
 	}
-
 	* + .inp-file {
 		margin-top: 9px;
 	}
@@ -938,7 +922,6 @@
 	    clip: rect(0, 0, 0, 0);
 	    border: none;
 	}
-
 	.inp-file .input-text {
 		-webkit-box-flex: 1;
 		-webkit-flex: 1 1 auto;
@@ -963,7 +946,6 @@
 	    text-align: center;
 	    vertical-align: middle;
 	}
-
 	.c-title + .bg-box{
 		margin-top: 9px;
 	}
@@ -973,8 +955,7 @@
 	}
 	.bg-box.ty1{
 	    background: #f3f5f9;
-	}
-	
+	}	
 
 /* common */
 
@@ -1049,7 +1030,6 @@
 	.list03 > li > * + *{
 	    margin-left: 12px;
 	}
-
 	
 	.list04{}
 	.list04 > li{
@@ -1128,14 +1108,12 @@
 		margin-top: 12px;
 	}
 
-
 	.text{
 	    font-weight: 400;
 	    font-size: 15px;
 	    line-height: 22px;
 	    color: #000;
 	}
-
 
 	.txt-cont{}
 	.txt-cont + .txt-cont{
@@ -1180,10 +1158,6 @@
 	    color: #888;
 	    letter-spacing: -0.25px;
 	}
-
-
-
-
 	* + .tbl-div {
 	    margin-top: 9px;
 	}
@@ -1250,14 +1224,12 @@
 	    line-height: 19px;
 	    letter-spacing: -0.25px;
 	}
-
 	.sub-txt{
 	    font-weight: 500;
 	    font-size: 18px;
 	    line-height: 27px;
 	    color: #000;
 	}
-
 	.badge{
 	    display: inline-block;
 	    vertical-align: middle;
@@ -1482,7 +1454,6 @@
 	* + .desc{
 		margin-top: 9px;
 	}
-
 	.desc02{
 		font-weight: 400;
 	    font-size: 15px;
