@@ -73,7 +73,6 @@ function dpChange() {
 }
 
 
-
 // slide
 function slide() {
     $('.slide-act').on('click', function(){
@@ -163,8 +162,15 @@ function autoEmail() {
     }
 }
 
+$(window).on('resize', function(){
+    jQuery('.scrollbar-outer').scrollbar();
+});
+
 
 $(function(){
+
+    // scrollbar
+    jQuery('.scrollbar-outer').scrollbar();
 
     //달력
     if($('.inp-date').length > 0){

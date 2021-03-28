@@ -9,9 +9,11 @@
     <title>온라인 전자 계약서</title>
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="../css/jquery.scrollbar.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollbar.min.js"></script>
     <script type="text/javascript" src="../js/commonui.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript">
@@ -48,105 +50,107 @@
                         <li class="passed">코나아이 가맹점 계약</li>
                     </ol>
                 </nav>
-                <article class="contents">
-                    <section class="content">
-                        <div class="inner">
-                            <div class="top-title">
-                                <h1 class="tit-h1">코나카드 가맹점 계약</h1>
-                            </div>
-
-                            <div class="brd-ele">
-                                <dl class="txt-cont">
-                                    <dt>가맹점 가입 신청</dt>
-                                    <dd>코나아이 주식회사는 지역화폐 운영대행사로서 가맹점 계약을 체결합니다.</dd>
-                                </dl>
-                                <dl class="txt-cont">
-                                    <dt>가맹점 결제 수수료</dt>
-                                    <dd>
-                                        "코나아이"는 "이용자"가 "서비스"내의 "결제 서비스"를 통하여 "가맹점"의 상품을 구매하는 경우 결제 금액에 대하여 결제 수수료를 부과합니다.<br>
-                                        결제 수수료는 회사 정책에 따라 사후 통보됩니다.
-                                    </dd>
-                                </dl>
-
-                                <div class="n-ele">
-                                    <div class="eles">
-                                        <div class="c-title">결제 수수료</div>
-                                        <div class="input-text word-add">
-                                            <input type="text" class="t-right" value="3" disabled="disabled">
-                                            <span class="sub-txt">%</span>
-                                        </div>
-                                    </div>
-                                    <div class="eles">
-                                        <div class="c-title">정산/주기</div>
-                                        <div class="input-text word-add">
-                                            <span class="sub-txt pl0">매월</span>
-                                            <input type="text" class="t-right" value="20" disabled="disabled">
-                                            <span class="sub-txt">일</span>
-                                        </div>
-                                    </div>
+                <div class="contents">
+                    <div class="scrollbar-outer">
+                        <section class="content">
+                            <div class="inner">
+                                <div class="top-title">
+                                    <h1 class="tit-h1">코나카드 가맹점 계약</h1>
                                 </div>
-                            </div>
 
-                            <div class="brd-ele">
-                                <h2 class="tit-h2">서비스 계약 동의</h2>
-                                <div class="brd-box">
+                                <div class="brd-ele">
                                     <dl class="txt-cont">
-                                        <dt>결제 수수료</dt>
+                                        <dt>가맹점 가입 신청</dt>
+                                        <dd>코나아이 주식회사는 지역화폐 운영대행사로서 가맹점 계약을 체결합니다.</dd>
+                                    </dl>
+                                    <dl class="txt-cont">
+                                        <dt>가맹점 결제 수수료</dt>
                                         <dd>
-                                            결제 수수료는 회사 정책에 따라 통보됩니다. 동의하지 않을 경우, 고객센터으로 7일 이내 문의주시기 바랍니다.<br>
-                                            고객센터 번호 : {ASP 별 고객센터 번호 노출}
+                                            "코나아이"는 "이용자"가 "서비스"내의 "결제 서비스"를 통하여 "가맹점"의 상품을 구매하는 경우 결제 금액에 대하여 결제 수수료를 부과합니다.<br>
+                                            결제 수수료는 회사 정책에 따라 사후 통보됩니다.
                                         </dd>
                                     </dl>
-                                </div>
-                                <label class="input-checkbox">
-                                    <input type="checkbox" checked="checked" disabled="disabled">
-                                    <span>결제 수수료에 대한 내용을 이해하고, 이에 동의합니다.</span>
-                                </label>
 
-                                <div class="brd-box">
-                                    <dl class="txt-cont">
-                                        <dt>정산/주기</dt>
-                                        <dd>
-                                            정산주기는 회사 정책에 따라 통보됩니다. 동의하지 않을 경우, 고객센터으로 7일 이내 문의주시기 바랍니다.<br>
-                                            고객센터 번호 : {ASP 별 고객센터 번호 노출}
-                                        </dd>
-                                    </dl>
-                                </div>
-                                <label class="input-checkbox">
-                                    <input type="checkbox" checked="checked" disabled="disabled">
-                                    <span>정산 주기 및 분담률에 대한 내용을 이해하고, 이에 동의합니다.</span>
-                                </label>
-                            </div>
-
-                            <div class="brd-ele">
-                                <div class="c-title">QR 결제 서비스 신청</div>
-                                <p class="desc">매장 내 QR 결제 지원을 위해 신청 시 QR 패널을 제작하여 매장으로 발송해 드리는 서비스입니다.</p>
-                                <ul class="list03">
-                                    <li>
-                                        <div class="c-title">QR 패널 배송지 주소 : 서울시 영등포구 여의도동 은행로 3(익스콘벤처타워) 8층</div>
-                                        <div class="t-right">
-                                            <div class="input-checkbox normal">
-                                                <input type="checkbox" checked="checked" disabled="disabled">
-                                                <span>신청</span>
+                                    <div class="n-ele">
+                                        <div class="eles">
+                                            <div class="c-title">결제 수수료</div>
+                                            <div class="input-text word-add">
+                                                <input type="text" class="t-right" value="3" disabled="disabled">
+                                                <span class="sub-txt">%</span>
                                             </div>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+                                        <div class="eles">
+                                            <div class="c-title">정산/주기</div>
+                                            <div class="input-text word-add">
+                                                <span class="sub-txt pl0">매월</span>
+                                                <input type="text" class="t-right" value="20" disabled="disabled">
+                                                <span class="sub-txt">일</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <section class="content">
-                        <div class="inner">
-                            <div class="c-title">QR 결제 서비스 신청</div>
-                            <p class="desc">매장 내 QR 결제 지원을 위해 신청 시 QR 패널을 제작하여 매장으로 발송해 드리는 서비스입니다.</p>
-                            <label class="input-checkbox">
-                                <input type="checkbox" checked="checked">
-                                <span>QR 결제 서비스를 신청하시겠습니까?</span>
-                            </label>
-                        </div>
-                    </section>
-                </article>
+                                <div class="brd-ele">
+                                    <h2 class="tit-h2">서비스 계약 동의</h2>
+                                    <div class="brd-box">
+                                        <dl class="txt-cont">
+                                            <dt>결제 수수료</dt>
+                                            <dd>
+                                                결제 수수료는 회사 정책에 따라 통보됩니다. 동의하지 않을 경우, 고객센터으로 7일 이내 문의주시기 바랍니다.<br>
+                                                고객센터 번호 : {ASP 별 고객센터 번호 노출}
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <label class="input-checkbox">
+                                        <input type="checkbox" checked="checked" disabled="disabled">
+                                        <span>결제 수수료에 대한 내용을 이해하고, 이에 동의합니다.</span>
+                                    </label>
+
+                                    <div class="brd-box">
+                                        <dl class="txt-cont">
+                                            <dt>정산/주기</dt>
+                                            <dd>
+                                                정산주기는 회사 정책에 따라 통보됩니다. 동의하지 않을 경우, 고객센터으로 7일 이내 문의주시기 바랍니다.<br>
+                                                고객센터 번호 : {ASP 별 고객센터 번호 노출}
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <label class="input-checkbox">
+                                        <input type="checkbox" checked="checked" disabled="disabled">
+                                        <span>정산 주기 및 분담률에 대한 내용을 이해하고, 이에 동의합니다.</span>
+                                    </label>
+                                </div>
+
+                                <div class="brd-ele">
+                                    <div class="c-title">QR 결제 서비스 신청</div>
+                                    <p class="desc">매장 내 QR 결제 지원을 위해 신청 시 QR 패널을 제작하여 매장으로 발송해 드리는 서비스입니다.</p>
+                                    <ul class="list03">
+                                        <li>
+                                            <div class="c-title">QR 패널 배송지 주소 : 서울시 영등포구 여의도동 은행로 3(익스콘벤처타워) 8층</div>
+                                            <div class="t-right">
+                                                <div class="input-checkbox normal">
+                                                    <input type="checkbox" checked="checked" disabled="disabled">
+                                                    <span>신청</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="content">
+                            <div class="inner">
+                                <div class="c-title">QR 결제 서비스 신청</div>
+                                <p class="desc">매장 내 QR 결제 지원을 위해 신청 시 QR 패널을 제작하여 매장으로 발송해 드리는 서비스입니다.</p>
+                                <label class="input-checkbox">
+                                    <input type="checkbox" checked="checked">
+                                    <span>QR 결제 서비스를 신청하시겠습니까?</span>
+                                </label>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- // 콘텐츠 -->
