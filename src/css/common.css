@@ -659,8 +659,8 @@
 		height: 30px;
 		padding: 0;
 		color: #5f6879;
-		background: #f3f5f9;
-		border: 1px solid #f3f5f9;
+		background: #fff;
+		border: 1px solid #acb8cf;
 		text-align: center;
 		line-height: 28px;
 		border-radius: 5px;
@@ -668,6 +668,15 @@
 	.input-checkbox.mini input:checked + span{
 		border: 1px solid #e15d5d;
 		background: #fff;
+	}
+	.input-checkbox.mini input:disabled + span{
+		border: 1px solid #f3f5f9;
+		background: #f3f5f9;
+	}
+	.input-checkbox.mini input:checked:disabled + span{
+		color: #fff;
+		border: 1px solid #acb8cf;
+		background: #acb8cf;
 	}
 	.input-checkbox.mini > span:before{
 		content: none;
