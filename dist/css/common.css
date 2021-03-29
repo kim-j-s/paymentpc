@@ -79,7 +79,6 @@
 		z-index: 1;
 	    display: inline-block;
 	    vertical-align: top;
-	    /*width: calc(100% - 194px);*/
 	    width: 574px;
 	    height: 100%;
 	    background: #fff;
@@ -110,16 +109,7 @@
 		background: #fff;
 		border-radius: 10px 0 0 10px;
 	}
-	.content > .inner:after{
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 10px;
-		height: 10px;
-		background: url(../img/bg-side-b-l.png) no-repeat;
-	}
-	.content > .inner.none:after{
+	.content:first-child > .inner:after{
 		content: none;
 	}
 	.content + .content{
@@ -133,6 +123,16 @@
 		width: 100%;
 		height: 20px;
 		background: #f3f5f9;
+	}
+	.content.mark > .inner:after,
+	.content + .content > .inner:after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 10px;
+		height: 10px;
+		background: url(../img/bg-side-b-l.png) no-repeat;
 	}
 	.f-btn-area{
 	    -webkit-box-flex: 0;

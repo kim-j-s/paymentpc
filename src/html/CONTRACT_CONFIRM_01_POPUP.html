@@ -511,7 +511,7 @@
             <div class="inner">
                 <div class="btn-area">
                     <button type="button" class="btn ty1">이전</button>
-                    <button type="button" class="btn ty2" disabled="disabled">계약서 제출</button>
+                    <button type="button" class="btn ty2" onclick="popOpen(this);" data-openpop="pop1">계약서 제출</button>
                 </div>
             </div>
         </div>
@@ -519,7 +519,7 @@
     </div>
 
     <!-- 팝업 -->
-    <div class="layer-pop">
+    <div class="layer-pop" data-pop="pop1">
         <div class="layer-inner">
             <h2 class="tit-h2">전자 계약서 제출</h2>
 
@@ -536,7 +536,7 @@
                 <button type="button" class="btn ty2">제출</button>
             </div>
 
-            <button type="button" class="btn close">닫기</button>
+            <button type="button" class="btn close" onclick="popClose(this);">닫기</button>
         </div>
     </div>
     <!-- // 팝업 -->

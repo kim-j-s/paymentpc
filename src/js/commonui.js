@@ -1,3 +1,14 @@
+// pop open close
+function popOpen(e) {
+    var data = $(e).data('openpop');
+    $('[data-pop="'+ data +'"]').show();
+}
+
+function popClose(e){
+    $(e).closest('.layer-pop').hide();
+}
+
+
 // input disabled true / false
 function disChk(){
     var $disChk = $('.dischk');

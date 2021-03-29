@@ -207,7 +207,7 @@
                                 </label>
                                 <div class="btn-area">
                                     <button type="button" class="btn">재인증</button>
-                                    <button type="button" class="btn ty2">계좌인증</button>
+                                    <button type="button" class="btn ty2" onclick="popOpen(this);" data-openpop="pop1">계좌인증</button>
                                 </div>
                             </div>
                         </section>
@@ -307,7 +307,7 @@
     </div>
 
     <!-- 팝업 -->
-    <div class="layer-pop">
+    <div class="layer-pop" data-pop="pop1">
         <div class="layer-inner">
             <p class="text">
                 이체 내역을 확인 후<br> 코나아이 뒤 숫자를 입력해 주세요.
@@ -351,7 +351,7 @@
                 <button type="button" class="btn ty2">제출</button>
             </div>
 
-            <button type="button" class="btn close">닫기</button>
+            <button type="button" class="btn close" onclick="popClose(this);">닫기</button>
         </div>
     </div>
     <!-- // 팝업 -->

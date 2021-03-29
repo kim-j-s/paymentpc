@@ -83,7 +83,7 @@
                                         </div>
                                         <div class="eles">
                                             <div class="c-title"><span class="star-mark"></span>서명/인</div>
-                                            <button type="button" class="btn reg">서명을 등록해주세요.</button>
+                                            <button type="button" class="btn reg" onclick="popOpen(this);" data-openpop="pop1">서명을 등록해주세요.</button>
                                         </div>
                                     </div>
                                 </div>
@@ -177,7 +177,7 @@
     </div>
 
     <!-- 팝업 -->
-    <div class="layer-pop">
+    <div class="layer-pop" data-pop="pop1">
         <div class="layer-inner">
             <h2 class="tit-h2">서명 등록</h2>
             <div class="sign-field"></div>
@@ -186,7 +186,7 @@
                 <button type="button" class="btn ty2">등록</button>
             </div>
 
-            <button type="button" class="btn close">닫기</button>
+            <button type="button" class="btn close" onclick="popClose(this);">닫기</button>
         </div>
     </div>
     <!-- // 팝업 -->
