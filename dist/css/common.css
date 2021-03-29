@@ -870,8 +870,8 @@
 	    resize: none;
 	}
 	.textarea > textarea[readonly],
-	.textarea > textarea:disabled{
-		color: ##5f6879;
+	.textarea > textarea[disabled]{
+		color: #5f6879;
 		border: none;
 		background: #f3f5f9;
 	}
@@ -1460,6 +1460,9 @@
 	}
 	* + .desc{
 		margin-top: 9px;
+	}
+	.desc + .desc{
+		margin-top: 0;
 	}
 	.desc02{
 		font-weight: 400;
