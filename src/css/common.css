@@ -894,7 +894,7 @@
 		margin-top: 9px;
 	}
 	.brd-ele + .list02{
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 	.list02{}
 	.list02 > li + li{
@@ -1345,10 +1345,10 @@
 	/* 약관 */
 
 		.terms-cont{
-		    padding-top: 30px;
+		    padding-top: 20px;
 		}
 		.terms-cont + .terms-cont{
-		    padding-top: 50px;
+		    padding-top: 20px;
 		}
 		.terms{
 		    margin: 20px 0;
