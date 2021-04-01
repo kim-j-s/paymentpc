@@ -1,39 +1,8 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <meta name="x-apple-disable-message-reformatting">
-    <title>온라인 전자 계약서</title>
-    <link href="../css/reset.css" rel="stylesheet">
-    <link href="../css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
-    <link href="../css/jquery.scrollbar.css" rel="stylesheet">
-    <link href="../css/common.css" rel="stylesheet">
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.scrollbar.min.js"></script>
-    <script type="text/javascript" src="../js/commonui.js"></script>
-    <!--[if lt IE 9]>
-    <script type="text/javascript">
-        document.createElement("header"); 
-        document.createElement("nav"); 
-        document.createElement("section"); 
-        document.createElement("article"); 
-        document.createElement("footer");
-    </script>
-<![endif]-->
-</head>
-
+@@include('head.html')
 <body>
     <div class="wrap">
         <!-- 헤더영역 -->
-        <header>
-            <div class="inner">
-                <h1>온라인 전자 계약서</h1>
-            </div>
-        </header>
+        @@include('header.html')
         <!-- //헤더영역 -->
 
         <!-- 콘텐츠 -->
@@ -98,7 +67,7 @@
                                             <div class="eles">
                                                 <button type="button" class="btn" onclick="popOpen(this);" data-openpop="pop2">조회</button>
                                             </div>
-                                        </div>
+                                        </div>                                        
                                     </div>
                                     <div class="eles">
                                         <div class="c-title"><span class="star-mark"></span>상호명</div>
@@ -408,7 +377,7 @@
     <!-- // 팝업 -->
 
     <!-- 팝업 -->
-    <div class="layer-pop" data-pop="pop2" style="display: none;">
+    <div class="layer-pop" data-pop="pop2">
         <div class="layer-inner">
             <h2 class="tit-h2">사업자등록번호</h2>
 
@@ -452,5 +421,4 @@
     <!-- // 팝업 -->
 
 </body>
-
 </html>

@@ -260,6 +260,10 @@
 			margin-top: 0;
 			border-top: 0;
 		}
+		.brd-ele.ty2{
+			padding-bottom: 0;
+			border-bottom: 0;
+		}
 		.tit-h2.brd + .brd-ele{
 			margin-top: 0;
 			border-top: none;
@@ -1288,6 +1292,7 @@
 
 	.btn.close{
 		width: 20px;
+		min-width: 0;
 		height: 20px;
 		overflow: hidden;
 		text-indent: -999px;
@@ -1584,6 +1589,7 @@
 	    top: 50%;
 	    left: 50%;
 	    min-width: 360px;
+	    max-width: 450px;
 	    padding: 20px 18px 30px;
 	    background: #fff;
 	    transform: translate(-50%, -50%);
@@ -1652,6 +1658,10 @@
 	}
 	.s-code .input-text + .input-text{
 	    margin-left: 5px;
+	}
+
+	.pop-scroll{
+		max-height: 400px;
 	}
 
 /* // layer pop */
