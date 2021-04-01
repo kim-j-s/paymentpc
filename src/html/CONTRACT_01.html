@@ -14,7 +14,6 @@
                         <li class="passed">개인 사업자 계약</li>
                         <li class="passed">휴대폰 본인 인증</li>
                         <li class="passed">공동 대표자 가입 확인</li>
-                        <li class="passed">사업자 등록 번호 조회</li>
                     </ol>
                     <h2 class="nav-tit">계약 정보</h2>
                     <ol class="nav-list">
@@ -58,15 +57,22 @@
 
                                 <div class="n-ele">
                                     <div class="eles">
+                                        <div class="c-title"><span class="star-mark"></span>사업자등록번호</div>
+                                        <div class="n-ele ty2">
+                                            <div class="eles">
+                                                <div class="input-text">
+                                                    <input type="text" placeholder="사업자등록번호">
+                                                </div>
+                                            </div>
+                                            <div class="eles">
+                                                <button type="button" class="btn">조회</button>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="eles">
                                         <div class="c-title"><span class="star-mark"></span>상호명</div>
                                         <div class="input-text">
                                             <input type="text" value="(주)코나아이" disabled="disabled">
-                                        </div>
-                                    </div>
-                                    <div class="eles">
-                                        <div class="c-title"><span class="star-mark"></span>사업자등록번호</div>
-                                        <div class="input-text">
-                                            <input type="text" value="109-81-5365" disabled="disabled">
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +87,7 @@
                                         </div>
                                     </div>
                                     <div class="eles">
-                                        <div class="c-title"><span class="star-mark"></span>영업게시일</div>
+                                        <div class="c-title">영업게시일</div>
                                         <div class="input-text">
                                             <input type="text" class="inp-date" placeholder="">
                                         </div>
@@ -108,15 +114,18 @@
                                 </div>
 
                                 <div class="c-title"><span class="star-mark"></span>사업장 주소</div>
-                                <div class="n-ele ty3">
+                                <div class="n-ele addr">
                                     <div class="eles">
                                         <div class="input-text">
-                                            <input type="text" value="53365">
+                                            <input type="text" readonly="readonly">
                                         </div>
                                     </div>
                                     <div class="eles">
+                                        <button type="button" class="btn">우편번호 검색</button>
+                                    </div>
+                                    <div class="eles">
                                         <div class="input-text">
-                                            <input type="text" value="서울시 영등포구 여의도동 은행로 3(익스콘벤처타워) 8층">
+                                            <input type="text" placeholder="상세주소를 입력해주세요.">
                                         </div>
                                     </div>
                                 </div>
