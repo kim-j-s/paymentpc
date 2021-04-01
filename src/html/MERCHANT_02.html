@@ -277,40 +277,134 @@
                                     <div class="n-ele">
                                         <div class="eles">
                                             <label class="input-radio normal">
-                                                <input type="radio" name="days" checked="checked">
+                                                <input type="radio" name="days" class="dp-onoff" checked="checked" data-displayon="dp01" data-displayoff="dp02">
                                                 <span>매일 같아요</span>
                                             </label>
                                         </div>
                                         <div class="eles">
                                             <label class="input-radio normal">
-                                                <input type="radio" name="days">
+                                                <input type="radio" name="days" class="dp-onoff" data-displayon="dp02" data-displayoff="dp01">
                                                 <span>요일별로 달라요</span>
                                             </label>
                                         </div>
                                     </div>
-                                    <div style="line-height: 60px; background: #ddd; text-align: center; font-size: 15px;">
-                                        요일별로 달라요 ㅅㅂ
-                                    </div>
-                                    <label class="input-checkbox normal">
-                                        <input type="checkbox" class="dischk02" data-dischk="worktime">
-                                        <span>24시간 운영</span>
-                                    </label>
-                                    <div class="n-ele">
-                                        <div class="eles flex-none text inp-width01">시작시간</div>
-                                        <div class="eles">
-                                            @@include('worktimebefore.html',{
-                                                "custom":"worktime"
-                                            })
+
+                                    <div class="date-dp" data-display="dp01">
+                                        <label class="input-checkbox normal">
+                                            <input type="checkbox" class="dischk02" data-dischk="worktime">
+                                            <span>24시간 운영</span>
+                                        </label>
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text inp-width02">시작시간</div>
+                                            <div class="eles">
+                                                @@include('worktimebefore.html',{
+                                                    "custom":"worktimebefore"
+                                                })
+                                            </div>
+                                        </div>
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text inp-width02">종료시간</div>
+                                            <div class="eles">
+                                                @@include('worktimeafter.html',{
+                                                    "custom":"worktimeafter"
+                                                })
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="n-ele">
-                                        <div class="eles flex-none text inp-width01">종료시간</div>
-                                        <div class="eles">
-                                            @@include('worktimeafter.html',{
-                                                "custom":"worktime"
-                                            })
+
+                                    <div class="date-dp" data-display="dp02" style="display: none;">
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text inp-width02">
+                                                <label class="input-checkbox normal">
+                                                    <input type="checkbox" class="dischk" data-dischk="mon">
+                                                    <span>월요일</span>
+                                                </label>
+                                            </div>
+                                            <div class="eles">                                                
+                                                @@include('timedisabled_0921.html',{
+                                                    "custom":"mon"
+                                                })
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text inp-width02">
+                                                <label class="input-checkbox normal">
+                                                    <input type="checkbox" class="dischk" data-dischk="tue">
+                                                    <span>화요일</span>
+                                                </label>
+                                            </div>
+                                            <div class="eles">                                                
+                                                @@include('timedisabled_0921.html',{
+                                                    "custom":"tue"
+                                                })
+                                            </div>
+                                        </div>
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text inp-width02">
+                                                <label class="input-checkbox normal">
+                                                    <input type="checkbox" class="dischk" data-dischk="wed">
+                                                    <span>수요일</span>
+                                                </label>
+                                            </div>
+                                            <div class="eles">                                                
+                                                @@include('timedisabled_0921.html',{
+                                                    "custom":"wed"
+                                                })
+                                            </div>
+                                        </div>
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text inp-width02">
+                                                <label class="input-checkbox normal">
+                                                    <input type="checkbox" class="dischk" data-dischk="thu">
+                                                    <span>목요일</span>
+                                                </label>
+                                            </div>
+                                            <div class="eles">                                                
+                                                @@include('timedisabled_0921.html',{
+                                                    "custom":"thu"
+                                                })
+                                            </div>
+                                        </div>
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text inp-width02">
+                                                <label class="input-checkbox normal">
+                                                    <input type="checkbox" class="dischk" data-dischk="fri">
+                                                    <span>금요일</span>
+                                                </label>
+                                            </div>
+                                            <div class="eles">                                                
+                                                @@include('timedisabled_0921.html',{
+                                                    "custom":"fri"
+                                                })
+                                            </div>
+                                        </div>
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text inp-width02">
+                                                <label class="input-checkbox normal">
+                                                    <input type="checkbox" class="dischk" data-dischk="sat">
+                                                    <span>토요일</span>
+                                                </label>
+                                            </div>
+                                            <div class="eles">                                                
+                                                @@include('timedisabled_0921.html',{
+                                                    "custom":"sat"
+                                                })
+                                            </div>
+                                        </div>
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text inp-width02">
+                                                <label class="input-checkbox normal">
+                                                    <input type="checkbox" class="dischk" data-dischk="sun">
+                                                    <span>일요일</span>
+                                                </label>
+                                            </div>
+                                            <div class="eles">                                                
+                                                @@include('timedisabled_0921.html',{
+                                                    "custom":"sun"
+                                                })
+                                            </div>
+                                        </div>
+                                    </div>                                    
 
                                     <div class="c-title">운영 준비 시간 (Break Time)</div>
                                     <label class="input-checkbox normal">
@@ -395,135 +489,84 @@
                                         <input type="text" placeholder="ex) 둘째, 넷째 일요일 휴무입니다.">
                                     </div>
 
-
-
-
-
-                                    
-
-
-
-
-
-
-
-                                    
-
-                                    <div class="c-title">업체 소개</div>
-                                    <div class="textarea">
-                                        <textarea name="" id="" cols="30" rows="10" placeholder="소개하고 싶은 내용을 최대 1,000자 이내로 작성해주세요."></textarea>
-                                    </div>
-
-                                    <div class="c-title"><span class="star-mark"></span>주요 상품 카테고리</div>
-                                    <div class="n-ele ty6">
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>치킨/피자</span>
-                                            </label>
+                                    <div class="c-title">배달팁</div>
+                                    <div class="n-ele">
+                                        <div class="eles flex-none text inp-width02">
+                                            기본<span class="star-mark"></span>
                                         </div>
                                         <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>족발/보쌈</span>
-                                            </label>
-                                        </div>
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>중식</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="n-ele ty6">
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>분식</span>
-                                            </label>
-                                        </div>
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>한식</span>
-                                            </label>
-                                        </div>
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>아시안/양식</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="n-ele ty6">
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>패스트푸드</span>
-                                            </label>
-                                        </div>
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>돈까스/일식/회</span>
-                                            </label>
-                                        </div>
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>디저트/카페</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="n-ele ty6">
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>야식</span>
-                                            </label>
-                                        </div>
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>도시락</span>
-                                            </label>
-                                        </div>
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox">
-                                                <span>기타</span>
-                                            </label>
+                                            <div class="n-ele">
+                                                <div class="eles">
+                                                    <div class="input-text">
+                                                        <input type="text" class="t-right">
+                                                    </div>
+                                                </div>
+                                                <div class="eles flex-none text">원 이상 주문 시</div>
+                                                <div class="eles">
+                                                    <div class="input-text">
+                                                        <input type="text" class="t-right">
+                                                    </div>
+                                                </div>
+                                                <div class="eles flex-none text">원 할인</div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="n-ele">
-                                        <div class="eles flex-none text">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox" class="dischk" data-dischk="etc">
-                                                <span>기타</span>
-                                            </label>
+                                        <div class="eles flex-none text inp-width02">
+                                            추가1
                                         </div>
                                         <div class="eles">
-                                            <div class="input-text">
-                                                <input type="text" data-disabled="etc" disabled="disabled">
+                                            <div class="n-ele">
+                                                <div class="eles">
+                                                    <div class="input-text">
+                                                        <input type="text" class="t-right">
+                                                    </div>
+                                                </div>
+                                                <div class="eles flex-none text">원 이상 주문 시</div>
+                                                <div class="eles">
+                                                    <div class="input-text">
+                                                        <input type="text" class="t-right">
+                                                    </div>
+                                                </div>
+                                                <div class="eles flex-none text">원 할인</div>
                                             </div>
-                                        </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="btn-area normal">
+                                        <button type="button" class="btn reg">주문금액별 배달팁 추가</button>
+                                    </div>
+
+                                    <div class="c-title">지역별 할증 배달팁 <small>아래에 설정된 지역으로 주문 시 할증금액(배달팁이 추가됩니다.)</small></div>
+                                    <div style="line-height: 60px; background: #ddd; text-align: center; font-size: 15px;">
+                                        디자인 필요 구간
+                                    </div>
+
+                                    <div class="c-title">배달안내</div>
+                                    <div class="input-text">
+                                        <input type="text" placeholder="ex) △△지역은 배달불가합니다.">
+                                    </div>
+
+                                    <div class="c-title">원산지 정보</div>
+                                    <div class="textarea">
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="매장에서 사용중인 모든 식재료에 대한 원산지 정보를 입력해주세요.원산지 정보 ex) 김치(국내산), 돼지고기(칠레산) 등"></textarea>
                                     </div>
                                 </div>
 
+                                <!-- d
                                 <div class="brd-ele">
                                     <h2 class="tit-h2">배달 정보</h2>
                                     <div class="n-ele">
                                         <div class="eles">
                                             <div class="c-title"><span class="star-mark"></span>배달 시간</div>
                                             <div class="input-text word-add">
-                                                <input type="text" class="inp-width01 t-right">
+                                                <input type="text" class="inp-width02 t-right">
                                                 <span class="sub-txt">분 (평균시간)</span>
                                             </div>
                                         </div>
                                         <div class="eles">
                                             <div class="c-title"><span class="star-mark"></span>배달 거리</div>
                                             <div class="input-text word-add">
-                                                <input type="text" class="inp-width01 t-right">
+                                                <input type="text" class="inp-width02 t-right">
                                                 <span class="sub-txt">분 (최대 3km)</span>
                                             </div>
                                         </div>
@@ -535,35 +578,7 @@
                                         <span class="sub-txt">원 이상</span>
                                     </div>
 
-                                    <div class="c-title"><span class="star-mark"></span>배달팁</div>
-                                    <div class="n-ele">
-                                        <div class="eles flex-none text inp-width01">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox" class="dischk" data-dischk="tip">
-                                                <span>기본료</span>
-                                            </label>
-                                        </div>
-                                        <div class="eles">
-                                            <div class="input-text word-add">
-                                                <input type="text" class="inp-width01 t-right" data-disabled="tip" disabled="disabled">
-                                                <span class="sub-txt">원 이상</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="n-ele">
-                                        <div class="eles flex-none text inp-width01">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox" class="dischk" data-dischk="sur">
-                                                <span>할증 구분</span>
-                                            </label>
-                                        </div>
-                                        <div class="eles">
-                                            <div class="input-text">
-                                                <input type="text" data-disabled="sur" disabled="disabled">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="n-txt01 red">법정동 단위로 기존 배달팁 외 추가로 받으실 배달팁 설정이 가능합니다.</p>
+                                    
 
                                     <div class="c-title"><span class="star-mark"></span>배달대행사</div>
                                     <div class="n-ele">
@@ -599,6 +614,7 @@
                                     })
                                     <p class="n-txt01 red">매장명이 포함된 간판 사진 또는 확인할 수 있는 사진을 등록해주세요.</p>
                                 </div>
+                                -->
 
                                 <div class="brd-ele">
                                     <h2 class="tit-h2">포장정보</h2>
@@ -667,12 +683,7 @@
                                     </div>
                                 </div>
 
-                                <div class="brd-ele">
-                                    <h2 class="tit-h2">원산지 정보</h2>
-                                    <div class="textarea">
-                                        <textarea name="" id="" cols="30" rows="10" placeholder="매장에서 사용중인 모든 식재료에 대한 원산지 정보를 입력해주세요.원산지 정보 ex) 김치(국내산), 돼지고기(칠레산) 등"></textarea>
-                                    </div>
-                                </div>
+                                
 
                                 <h2 class="tit-h2">기존 서비스 정보 활용 동의</h2>
                                 <div class="c-title">기존 이용 중인 배달 서비스</div>

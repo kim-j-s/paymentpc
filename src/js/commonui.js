@@ -43,6 +43,21 @@ function disChk(){
     });
 }
 
+function dpchk() {
+    var $dpon = $('.dp-onoff');
+
+    $dpon.on('change', function() {
+        var dataOn = $(this).data('displayon');
+        var dataOff = $(this).data('displayoff');
+        console.log(dataOn, dataOff);
+        if ( $(this).prop('checked') )
+        {
+            $('[data-display="'+ dataOn +'"]').show();
+            $('[data-display="'+ dataOff +'"]').hide();
+        }
+    });
+}
+
 
 
 // 파일첨부
@@ -225,6 +240,9 @@ $(function(){
 
 	// input disabled true / false
 	disChk();
+
+    // display checked on off
+    dpchk();
 
     // 파일첨부
     fileInit();

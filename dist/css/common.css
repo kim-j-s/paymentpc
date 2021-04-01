@@ -171,9 +171,11 @@
 		margin-top: 12px;
 	}
 	.btn-area + .n-ele,
-	.n-txt01 + .n-ele,
-	.n-ele + .n-ele{
+	.n-txt01 + .n-ele{
 		margin-top: 20px;
+	}
+	.n-ele + .n-ele{
+		margin-top: 9px;
 	}
 	
 	.n-ele > *{
@@ -438,6 +440,9 @@
 	}
 	* + .c-title{
 		padding-top: 20px;
+	}
+	.eles > .c-title{
+		padding-top: 11px;
 	}
 	/*
 	.btn-area + .c-title{
@@ -740,9 +745,11 @@
 		top: 0;
 		left: 0;
 	}
-	.n-ele + .input-checkbox.normal,
-	.c-title + .input-checkbox.normal{
+	.n-ele + .input-checkbox.normal{
 		margin-top: 9px;
+	}
+	.c-title + .input-checkbox.normal{
+		margin-top: 12px;
 	}
 	.input-checkbox.normal{
 		display: inline-block;
@@ -1367,6 +1374,15 @@
 	        -ms-flex-direction: row;
 	            flex-direction: row;
 	}
+	.btn-area.normal{
+	    display: block;
+	    text-align: center;
+	    font-size: 0;
+	}
+	.btn-area.normal > .btn{
+		display: inline-block;
+		width: auto;
+	}
 	.btn-area > *{
 	    -webkit-box-flex: 1;
 	    -webkit-flex: 1 1 auto;
@@ -1428,6 +1444,9 @@
 	    border: 1px solid #acb8cf;
 	    border-radius: 5px;
 	    background: url(../img/ico-plus.png) no-repeat right 18px center;
+	}
+	.btn.reg:hover{
+		background: #fff8f8 url(../img/ico-plus.png) no-repeat right 18px center;
 	}
 	.btn.small{
 		display: inline-block;
@@ -1728,6 +1747,11 @@
 		}
 
 	/* 첨부파일 */
+
+	/* 날짜선택 - display */
+	.date-dp{
+		padding-top: 9px;
+	}
 
 
 /*content*/
