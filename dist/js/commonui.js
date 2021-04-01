@@ -12,6 +12,7 @@ function popClose(e){
 // input disabled true / false
 function disChk(){
     var $disChk = $('.dischk');
+    var $disChk02 = $('.dischk02');
     var $disChkOff = $('.dischk-off');
     $disChk.on('change', function() {
         var data = $(this).data('dischk');
@@ -23,6 +24,16 @@ function disChk(){
         }
     });
 
+    $disChk02.on('change', function() {
+        var data = $(this).data('dischk');
+        if ( $(this).prop('checked') )
+        {
+            $('[data-disabled="'+ data +'"]').prop('disabled',true);
+        } else {
+            $('[data-disabled="'+ data +'"]').prop('disabled',false);
+        }
+    });
+
     $disChkOff.on('change', function() {
         var data = $(this).data('dischk');
         if ( $(this).prop('checked') )
@@ -31,6 +42,8 @@ function disChk(){
         }
     });
 }
+
+
 
 // 파일첨부
 var $fileBox = null;

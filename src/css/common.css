@@ -226,7 +226,7 @@
 		font-weight: 400;
 		font-size: 15px;
 		color: #000;
-		line-height: 60px;
+		line-height: 50px;
 	}
 	.n-ele * + .wave{
 		margin-left: 0;
@@ -377,11 +377,13 @@
 		padding-top: 20px;
 	}
 	* + .c-title{
-		padding-top: 30px;
+		padding-top: 20px;
 	}
+	/*
 	.btn-area + .c-title{
 		padding-top: 9px;
 	}
+	*/
 	.input-text + .c-title{
 		padding-top: 20px;
 	}
@@ -405,7 +407,7 @@
 	    vertical-align: middle;
 	    font-weight: 400;
 	    font-size: 12px;
-	    color: #000;
+	    /*color: #000;*/
 	    line-height: 1;
 	}
 	.c-title > .star-mark:before{
@@ -413,6 +415,9 @@
 	}
 	* + .selectbox{
 		margin-top: 9px;
+	}
+	.n-ele .selectbox + .selectbox{
+		margin-top: 0;
 	}
 	.selectbox > select{
 	    display: block;
@@ -425,13 +430,14 @@
 	    border-radius: 5px;
 	    background: url(../img/ico-arrow-down.png) no-repeat right 12px center;
 		letter-spacing: -0.5px;
+		transition: .3s;
 	}
 	.selectbox > select:focus{
 		border: 1px solid #000;
 	}
 	.selectbox > select:disabled{
 		color: #5f6879;
-		border: none;
+		border: 1px solid #f3f5f9;
 		background: #f3f5f9 url(../img/ico-arrow-down.png) no-repeat right 12px center;
 		opacity: 1;
 	}
@@ -450,6 +456,9 @@
 		line-height: 18px;
 	}
 
+	.n-ele + .input-radio{
+		margin-top: 9px;
+	}
 	.input-radio {
 	    display: block;
 	    width: 100%;
@@ -647,6 +656,10 @@
 	.input-checkbox.single > span:after{
 		top: 0;
 		left: 0;
+	}
+	.n-ele + .input-checkbox.normal,
+	.c-title + .input-checkbox.normal{
+		margin-top: 9px;
 	}
 	.input-checkbox.normal{
 		display: inline-block;
@@ -1513,7 +1526,7 @@
 
 		.mail-list-cont{
 		    position: absolute;
-		    top: 59px;
+		    top: 49px;
 		    left: 0;
 		    z-index: 1;
 		    width: 100%;
@@ -1650,6 +1663,7 @@
 	    display: inline-block;
 	    vertical-align: middle;
 	    width: 30px;
+	    margin-top: 0;
 	}
 	.s-code .input-text input{
 	    height: 30px;
