@@ -550,140 +550,58 @@
                                     <div class="textarea">
                                         <textarea name="" id="" cols="30" rows="10" placeholder="매장에서 사용중인 모든 식재료에 대한 원산지 정보를 입력해주세요.원산지 정보 ex) 김치(국내산), 돼지고기(칠레산) 등"></textarea>
                                     </div>
-                                </div>
-
-                                <!-- d
-                                <div class="brd-ele">
-                                    <h2 class="tit-h2">배달 정보</h2>
-                                    <div class="n-ele">
-                                        <div class="eles">
-                                            <div class="c-title"><span class="star-mark"></span>배달 시간</div>
-                                            <div class="input-text word-add">
-                                                <input type="text" class="inp-width02 t-right">
-                                                <span class="sub-txt">분 (평균시간)</span>
-                                            </div>
-                                        </div>
-                                        <div class="eles">
-                                            <div class="c-title"><span class="star-mark"></span>배달 거리</div>
-                                            <div class="input-text word-add">
-                                                <input type="text" class="inp-width02 t-right">
-                                                <span class="sub-txt">분 (최대 3km)</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="c-title"><span class="star-mark"></span>최소 주문 금액</div>
-                                    <div class="input-text word-add">
-                                        <input type="text" class="t-right">
-                                        <span class="sub-txt">원 이상</span>
-                                    </div>
-
-                                    
-
-                                    <div class="c-title"><span class="star-mark"></span>배달대행사</div>
-                                    <div class="n-ele">
-                                        <div class="eles">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox" class="dischk-off" data-dischk="deli">
-                                                <span>직접배달</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="n-ele">
-                                        <div class="eles flex-none text">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox" class="dischk" data-dischk="deli">
-                                                <span>배달대행사 (주 이용사항)</span>
-                                            </label>
-                                        </div>
-                                        <div class="eles">
-                                            <div class="input-text">
-                                                <input type="text" placeholder="ex) 이용 중인 배달 대행서를 기입해주세요." data-disabled="deli" disabled="disabled">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="c-title">커텍티드 POS사 (이용 POS사)</div>
-                                    <div class="input-text">
-                                        <input type="text" placeholder="ex) 매장천사, 포스피드 등">
-                                    </div>
-
-                                    <div class="c-title">매장 간판 사진</div>
-                                    @@include('file.html',{
-                                        "id":"file01"
-                                    })
-                                    <p class="n-txt01 red">매장명이 포함된 간판 사진 또는 확인할 수 있는 사진을 등록해주세요.</p>
-                                </div>
-                                -->
+                                </div>                                
 
                                 <div class="brd-ele">
                                     <h2 class="tit-h2">포장정보</h2>
+                                    <div class="c-title">최소 포장주문 설정 <small>기본 금액이 최소 주문금액으로 설정됩니다.</small></div>
+                                    <div class="n-ele">
+                                        <div class="eles flex-none text inp-width02">기본</div>
+                                        <div class="eles">
+                                            <div class="input-text word-add">
+                                                <input type="text" name="" id="">
+                                                <span class="sub-txt">이상 주문 시 포장주문이 가능합니다.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="c-title">포장주문 할인 설정</div>
                                     <div class="n-ele">
                                         <div class="eles flex-none text inp-width02">
                                             <label class="input-checkbox normal">
-                                                <input type="checkbox">
+                                                <input type="checkbox" class="dischk" data-dischk="save0101">
                                                 <span>정액할인</span>
                                             </label>
                                         </div>
                                         <div class="eles">
-                                            <div class="n-ele">
-                                                <div class="eles flex-none" style="width: 100px;">
-                                                    <div class="input-text">
-                                                        <input type="text" class="t-right">
-                                                    </div>
-                                                </div>
-                                                <div class="eles flex-none text" style="width: 116px;">원 이상 포장 시</div>
-                                                <div class="eles flex-none" style="width: 100px;">
-                                                    <div class="input-text">
-                                                        <input type="text" class="t-right">
-                                                    </div>
-                                                </div>
-                                                <div class="eles text">원 할인</div>
+                                            <div class="input-text word-add">
+                                                <input type="text" class="t-right" style="width: 120px;" data-disabled="save0101" disabled="disabled">
+                                                <span class="sub-txt">원 할인</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="n-ele">
                                         <div class="eles flex-none text inp-width02">
                                             <label class="input-checkbox normal">
-                                                <input type="checkbox">
+                                                <input type="checkbox" class="dischk" data-dischk="save0102">
                                                 <span>정률할인</span>
                                             </label>
                                         </div>
                                         <div class="eles">
-                                            <div class="n-ele">
-                                                <div class="eles flex-none" style="width: 100px;"></div>
-                                                <div class="eles flex-none text" style="width: 116px;">최대 할인금액</div>
-                                                <div class="eles flex-none" style="width: 100px;">
-                                                    <div class="input-text">
-                                                        <input type="text" class="t-right">
-                                                    </div>
-                                                </div>
-                                                <div class="eles text">원 할인</div>
+                                            <div class="input-text word-add">
+                                                <input type="text" class="t-right" style="width: 120px;" data-disabled="save0102" disabled="disabled">
+                                                <span class="sub-txt">% 할인</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="n-ele">
-                                        <div class="eles flex-none inp-width02"></div>
                                         <div class="eles">
-                                            <div class="n-ele">
-                                                <div class="eles flex-none" style="width: 100px;">
-                                                    <div class="input-text">
-                                                        <input type="text" class="t-right">
-                                                    </div>
-                                                </div>
-                                                <div class="eles flex-none text" style="width: 168px;">원 이상 포장 시 주문 금액의</div>
-                                                <div class="eles flex-none ml0" style="width: 60px;">
-                                                    <div class="input-text">
-                                                        <input type="text" class="t-right">
-                                                    </div>
-                                                </div>
-                                                <div class="eles text">% 할인</div>
+                                            <div class="input-text word-add">
+                                                <span class="sub-txt">최대</span>
+                                                <input type="text" class="t-right" style="width: 120px;" data-disabled="save0102" disabled="disabled">
+                                                <span class="sub-txt">원 할인</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                
+                                </div>                                
 
                                 <h2 class="tit-h2">기존 서비스 정보 활용 동의</h2>
                                 <div class="c-title">기존 이용 중인 배달 서비스</div>
