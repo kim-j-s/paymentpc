@@ -182,8 +182,10 @@
 		width: 90px;
 	}
 	.n-ele.ty4 > *:nth-child(1){
-		flex: none;
-		width: 164px;
+		flex: 1 1 30%;
+	}
+	.n-ele.ty4 > *:nth-child(2){
+		flex: 2 1 70%;
 	}
 	.n-ele.ty5 > *:nth-child(2){
 		flex: none;
@@ -482,9 +484,11 @@
 	.input-radio > span {
 	    display: block;
 	    position: relative;
-	    padding: 20px 60px 20px 18px;
-	    font-weight: 500;
+	    padding: 14px 60px 14px 18px;
+	    font-weight: 400;
 	    font-size: 15px;
+	    line-height: 22px;
+	    border-radius: 5px;
 	    transition: .3s;
 	}
 	.input-radio > span::before {
@@ -493,7 +497,7 @@
 	    position: absolute;
 	    box-sizing: border-box;
 	    right: 18px;
-	    top: 18px;
+	    top: 12px;
 	    width: 25px;
 	    height: 25px;
 	    background: url(../img/radio-off.png) no-repeat 0 0;
