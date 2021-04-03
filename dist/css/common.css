@@ -224,17 +224,20 @@
 		        flex: none;
 		width: 90px;
 	}
+	/*.n-ele.ty4 > * + *{
+		margin-left: 0;
+	}*/
 	.n-ele.ty4 > *:nth-child(1){
 		-webkit-box-flex: 1;
-		-webkit-flex: 1 1 0;
-		    -ms-flex: 1 1 0px;
-		        flex: 1 1 0;
+		-webkit-flex: 1 1 30%;
+		    -ms-flex: 1 1 30%;
+		        flex: 1 1 30%;
 	}
 	.n-ele.ty4 > *:nth-child(2){
-		-webkit-box-flex: 2;
-		-webkit-flex: 2 1 0;
-		    -ms-flex: 2 1 0px;
-		        flex: 2 1 0;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 70%;
+		    -ms-flex: 1 1 70%;
+		        flex: 1 1 70%;
 	}
 	.n-ele.ty5 > *:nth-child(2){
 		-webkit-box-flex: 0;
