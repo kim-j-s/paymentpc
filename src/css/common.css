@@ -130,6 +130,10 @@
 		width: 768px;
 	    margin: 0 auto;
 	}
+	.f-btn-area .btn{
+		font-size: 18px;
+		line-height: 27px;
+	}
 
 	.n-ele{
 	    display: flex;
@@ -175,17 +179,17 @@
 	}
 	.n-ele.ty2 > *:nth-child(2){
 		flex: none;
-		width: 65px;
+		width: 80px;
 	}
 	.n-ele.ty3 > *:nth-child(1){
 		flex: none;
 		width: 90px;
 	}
 	.n-ele.ty4 > *:nth-child(1){
-		flex: 1 1 30%;
+		flex: 1 1 0;
 	}
 	.n-ele.ty4 > *:nth-child(2){
-		flex: 2 1 70%;
+		flex: 2 1 0;
 	}
 	.n-ele.ty5 > *:nth-child(2){
 		flex: none;
@@ -1289,7 +1293,8 @@
 	    height: 50px;
 	    /*padding: 0 5px;*/
 	    font-weight: 500;
-	    font-size: 18px;
+	    font-size: 15px;
+	    line-height: 22px;
 	    color: #e15d5d;
 	    border: 1px solid #e15d5d;
 	    border-radius: 5px;
