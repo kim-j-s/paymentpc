@@ -213,16 +213,23 @@
 		flex: none;
 	}
 	.n-ele.addr > .eles:nth-child(1){
-		width: calc(100% - 145px);
+		width: 90px;
 	}
 	.n-ele.addr > .eles:nth-child(2){
-		width: 130px;
+		width: calc(100% - 242px);
 	}
 	.n-ele.addr > .eles:nth-child(3){
+		width: 128px;
+	}
+	.n-ele.addr > .eles.addr-detail{
 		width: 100%;
 		margin-left: 0;
 		margin-top: 9px;
 	}
+	.n-ele.al-bottom > .eles{
+		align-self: flex-end;
+	}
+	
 
 	.n-ele .wave{
 		flex: none;
@@ -286,8 +293,14 @@
 	    display: none !important;
 	}
 
+	.mt0{
+		margin-top: 0px !important;
+	}
 	.mt9{
 		margin-top: 9px !important;
+	}
+	.mt12{
+		margin-top: 12px !important;
 	}
 	.mt18{
 		margin-top: 18px !important;
@@ -306,6 +319,9 @@
 	}
 	.pt11{
 		padding-top: 11px !important;
+	}
+	.pt12{
+		padding-top: 12px !important;
 	}
 	.pt16{
 		padding-top: 16px !important;
@@ -330,6 +346,15 @@
 	.brd-b-none{
 		border-bottom: none !important;
 	}
+
+	.fs15{
+		font-size: 15px !important;
+		line-height: 22px !important;
+	}
+	.nowrap{
+		white-space: nowrap;
+	}
+
 
 	.tit-h1{
 	    font-weight: 700;
@@ -389,11 +414,6 @@
 	.eles > .c-title{
 		padding-top: 11px;
 	}
-	/*
-	.btn-area + .c-title{
-		padding-top: 9px;
-	}
-	*/
 	.input-text + .c-title{
 		padding-top: 20px;
 	}
@@ -1267,7 +1287,7 @@
 	    width: 100%;
 	    min-width: 65px;
 	    height: 50px;
-	    padding: 0 10px;
+	    /*padding: 0 5px;*/
 	    font-weight: 500;
 	    font-size: 18px;
 	    color: #e15d5d;
