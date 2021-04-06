@@ -59,7 +59,7 @@
                 </nav>
                 <div class="contents">
                     <div class="scrollbar-outer">
-                        <section class="content">
+                        <section class="content mark">
                             <div class="inner">
                                 <div class="top-title brd">
                                     <h1 class="tit-h1">계약 정보</h1>
@@ -73,14 +73,14 @@
                                 <div class="c-title">등록하실 사업자 정보 확인 후 다음 단계를 입력해주세요. </div>
                                 <div class="n-ele normal">
                                     <div class="eles">
-                                        <label class="input-checkbox">
-                                            <input type="checkbox">
+                                        <label class="input-radio">
+                                            <input type="radio" name="sort01">
                                             <span>개인</span>
                                         </label>
                                     </div>
                                     <div class="eles">
-                                        <label class="input-checkbox">
-                                            <input type="checkbox">
+                                        <label class="input-radio">
+                                            <input type="radio" name="sort01">
                                             <span>법인</span>
                                         </label>
                                     </div>
@@ -134,12 +134,8 @@
                                     </div>
                                     <div class="eles">
                                         <div class="c-title"><span class="star-mark"></span>E-mail</div>
-                                        <div class="input-text">
+                                        <div class="input-text email-wrap">
                                             <input type="text" placeholder="E-mail" class="email-auto">
-                                            <div class="mail-list-cont">
-                                                <ul class="mail-list">
-                                                </ul>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -152,9 +148,14 @@
                                         </div>
                                     </div>
                                     <div class="eles">
-                                        <button type="button" class="btn">우편번호 검색</button>
+                                        <div class="input-text">
+                                            <input type="text" readonly="readonly">
+                                        </div>
                                     </div>
                                     <div class="eles">
+                                        <button type="button" class="btn">우편번호 검색</button>
+                                    </div>
+                                    <div class="eles addr-detail">
                                         <div class="input-text">
                                             <input type="text" placeholder="상세주소를 입력해주세요.">
                                         </div>
@@ -171,46 +172,11 @@
                                         </div>
                                     </div>
                                     <div class="eles">
-                                        <div class="c-title"><span class="star-mark"></span>주요 취급 품목</div>
+                                        <div class="c-title"><span class="star-mark"></span>업태</div>
                                         <div class="selectbox">
                                             <select name="" id="">
-                                                <option value="">품목을 선택해주세요.</option>
+                                                <option value="">업태를 선택해주세요.</option>
                                             </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="c-title"><span class="star-mark"></span>가입확인서 수신방법</div>
-                                <div class="n-ele">
-                                    <div class="eles">
-                                        <label class="input-checkbox">
-                                            <input type="checkbox">
-                                            <span>우편</span>
-                                        </label>
-                                    </div>
-                                    <div class="eles">
-                                        <label class="input-checkbox">
-                                            <input type="checkbox">
-                                            <span>E-mail</span>
-                                        </label>
-                                    </div>
-                                    <div class="eles">
-                                        <label class="input-checkbox">
-                                            <input type="checkbox">
-                                            <span>문자</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="n-ele ty4">
-                                    <div class="eles">
-                                        <label class="input-checkbox">
-                                            <input type="checkbox" class="dischk" data-dischk="tf">
-                                            <span>기타</span>
-                                        </label>
-                                    </div>
-                                    <div class="eles">
-                                        <div class="input-text">
-                                            <input type="text" data-disabled="tf" disabled="disabled">
                                         </div>
                                     </div>
                                 </div>
@@ -241,11 +207,14 @@
                                     <input type="text" placeholder="계좌번호">
                                 </div>
 
-                                <label class="input-checkbox free">
-                                    <input type="checkbox">
-                                    <span>계약자 명의의 금융회사로 본인 계좌 인증 절차가 필요합니다.</span>
-                                </label>
-                                <div class="btn-area">
+                                <div class="mt20">
+                                    <label class="input-checkbox free">
+                                        <input type="checkbox">
+                                        <span>계약자 명의의 금융회사로 본인 계좌 인증 절차가 필요합니다.</span>
+                                    </label>
+                                    <p class="n-txt01 red">결제 수수료 정산과 금융사고예방을 위해 계약자 본인 확인 절차를 강화하기 위한 계좌 인증 절차입니다.</p>
+                                </div>
+                                <div class="btn-area mt30">
                                     <button type="button" class="btn">재인증</button>
                                     <button type="button" class="btn ty2" onclick="popOpen(this);" data-openpop="pop1">계좌인증</button>
                                 </div>
@@ -321,9 +290,14 @@
                                             </div>
                                         </div>
                                         <div class="eles">
-                                            <button type="button" class="btn">우편번호 검색</button>
+                                            <div class="input-text">
+                                                <input type="text" readonly="readonly">
+                                            </div>
                                         </div>
                                         <div class="eles">
+                                            <button type="button" class="btn">우편번호 검색</button>
+                                        </div>
+                                        <div class="eles addr-detail">
                                             <div class="input-text">
                                                 <input type="text" placeholder="상세주소를 입력해주세요.">
                                             </div>
@@ -342,18 +316,16 @@
                                         </div>
                                         <div class="eles">
                                             <div class="c-title">E-mail</div>
-                                            <div class="input-text">
+                                            <div class="input-text email-wrap">
                                                 <input type="text" placeholder="E-mail" class="email-auto">
-                                                <div class="mail-list-cont">
-                                                    <ul class="mail-list">
-                                                    </ul>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </section>
+                        <button type="button" class="btn small">임시 저장</button>
                     </div>
                 </div>
             </div>
@@ -430,8 +402,8 @@
                 <div class="pop-scroll scrollbar-outer">
                     <ul class="list02">
                         <li>
-                            <label class="input-checkbox">
-                                <input type="checkbox">
+                            <label class="input-radio">
+                                <input type="radio" name="businum">
                                 <span>
                                     <span class="tit-txt">(주)코나아이</span>
                                 <span class="txt02">
@@ -444,8 +416,8 @@
                             </label>
                         </li>
                         <li>
-                            <label class="input-checkbox">
-                                <input type="checkbox">
+                            <label class="input-radio">
+                                <input type="radio" name="businum">
                                 <span>
                                     <span class="tit-txt">(주)코나아이</span>
                                 <span class="txt02">

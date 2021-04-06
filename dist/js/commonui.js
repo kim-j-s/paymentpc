@@ -146,18 +146,19 @@ function autoEmail() {
     $autoEmail.on('keyup', function(){
         value = $(this).val();
         if (value.indexOf("@") != -1) {
-            value = value.split("@")[0];
-            $autoEmail.addClass('on');
-            $autoCont.addClass('on');
+            value = value.split("@")[0];            
             var mailList = '';
             var typing = "<li><a href='#'>" + etcWord + "</a></li>";
             for (i = 0; i < domains.length; i++) {
                 mailList += "<li><a href='#'>" + value + "@" + domains[i] + "</a></li>";
             }
-            $('.mail-list').html(typing + mailList);
+            listhtml = "<div class='mail-list-cont on'><ul class='mail-list'>" + typing + mailList + "</ul></div>";
+            $(this).closest('.email-wrap').find('.mail-list-cont').remove();
+            $(listhtml).appendTo($(this).closest('.email-wrap'));
+            $autoEmail.addClass('on');
         } else {
-            $('.mail-list').empty();
-            $autoCont.removeClass('dp-none');
+            $(this).closest('.email-wrap').find('.mail-list-cont').remove();
+            $('.mail-list-cont').removeClass('dp-none');
             displayList();
         }
     });
@@ -166,7 +167,7 @@ function autoEmail() {
         e.preventDefault();
         var value = $(this).html();
         if ( value == etcWord ) {
-            $autoCont.addClass('dp-none');
+            $('.mail-list-cont').addClass('dp-none');
             $(this).closest('.input-text').find('input').focus();
         } else {
             $(this).closest('.input-text').find('input').val(value);
@@ -178,13 +179,13 @@ function autoEmail() {
 
     function displayList() {
         $autoEmail.removeClass('on');
-        $autoCont.removeClass('on');
+        $('.mail-list-cont').removeClass('on');
     }
 
     function emailDisplay(){
         $(document).on('mouseenter focus', '.mail-list a', function(){
             $autoEmail.addClass('on');
-            $autoCont.addClass('on');
+            $('.mail-list-cont').addClass('on');
         });
         
         $(document).on('blur', '.mail-list > li a:last, .mail-list > li', function(){

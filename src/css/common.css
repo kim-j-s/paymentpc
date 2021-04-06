@@ -591,6 +591,7 @@
 		display: inline-block;
 		vertical-align: middle;
 		width: auto;
+		min-width: 0;
 	}
 	.input-radio.normal + .input-radio.normal{
 		margin-left: 30px;
@@ -842,7 +843,9 @@
 	.input-text input:disabled + .sub-txt{
 		color: #888;
 	}
-
+	.input-text.email-wrap > input{
+		transition: 0s;
+	}
 	.input-text > input.email-auto.on{
 		border: 1px solid #000;
 		border-radius: 5px 5px 0 0;
