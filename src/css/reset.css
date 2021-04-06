@@ -24,16 +24,6 @@ input { font-family: 'Noto Sans Kr', sans-serif; outline: none;}
 input:hover, input:focus {outline: none;}
 input:disabled + span {cursor: default;}
 label {cursor:pointer;}
-input::-webkit-input-placeholder,
-input::-webkit-input-placeholder,
-input::-moz-placeholder{
-  line-height: normal !important;
-}
-input::placeholder,
-input::-webkit-input-placeholder,
-input::-moz-placeholder{
-  line-height: normal !important;
-}
 textarea{-webkit-appearance:none;}
 
 /* placeholder */

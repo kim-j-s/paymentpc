@@ -793,6 +793,7 @@
 	    font-weight: 400;
 	    font-size: 15px;
 	    color: #000;
+	    line-height: 48px;
 	    border: 1px solid #acb8cf;
 	    border-radius: 5px;
 	    letter-spacing: -0.5px;
@@ -822,9 +823,6 @@
 	    color: #e15d5d;
 	    letter-spacing: -0.4px;
 	}
-	.input-text.word-add {
-	    
-	}
 	.input-text > *{
 		align-self: center;
 	}
@@ -835,6 +833,7 @@
 		font-size: 15px;
 		line-height: 18px;
 		transition: 0.5s;
+		white-space: nowrap;
 	}
 	.input-text input:disabled + .sub-txt{
 		color: #888;
