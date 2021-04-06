@@ -14,7 +14,6 @@
 	        -ms-flex-direction: column;
 	            flex-direction: column;
 	    height: 100%;
-	    /*overflow: hidden;*/
 	}
 	header{
 	    -webkit-box-flex: 0;
@@ -87,6 +86,7 @@
 	}
 	.contents > .scrollbar-outer{
 		max-height: 100%;
+		min-height: 100%;
 		overflow: auto;
 	}
 	.contents > .scrollbar-outer .btn.small{
@@ -94,7 +94,14 @@
 		top: 33px;
 		right: 30px;
 	}
+	.contents > .scrollbar-outer .scroll-wrapper{
+		min-height: 100%;
+	}
 	.content:first-child{
+		-webkit-box-align: stretch;
+		-webkit-align-items: stretch;
+		    -ms-flex-align: stretch;
+		        align-items: stretch;
 		min-height: 100%;
 	}
 	.content{
@@ -114,9 +121,6 @@
 		background: #fff;
 		border-radius: 10px 0 0 10px;
 	}
-	.content:first-child > .inner:after{
-		content: none;
-	}
 	.content + .content{
 		margin-top: 20px;
 	}
@@ -129,8 +133,7 @@
 		height: 20px;
 		background: #f3f5f9;
 	}
-	.content.mark > .inner:after,
-	.content + .content > .inner:after{
+	.content > .inner:after{
 		content: '';
 		position: absolute;
 		bottom: 0;
@@ -170,9 +173,6 @@
 	* + .n-ele{
 		margin-top: 9px;
 	}
-	/*.selectbox + .n-ele{
-		margin-top: 20px;
-	}*/
 	.txt-cont + .n-ele{
 		margin-top: 20px;
 	}
@@ -521,7 +521,6 @@
 	    vertical-align: middle;
 	    font-weight: 400;
 	    font-size: 12px;
-	    /*color: #000;*/
 	    line-height: 1;
 	}
 	.c-title > .star-mark:before{
@@ -1232,7 +1231,9 @@
 	    color: #000;
 	}
 
-	.txt-cont{}
+	.bg-box + .txt-cont{
+		margin-top: 20px;
+	}
 	.txt-cont + .txt-cont{
 	    margin-top: 18px;
 	}
@@ -1466,6 +1467,9 @@
 
 /* button */
 
+	.c-title + .btn-area{
+		margin-top: 12px;
+	}
 	.btn-area{
 	    display: -webkit-box;
 	    display: -webkit-flex;
