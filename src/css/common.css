@@ -1012,23 +1012,32 @@
 	    margin-left: 12px;
 	}
 	
-	.list04{}
+	.list04{width: 100%;}
 	.list04 > li{
 	    position: relative;
-	    text-indent: -14px;
-	    margin-left: 14px;
+	    display: flex;
+	    flex-flow: row wrap;
 	    font-weight: 400;
 	    font-size: 12px;
 	    line-height: 18px;
 	    color: #888;
 	}
-	.list04 > li li{
-		margin-left: 0;
-		text-indent: 0;
+	.list04 > li > .front{
+		flex: none;
+		padding-right: 4px;
+	}
+	.list04 > li > .cont{
+		flex-grow: 1;
+		flex-basis: 0;
 	}
 	.list04 > li + li{
 		margin-top: 3px;
 	}
+	.list04 > li .list04{
+		margin-top: 3px;
+	}
+
+	
 
 	.t-cell{
 	    display: table;
