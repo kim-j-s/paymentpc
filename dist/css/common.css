@@ -521,6 +521,23 @@
 	.n-ele .selectbox + .selectbox{
 		margin-top: 0;
 	}
+
+	.selectbox{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	    -webkit-box-orient: horizontal;
+	    -webkit-box-direction: normal;
+	    -webkit-flex-direction: row;
+	        -ms-flex-direction: row;
+	            flex-direction: row;
+	}
+	.selectbox > *{
+		-webkit-align-self: center;
+		    -ms-flex-item-align: center;
+		        align-self: center;
+	}
 	.selectbox > select{
 	    display: block;
 	    width: 100%;
@@ -544,28 +561,12 @@
 		background: #f3f5f9 url(../img/ico-arrow-down.png) no-repeat right 12px center;
 		opacity: 1;
 	}
-	.selectbox.word-add {
-	    display: -webkit-box;
-	    display: -webkit-flex;
-	    display: -ms-flexbox;
-	    display: flex;
-	    -webkit-box-orient: horizontal;
-	    -webkit-box-direction: normal;
-	    -webkit-flex-direction: row;
-	        -ms-flex-direction: row;
-	            flex-direction: row;
-	}
-	.selectbox.word-add > *{
-		-webkit-align-self: center;
-		    -ms-flex-item-align: center;
-		        align-self: center;
-	}
-	.selectbox.word-add .sub-txt{
+	.selectbox .sub-txt{
 		-webkit-box-flex: 0;
 		-webkit-flex: none;
 		    -ms-flex: none;
 		        flex: none;
-		padding: 0 12px;
+		padding: 0 0 0 12px;
 		font-weight: 400;
 		font-size: 15px;
 		line-height: 18px;
@@ -861,6 +862,15 @@
 
 	.input-text{
 	    position: relative;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-orient: horizontal;
+	    -webkit-box-direction: normal;
+	    -webkit-flex-direction: row;
+	        -ms-flex-direction: row;
+	            flex-direction: row;
 	}
 	.input-text > input{
 	    display: block;
@@ -901,34 +911,26 @@
 	    letter-spacing: -0.4px;
 	}
 	.input-text.word-add {
-	    display: -webkit-box;
-	    display: -webkit-flex;
-	    display: -ms-flexbox;
-	    display: flex;
-	    -webkit-box-orient: horizontal;
-	    -webkit-box-direction: normal;
-	    -webkit-flex-direction: row;
-	        -ms-flex-direction: row;
-	            flex-direction: row;
+	    
 	}
-	.input-text.word-add > *{
+	.input-text > *{
 		-webkit-align-self: center;
 		    -ms-flex-item-align: center;
 		        align-self: center;
 	}
-	.input-text.word-add .sub-txt{
+	.input-text .sub-txt{
 		-webkit-box-flex: 0;
 		-webkit-flex: none;
 		    -ms-flex: none;
 		        flex: none;
-		padding: 0 12px;
+		padding: 0 0 0 12px;
 		font-weight: 400;
 		font-size: 15px;
 		line-height: 18px;
 		-webkit-transition: 0.5s;
 		transition: 0.5s;
 	}
-	.input-text.word-add:disabled + .sub-txt{
+	.input-text input:disabled + .sub-txt{
 		color: #888;
 	}
 

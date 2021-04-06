@@ -456,6 +456,14 @@
 	.n-ele .selectbox + .selectbox{
 		margin-top: 0;
 	}
+
+	.selectbox{
+		display: flex;
+	    flex-direction: row;
+	}
+	.selectbox > *{
+		align-self: center;
+	}
 	.selectbox > select{
 	    display: block;
 	    width: 100%;
@@ -478,16 +486,9 @@
 		background: #f3f5f9 url(../img/ico-arrow-down.png) no-repeat right 12px center;
 		opacity: 1;
 	}
-	.selectbox.word-add {
-	    display: flex;
-	    flex-direction: row;
-	}
-	.selectbox.word-add > *{
-		align-self: center;
-	}
-	.selectbox.word-add .sub-txt{
+	.selectbox .sub-txt{
 		flex: none;
-		padding: 0 12px;
+		padding: 0 0 0 12px;
 		font-weight: 400;
 		font-size: 15px;
 		line-height: 18px;
@@ -773,6 +774,8 @@
 
 	.input-text{
 	    position: relative;
+	    display: flex;
+	    flex-direction: row;
 	}
 	.input-text > input{
 	    display: block;
@@ -812,21 +815,20 @@
 	    letter-spacing: -0.4px;
 	}
 	.input-text.word-add {
-	    display: flex;
-	    flex-direction: row;
+	    
 	}
-	.input-text.word-add > *{
+	.input-text > *{
 		align-self: center;
 	}
-	.input-text.word-add .sub-txt{
+	.input-text .sub-txt{
 		flex: none;
-		padding: 0 12px;
+		padding: 0 0 0 12px;
 		font-weight: 400;
 		font-size: 15px;
 		line-height: 18px;
 		transition: 0.5s;
 	}
-	.input-text.word-add:disabled + .sub-txt{
+	.input-text input:disabled + .sub-txt{
 		color: #888;
 	}
 
