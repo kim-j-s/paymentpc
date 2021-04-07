@@ -1641,10 +1641,15 @@
 	.btn.slide-act{
 	    position: relative;
 	    width: 29px;
+	    min-width: 0;
 	    height: 29px;
 	    overflow: hidden;
 	    text-indent: -9999px;
 	    border: none;
+	}
+	.btn.slide-act:hover,
+	.btn.slide-act:focus{
+		background: #fff;
 	}
 	.btn.slide-act:after{
 	    content: '';
@@ -1832,7 +1837,7 @@
 			margin-top: 10px;
 		}
 		* + .slide-top{
-			margin-top: 30px;
+			margin-top: 20px;
 		}
 		* + .slide-top.tblty{
 			margin-top: 10px;
