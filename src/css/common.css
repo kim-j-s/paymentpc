@@ -76,7 +76,7 @@
 		min-height: 100%;
 		overflow: auto;
 	}
-	.contents > .scrollbar-outer .btn.small{
+	.contents > .scrollbar-outer .btn.temp-storage{
 		position: absolute;
 		top: 33px;
 		right: 30px;
