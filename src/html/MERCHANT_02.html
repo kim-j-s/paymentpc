@@ -67,7 +67,7 @@
                                     </div>
                                 </div>
 
-                                <div class="brd-ele">
+                                <div class="brd-ele" style="display: none;">
                                     <h2 class="tit-h2">매장 기본 정보</h2>
                                     <div class="n-ele">
                                         <div class="eles">
@@ -85,21 +85,7 @@
                                     </div>
 
                                     <div class="c-title">매장주소</div>
-                                    <div class="n-ele addr">
-                                        <div class="eles">
-                                            <div class="input-text">
-                                                <input type="text" readonly="readonly">
-                                            </div>
-                                        </div>
-                                        <div class="eles">
-                                            <button type="button" class="btn">우편번호 검색</button>
-                                        </div>
-                                        <div class="eles">
-                                            <div class="input-text">
-                                                <input type="text" placeholder="상세주소를 입력해주세요.">
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @@include('addr.html')
 
                                     <div class="c-title"><span class="star-mark"></span>매장 전화번호</div>
                                     <div class="n-ele ty4">
@@ -266,6 +252,10 @@
                                     <p class="n-txt01 red">매장명이 포함된 간판 사진 또는 확인할 수 있는 사진을 등록해주세요.</p>
 
                                     <div class="c-title">매장 사진</div>
+                                    <ul class="list01">
+                                        <li>이미지를 등록해주세요 (최대20개)</li>
+                                        <li>15MB 이하의 jpg(jpeg), png 파일만 업로드 가능합니다.</li>
+                                    </ul>
                                     <div style="line-height: 60px; background: #ddd; text-align: center; font-size: 15px;">
                                         디자인 필요 구간
                                     </div>

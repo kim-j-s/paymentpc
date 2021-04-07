@@ -60,8 +60,11 @@
                                             <div class="selectbox">
                                                 <select name="" id="" style="width: 100px">
                                                     <option value="">5</option>
+                                                    <option value="">10</option>
+                                                    <option value="">15</option>
+                                                    <option value="">20</option>
                                                 </select>
-                                                <span class="sub-txt">개 적립 시 쿠폰 1매 발급</span>
+                                                <span class="sub-txt color03">개 적립 시 쿠폰 1매 발급</span>
                                             </div>
                                         </div>
                                     </div>
@@ -72,7 +75,7 @@
                                         <div class="eles flex-none">
                                             <div class="input-text">
                                                 <input type="text" class="t-right" style="width: 100px">
-                                                <span class="sub-txt">원 이상 결제 시 스탬프 발행</span>
+                                                <span class="sub-txt color03">원 이상 결제 시 스탬프 발행</span>
                                             </div>
                                         </div>
                                     </div>
@@ -80,35 +83,35 @@
                                     <div class="c-title"><span class="star-mark"></span>스탬프 유효기간</div>
                                     <div class="n-ele">
                                         <div class="eles flex-none text inp-width02">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox" class="dischk" data-dischk="stampmonth">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="stamp" class="dischk-radio" data-dischk="range01">
                                                 <span>개월 수</span>
                                             </label>
                                         </div>
-                                        <div class="eles flex-none text color01">
+                                        <div class="eles flex-none text color03">
                                             발급일로부터
                                         </div>
                                         <div class="eles">
                                             <div class="input-text">
-                                                <input type="text" class="inp-width01 t-right" data-disabled="stampmonth" disabled="disabled">
-                                                <span class="sub-txt">개월 까지</span>
+                                                <input type="text" class="inp-width01 t-right" data-disabled="range01" disabled="disabled">
+                                                <span class="sub-txt color03">개월 까지</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="n-ele">
                                         <div class="eles flex-none text inp-width02">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox" class="dischk" data-dischk="stampday">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="stamp" class="dischk-radio" data-dischk="range02">
                                                 <span>일수</span>
                                             </label>
                                         </div>
-                                        <div class="eles flex-none text color01">
+                                        <div class="eles flex-none text color03">
                                             발급일로부터
                                         </div>
                                         <div class="eles">
                                             <div class="input-text">
-                                                <input type="text" class="inp-width01 t-right" data-disabled="stampday" disabled="disabled">
-                                                <span class="sub-txt">개월 까지</span>
+                                                <input type="text" class="inp-width01 t-right" data-disabled="range02" disabled="disabled">
+                                                <span class="sub-txt color03">일 까지</span>
                                             </div>
                                         </div>
                                     </div>
@@ -116,34 +119,60 @@
 
                                 <div class="brd-ele">
                                     <h2 class="tit-h2">쿠폰 정책</h2>
-                                    <div class="c-title"><span class="star-mark"></span>쿠폰 권면금액</div>
-                                    <p class="desc">
-                                        쿠폰 권면 금액은 누적 결제금액에 따라 자동 산정되며, 최대 권면 한도 설정이 가능합니다.
-                                    </p>
-                                    <div class="n-ele">
-                                        <div class="eles text flex-none color01 inp-width02">
-                                            누적 결제 금액의
-                                        </div>
-                                        <div class="eles">
-                                            <div class="input-text">
-                                                <input type="text" class="inp-width01 t-right">
-                                                <span class="sub-txt">%</span>
-                                            </div>
-                                        </div>
+                                    <div class="c-title"><span class="star-mark"></span>쿠폰명</div>
+                                    <div class="input-text">
+                                        <input type="text" placeholder="최대 40글자까지 입력 가능합니다.">
                                     </div>
-                                    <p class="n-txt01 bl">결제 누적 금액은 쿠폰 발급 완료 후 초기화 됩니다.</p>
+
+                                    <div class="c-title"><span class="star-mark"></span>쿠폰형태</div>
                                     <div class="n-ele">
-                                        <div class="eles text flex-none color01 inp-width02">
-                                            최대 권면금액
+                                        <div class="eles text flex-none inp-width01">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="couponsave" class="dischk-radio" data-dischk="couponsave01">
+                                                <span>금액형 (정액)</span>
+                                            </label>
+                                        </div>
+                                        <div class="eles flex-none text color01" style="width: 90px;">
+                                            권면금액
                                         </div>
                                         <div class="eles">
                                             <div class="input-text">
-                                                <input type="text" class="inp-width01 t-right">
+                                                <input type="text" class="t-right" data-disabled="couponsave01" disabled="disabled" style="width: 80px;">
                                                 <span class="sub-txt">원</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="n-txt01 bl">쿠폰 발행 시 권면금액 한도 초과 잔액은 다음 쿠폰 발행 누적 결제금액에 자동 적립됩니다.</p>
+                                    <div class="n-ele">
+                                        <div class="eles text flex-none inp-width01">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="couponsave" class="dischk-radio" data-dischk="couponsave02">
+                                                <span>할인형 (정률)</span>
+                                            </label>
+                                        </div>
+                                        <div class="eles flex-none text color01" style="width: 90px;">
+                                            할인율
+                                        </div>
+                                        <div class="eles">
+                                            <div class="input-text">
+                                                <input type="text" class="t-right" data-disabled="couponsave02" disabled="disabled" style="width: 80px;">
+                                                <span class="sub-txt">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n-ele">
+                                        <div class="eles text flex-none inp-width01"></div>
+                                        <div class="eles flex-none text color01" style="width: 90px;">
+                                            최대할인금액
+                                        </div>
+                                        <div class="eles">
+                                            <div class="input-text">
+                                                <input type="text" class="t-right" data-disabled="couponsave02" disabled="disabled" style="width: 80px;">
+                                                <span class="sub-txt">원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="n-txt01">쿠폰 권면 금액은 누적 결제금액에 따라 자동 산정되며, 최대 권면 한도 설정이 가능합니다.</p>
+                                    <p class="n-txt01">쿠폰 발행 시 권면금액 한도 초과 잔액은 다음 쿠폰 발행 누적 결제금액에 자동 적립됩니다. </p>
 
                                     <div class="c-title"><span class="star-mark"></span>쿠폰 사용범위</div>
                                     <div class="n-ele">
@@ -161,13 +190,62 @@
                                         </div>
                                     </div>
 
+                                    <div class="c-title"><span class="star-mark"></span>쿠폰 발행 금액/매수</div>
+                                    <div class="n-ele">
+                                        <div class="eles text flex-none" style="width: 95px;">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="couponcnt" class="dischk-radio">
+                                                <span>무제한</span>
+                                            </label>
+                                        </div>
+                                        <div class="eles text flex-none" style="width: 144px;">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="couponcnt" class="dischk-radio" data-dischk="couponcnt02">
+                                                <span>직접입력</span>
+                                            </label>
+                                        </div>
+                                        <div class="eles flex-none" style="width: 124px;">
+                                            <div class="input-text">
+                                                <input type="text" class="t-right" data-disabled="couponcnt02" disabled="disabled" style="width: 80px;">
+                                                <span class="sub-txt">개</span>
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="input-text">
+                                                <input type="text" class="t-right" data-disabled="couponcnt02" disabled="disabled" style="width: 80px;">
+                                                <span class="sub-txt">원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="c-title"><span class="star-mark"></span>쿠폰 중복 지급여부</div>
+                                    <div class="n-ele">
+                                        <div class="eles text flex-none" style="width: 95px;">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="couponpre" class="dischk-radio">
+                                                <span>무제한</span>
+                                            </label>
+                                        </div>
+                                        <div class="eles text flex-none" style="width: 144px;">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="couponpre" class="dischk-radio" data-dischk="couponpre02">
+                                                <span>회원당</span>
+                                            </label>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="input-text">
+                                                <input type="text" class="t-right" data-disabled="couponpre02" disabled="disabled" style="width: 80px;">
+                                                <span class="sub-txt">개 지급</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="c-title"><span class="star-mark"></span>최소 결제금액</div>
                                     <div class="n-ele">
-                                        <div class="eles flex-none text color01 inp-width02">최소 결제금액</div>
                                         <div class="eles flex-none">
                                             <div class="input-text">
                                                 <input type="text" class="inp-width01 t-right">
-                                                <span class="sub-txt">원 이상 결제 시</span>
+                                                <span class="sub-txt">원 이상 결제 시 사용 가능</span>
                                             </div>
                                         </div>
                                     </div>
@@ -175,35 +253,35 @@
                                     <div class="c-title"><span class="star-mark"></span>쿠폰 유효기간</div>
                                     <div class="n-ele">
                                         <div class="eles flex-none text inp-width02">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox" class="dischk" data-dischk="month">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="couponrange" class="dischk-radio" data-dischk="couponrange01">
                                                 <span>개월 수</span>
                                             </label>
                                         </div>
-                                        <div class="eles flex-none text color01">
+                                        <div class="eles flex-none text color03">
                                             발급일로부터
                                         </div>
                                         <div class="eles">
                                             <div class="input-text">
-                                                <input type="text" class="inp-width01 t-right" data-disabled="month" disabled="disabled">
-                                                <span class="sub-txt">개월 까지</span>
+                                                <input type="text" class="inp-width01 t-right" data-disabled="couponrange01" disabled="disabled">
+                                                <span class="sub-txt color03">개월 까지</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="n-ele">
                                         <div class="eles flex-none text inp-width02">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox" class="dischk" data-dischk="day">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="couponrange" class="dischk-radio" data-dischk="couponrange02">
                                                 <span>일수</span>
                                             </label>
                                         </div>
-                                        <div class="eles flex-none text color01">
+                                        <div class="eles flex-none text color03">
                                             발급일로부터
                                         </div>
                                         <div class="eles">
                                             <div class="input-text">
-                                                <input type="text" class="inp-width01 t-right" data-disabled="day" disabled="disabled">
-                                                <span class="sub-txt">일 까지</span>
+                                                <input type="text" class="inp-width01 t-right" data-disabled="couponrange02" disabled="disabled">
+                                                <span class="sub-txt color03">일 까지</span>
                                             </div>
                                         </div>
                                     </div>

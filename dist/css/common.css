@@ -1052,8 +1052,9 @@
 	    width: 100px;
 	    height: 50px;
 	    margin-left: 12px;
-	    font-weight: 700;
-	    font-size: 18px;
+	    font-weight: 500;
+	    font-size: 15px;
+	    line-height: 22px;
 	    color: #e15d5d;
 	    line-height: 48px;
 	    border-radius: 5px;
@@ -1087,6 +1088,9 @@
 		color: #888 !important;
 	}
 
+	.c-title + .list01{
+		margin-top: 12px;
+	}
 	.list01{}
 	.list01 > li{
 	    position: relative;
@@ -1407,7 +1411,7 @@
 	    font-weight: 500;
 	    font-size: 18px;
 	    line-height: 27px;
-	    color: #000;
+	    /*color: #000;*/
 	}
 	.badge{
 	    display: inline-block;

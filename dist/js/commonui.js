@@ -14,6 +14,7 @@ function disChk(){
     var $disChk = $('.dischk');
     var $disChk02 = $('.dischk02');
     var $disChkOff = $('.dischk-off');
+    var $dischkRadio = $('.dischk-radio');
     $disChk.on('change', function() {
         var data = $(this).data('dischk');
         if ( $(this).prop('checked') )
@@ -39,6 +40,20 @@ function disChk(){
         if ( $(this).prop('checked') )
         {
             $('[data-disabled="'+ data +'"]').prop('disabled',true);
+        }
+    });
+
+    $dischkRadio.on('change', function() {
+        var name = $(this).attr('name');
+        var nameLng = $('[name="'+ name +'"]').length;
+        if ( $(this).prop('checked') )
+        {
+            for (var i = 0; i < nameLng; i++) {
+                var data =  $('[name="'+ name +'"]').eq(i).data('dischk');
+                $('[data-disabled="'+ data +'"]').prop('disabled',true);
+            }
+            var thisData = $(this).data('dischk');
+            $('[data-disabled="'+ thisData +'"]').prop('disabled',false);
         }
     });
 }
