@@ -153,16 +153,20 @@
 	.tit-h2 + .n-ele{
 		margin-top: 12px;
 	}
+	.n-ele + .n-ele,
 	.btn-area + .n-ele,
 	.n-txt01 + .n-ele{
 		margin-top: 20px;
 	}
+	/*
 	.n-ele + .n-ele{
-		margin-top: 9px;
+		margin-top: 20px;
 	}
+	*/
 	
 	.n-ele > *{
-	    flex: 1 1 100%;
+	    flex-grow: 1;
+	    flex-basis: 0;
 	    align-self: flex-start;
 	}
 	
@@ -218,29 +222,43 @@
 		vertical-align: top;
 		width: auto;
 	}
+
+
 	.n-ele.addr{
-		flex-flow: row wrap;
+		display: block;
 	}
-	.n-ele.addr > .eles{
+	.n-ele.addr > *{
 		flex: none;
 	}
-	.n-ele.addr > .eles:nth-child(1){
+	.addr-top{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.addr-top > .eles{
+		flex: none;
+	}
+	.addr-top > * + *{
+		margin-left: 12px;
+	}
+	.addr-top > .eles:nth-child(1){
 		width: 90px;
 	}
-	.n-ele.addr > .eles:nth-child(2){
-		width: calc(100% - 242px);
+	.addr-top > .eles:nth-child(2){
+		flex-grow: 1;
+		flex-basis: 0;
 	}
-	.n-ele.addr > .eles:nth-child(3){
+	.addr-top > .eles:nth-child(3){
 		width: 128px;
 	}
-	.n-ele.addr > .eles.addr-detail{
-		width: 100%;
+	.n-ele.addr > .addr-detail{
 		margin-left: 0;
 		margin-top: 9px;
 	}
 	.n-ele.al-bottom > .eles{
 		align-self: flex-end;
 	}
+
+
 	
 
 	.n-ele .wave{
@@ -427,9 +445,11 @@
 	* + .c-title{
 		padding-top: 20px;
 	}
+	/*
 	.eles > .c-title{
 		padding-top: 11px;
 	}
+	*/
 	.input-text + .c-title{
 		padding-top: 20px;
 	}
@@ -1547,7 +1567,7 @@
 		}
 		.sign-cont{
 		    display: inline-block;
-		    width: 251px;
+		    width: calc(50% - 6px);
 		}
 		.sign-cont > button{
 		    margin-top: 9px;
@@ -1557,6 +1577,7 @@
 		    height: 120px;
 		    border: 1px solid #acb8cf;
 		    border-radius: 5px;
+		    overflow: hidden;
 		}
 		.sign-area > img{
 		    position: absolute;
