@@ -827,6 +827,9 @@
 	    background-color: #f3f5f9;
 	    color: #5F6879;
 	}
+	.input-text > * + input{
+		margin-left: 12px;
+	}
 	.input-text > input.inp-date{
 		padding-right: 50px;
 		background: url(../img/ico-calender.png) no-repeat right 18px center;
@@ -848,12 +851,15 @@
 	}
 	.input-text .sub-txt{
 		flex: none;
-		padding: 0 0 0 12px;
+		/*padding: 0 0 0 12px;*/
 		font-weight: 400;
 		font-size: 15px;
 		line-height: 18px;
 		transition: 0.5s;
 		white-space: nowrap;
+	}
+	.input-text * + .sub-txt{
+		padding-left: 12px;
 	}
 	.input-text input:disabled + .sub-txt{
 		color: #888;
