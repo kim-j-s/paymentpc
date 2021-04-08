@@ -8,7 +8,6 @@ function popClose(e){
     $(e).closest('.layer-pop').hide();
 }
 
-
 // input disabled true / false
 function disChk(){
     var $disChk = $('.dischk');
@@ -60,7 +59,6 @@ function disChk(){
 
 function dpchk() {
     var $dpon = $('.dp-onoff');
-
     $dpon.on('change', function() {
         var dataOn = $(this).data('displayon');
         var dataOff = $(this).data('displayoff');
@@ -73,8 +71,6 @@ function dpchk() {
     });
 }
 
-
-
 // 파일첨부
 var $fileBox = null;
 function fileInit(){
@@ -84,11 +80,11 @@ function fileInit(){
 function fileLoad(){
     $.each($fileBox, function(idx){
         var $this = $fileBox.eq(idx),
-        $btnUpload = $this.find('[type="file"]'),
-        $label = $this.find('.file-label');
+                    $btnUpload = $this.find('[type="file"]'),
+                    $label = $this.find('.file-label');
         $btnUpload.on('change', function(){
             var $target = $(this),
-            fileName = $target.val();
+            fileName = $target.get(0).files.item(0).name;
             $fileText = $target.closest('.inp-file').find('.file-name');
             $fileText.val(fileName);
         });
