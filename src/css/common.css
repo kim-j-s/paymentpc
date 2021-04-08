@@ -185,7 +185,7 @@
 	}
 	.n-ele.ty2 > *:nth-child(2){
 		flex: none;
-		width: 80px;
+		min-width: 80px;
 	}
 	.n-ele.ty2 > *:nth-child(2) .btn{
 		min-width: 0;
@@ -1396,10 +1396,13 @@
 	    width: 100%;
 	    min-width: 128px;
 	    height: 50px;
+	    padding: 0 5px;
 	    font-weight: 500;
 	    font-size: 15px;
 	    line-height: 22px;
 	    color: #e15d5d;
+	    line-height: 48px;
+	    text-align: center;
 	    border: 1px solid #e15d5d;
 	    border-radius: 5px;
 	    transition: 0.5s;

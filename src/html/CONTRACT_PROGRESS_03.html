@@ -24,7 +24,23 @@
                         <section class="content">
                             <div class="inner">
                                 <div class="top-title">
-                                    <h1 class="tit-h1">배달 및 픽업(포장)서비스 입점 신청서</h1>
+                                    <h1 class="tit-h1">전자 계약서 확인</h1>
+                                </div>
+
+                                <div class="brd-ele">
+                                    <div class="c-title">계약서 선택</div>
+                                    <div class="n-ele ty2">
+                                        <div class="eles">
+                                            <div class="selectbox">
+                                                <select name="" id="">
+                                                    <option value="">IC2034500101</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <a href="" class="btn">계약서 다운로드</a>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="brd-ele">
@@ -39,13 +55,13 @@
                                     <div class="n-ele">
                                         <div class="eles">
                                             <label class="input-checkbox normal">
-                                                <input type="checkbox">
+                                                <input type="checkbox" checked="checked" disabled="disabled">
                                                 <span>배달서비스</span>
                                             </label>
                                         </div>
                                         <div class="eles">
                                             <label class="input-checkbox normal">
-                                                <input type="checkbox">
+                                                <input type="checkbox" checked="checked" disabled="disabled">
                                                 <span>픽업(포장)서비스</span>
                                             </label>
                                         </div>
@@ -80,33 +96,49 @@
                                                 <input type="text" value="맛잇는 커피 익스콘벤처타워점" disabled="disabled">
                                             </div>
                                         </div>
-                                        <div class="eles">
-                                            <div class="c-title"><span class="star-mark"></span>사업자등록번호</div>
-                                            <div class="input-text">
-                                                <input type="text" value="000-00-0000" disabled="disabled">
-                                            </div>
-                                        </div>
                                     </div>
 
-                                    <div class="c-title"><span class="star-mark"></span>영업시간</div>
-                                    @@include('timeselected.html')
+                                    <div class="c-title"><span class="star-mark"></span>매장주소</div>
+                                    @@include('addr_disabled.html')
 
-                                    <div class="c-title"><span class="star-mark"></span>휴무정보</div>
+                                    <div class="c-title"><span class="star-mark"></span>매장전화번호</div>
                                     <div class="input-text">
-                                        <input type="text" value="연중무휴" disabled="disabled">
+                                        <input type="text" value="02-2098-0987" disabled="disabled">
+                                    </div>
+
+                                    <div class="n-ele">
+                                        <div class="eles">
+                                            <div class="c-title"><span class="star-mark"></span>매장 카테고리</div>
+                                            <div class="selectbox">
+                                                <select name="" id="" disabled="disabled">
+                                                    <option value="" selected="selected">카페/디저트</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="c-title"><span class="star-mark"></span>주문 카테고리</div>
+                                            <div class="selectbox">
+                                                <select name="" id="" disabled="disabled">
+                                                    <option value="" selected="selected">패스트푸트</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+
+                                    <div class="c-title">가맹점 소개</div>
+                                    <div class="input-text">
+                                        <input type="text" value="가맹점을 소개할 제목을 입력해주세요." disabled="disabled">
+                                    </div>
+                                    <div class="textarea">
+                                        <textarea name="" id="" cols="30" rows="10" disabled="disabled">
+소개하고 싶은 내용을 최대 1,000자 이내로 작성해주세요.
+                                        </textarea>
                                     </div>
 
                                     <div class="c-title">고객 편의시설</div>
                                     <div class="textarea">
                                         <textarea name="" id="" cols="30" rows="10" disabled="disabled">
-남녀화장실,wifi,주차가능,배달,포장 가능
-                                        </textarea>
-                                    </div>
-
-                                    <div class="c-title">업체 소개</div>
-                                    <div class="textarea">
-                                        <textarea name="" id="" cols="30" rows="10" disabled="disabled">
-방금 로스팅한 원두로 다양한 풍미의 커피를 즐길실 수 있습니다.
+ex) 화장실,주차가능,wifi, 단체석 등 (최대 200자 이내로 작성) 매장 편의 시설을 작성해주세요.
                                         </textarea>
                                     </div>
 
@@ -119,7 +151,12 @@
                                 </div>
 
                                 <div class="brd-ele">
-                                    <h2 class="tit-h2">매장 운영 정보</h2>
+                                    <h2 class="tit-h2">매장 운영 정보 <small>* 최조 등록 이후 가맹점 포탈 &gt; 주문관리에서 설정 가능합니다.</small></h2>
+
+                                    <div class="c-title"><span class="star-mark"></span>운영시간</div>
+                                    @@include('timedisabled.html')
+
+
                                     <div class="c-title"><span class="star-mark"></span>주요 상품 카테고리</div>
                                     <div class="n-ele ty6">
                                         <div class="eles">
