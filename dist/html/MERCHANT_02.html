@@ -625,13 +625,13 @@
                                             <div class="eles">
                                                 <div class="n-ele">
                                                     <div class="selectbox">
-                                                        <select name="" id="" data-disabled="worktimebefore">
+                                                        <select name="" id="" data-disabled="worktime">
                                                             <option value="" selected="selected">오전</option>
                                                             <option value="">오후</option>
                                                         </select>
                                                     </div>
                                                     <div class="selectbox">
-                                                        <select name="" id="" data-disabled="worktimebefore">
+                                                        <select name="" id="" data-disabled="worktime">
                                                             <option value="">01</option>
                                                             <option value="">02</option>
                                                             <option value="">03</option>
@@ -647,7 +647,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="selectbox">
-                                                        <select name="" id="" data-disabled="worktimebefore">
+                                                        <select name="" id="" data-disabled="worktime">
                                                             <option value="">00</option>
                                                             <option value="">10</option>
                                                             <option value="">20</option>
@@ -664,13 +664,13 @@
                                             <div class="eles">
                                                 <div class="n-ele">
                                                     <div class="selectbox">
-                                                        <select name="" id="" data-disabled="worktimeafter">
+                                                        <select name="" id="" data-disabled="worktime">
                                                             <option value="">오전</option>
                                                             <option value="" selected="selected">오후</option>
                                                         </select>
                                                     </div>
                                                     <div class="selectbox">
-                                                        <select name="" id="" data-disabled="worktimeafter">
+                                                        <select name="" id="" data-disabled="worktime">
                                                             <option value="">01</option>
                                                             <option value="">02</option>
                                                             <option value="">03</option>
@@ -686,7 +686,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="selectbox">
-                                                        <select name="" id="" data-disabled="worktimeafter">
+                                                        <select name="" id="" data-disabled="worktime">
                                                             <option value="">00</option>
                                                             <option value="">10</option>
                                                             <option value="">20</option>
@@ -1549,57 +1549,82 @@
                                         <input type="text" placeholder="ex) 둘째, 넷째 일요일 휴무입니다.">
                                     </div>
 
-                                    <div class="c-title">배달팁</div>
-                                    <div class="n-ele">
-                                        <div class="eles flex-none text inp-width02">
-                                            기본<span class="star-mark"></span>
-                                        </div>
-                                        <div class="eles">
-                                            <div class="n-ele">
-                                                <div class="eles">
-                                                    <div class="input-text">
-                                                        <input type="text" class="t-right">
+                                    <div class="del-cont">
+                                        <div class="c-title">배달팁</div>
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text" style="width: 40px;"><span class="star-mark"></span>기본</div>
+                                            <div class="eles">
+                                                <div class="n-ele">
+                                                    <div class="eles">
+                                                        <div class="input-text">
+                                                            <input type="text" class="t-right" style="width: 100px;">
+                                                            <span class="sub-txt">원 이상 주문 시</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="eles">
+                                                        <div class="input-text">
+                                                            <input type="text" class="t-right" style="width: 100px;">
+                                                            <span class="sub-txt">원 할인</span>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="eles flex-none text">원 이상 주문 시</div>
-                                                <div class="eles">
-                                                    <div class="input-text">
-                                                        <input type="text" class="t-right">
-                                                    </div>
-                                                </div>
-                                                <div class="eles flex-none text">원 할인</div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="n-ele">
-                                        <div class="eles flex-none text inp-width02">
-                                            추가1
-                                        </div>
-                                        <div class="eles">
-                                            <div class="n-ele">
-                                                <div class="eles">
-                                                    <div class="input-text">
-                                                        <input type="text" class="t-right">
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text" style="width: 40px;">추가1</div>
+                                            <div class="eles">
+                                                <div class="n-ele">
+                                                    <div class="eles">
+                                                        <div class="input-text">
+                                                            <input type="text" class="t-right" style="width: 100px;">
+                                                            <span class="sub-txt">원 이상 주문 시</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="eles">
+                                                        <div class="input-text">
+                                                            <input type="text" class="t-right" style="width: 100px;">
+                                                            <span class="sub-txt">원 할인</span>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="eles flex-none text">원 이상 주문 시</div>
-                                                <div class="eles">
-                                                    <div class="input-text">
-                                                        <input type="text" class="t-right">
-                                                    </div>
-                                                </div>
-                                                <div class="eles flex-none text">원 할인</div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="btn-area normal">
-                                        <button type="button" class="btn reg">주문금액별 배달팁 추가</button>
+                                        <div class="btn-area">
+                                            <button type="button" class="btn">주문금액별 배달팁 추가</button>
+                                        </div>
+                                        <button type="button" class="underline-btn">전체삭제</button>
                                     </div>
 
-                                    <div class="c-title">지역별 할증 배달팁 <small>아래에 설정된 지역으로 주문 시 할증금액(배달팁이 추가됩니다.)</small></div>
-                                    <div style="line-height: 60px; background: #ddd; text-align: center; font-size: 15px;">
-                                        디자인 필요 구간
+                                    <div class="del-cont">
+                                        <div class="c-title">지역별 할증 배달팁 <small>아래에 설정된 지역으로 주문 시 할증금액(배달팁이 추가됩니다.)</small></div>
+                                        <div style="line-height: 60px; background: #ddd; text-align: center; font-size: 15px;">
+                                            디자인 필요 구간
+                                        </div>
+
+
+
+                                        <button type="button" class="underline-btn">전체삭제</button>
                                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                     <div class="c-title">배달안내</div>
                                     <div class="input-text">
@@ -1628,67 +1653,37 @@
                                     <div class="c-title">포장주문 할인 설정</div>
                                     <div class="n-ele">
                                         <div class="eles flex-none text inp-width02">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox" class="dischk" data-dischk="save0101">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="packagesale" class="dischk-radio" data-dischk="packagesale01">
                                                 <span>정액할인</span>
                                             </label>
                                         </div>
                                         <div class="eles">
                                             <div class="input-text">
-                                                <input type="text" class="t-right" style="width: 120px;" data-disabled="save0101" disabled="disabled">
+                                                <input type="text" class="t-right" style="width: 120px;" data-disabled="packagesale01" disabled="disabled">
                                                 <span class="sub-txt">원 할인</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="n-ele">
                                         <div class="eles flex-none text inp-width02">
-                                            <label class="input-checkbox normal">
-                                                <input type="checkbox" class="dischk" data-dischk="save0102">
+                                            <label class="input-radio normal">
+                                                <input type="radio" name="packagesale" class="dischk-radio" data-dischk="packagesale02">
                                                 <span>정률할인</span>
                                             </label>
                                         </div>
                                         <div class="eles">
                                             <div class="input-text">
-                                                <input type="text" class="t-right" style="width: 120px;" data-disabled="save0102" disabled="disabled">
+                                                <input type="text" class="t-right" style="width: 120px;" data-disabled="packagesale02" disabled="disabled">
                                                 <span class="sub-txt">% 할인</span>
                                             </div>
                                         </div>
                                         <div class="eles">
                                             <div class="input-text">
                                                 <span class="sub-txt">최대</span>
-                                                <input type="text" class="t-right" style="width: 120px;" data-disabled="save0102" disabled="disabled">
+                                                <input type="text" class="t-right" style="width: 120px;" data-disabled="packagesale02" disabled="disabled">
                                                 <span class="sub-txt">원 할인</span>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <h2 class="tit-h2">기존 서비스 정보 활용 동의</h2>
-                                <div class="c-title">기존 이용 중인 배달 서비스</div>
-                                <div class="n-ele">
-                                    <div class="eles">
-                                        <label class="input-checkbox normal">
-                                            <input type="checkbox">
-                                            <span>배달의 민족</span>
-                                        </label>
-                                    </div>
-                                    <div class="eles">
-                                        <label class="input-checkbox normal">
-                                            <input type="checkbox">
-                                            <span>요기요</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="n-ele">
-                                    <div class="eles flex-none text" style="width: 105px;">
-                                        <label class="input-checkbox normal">
-                                            <input type="checkbox" class="dischk" data-dischk="service">
-                                            <span>기타</span>
-                                        </label>
-                                    </div>
-                                    <div class="eles">
-                                        <div class="input-text">
-                                            <input type="text" data-disabled="service" disabled="disabled">
                                         </div>
                                     </div>
                                 </div>

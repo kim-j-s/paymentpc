@@ -158,12 +158,6 @@
 	.n-txt01 + .n-ele{
 		margin-top: 20px;
 	}
-	/*
-	.n-ele + .n-ele{
-		margin-top: 20px;
-	}
-	*/
-	
 	.n-ele > *{
 	    flex-grow: 1;
 	    flex-basis: 0;
@@ -194,9 +188,6 @@
 		flex: none;
 		width: 90px;
 	}
-	/*.n-ele.ty4 > * + *{
-		margin-left: 0;
-	}*/
 	.n-ele.ty4 > *:nth-child(1){
 		flex: 1 1 30%;
 	}
@@ -258,9 +249,6 @@
 		align-self: flex-end;
 	}
 
-
-	
-
 	.n-ele .wave{
 		flex: none;
 		padding: 0 9px;
@@ -278,6 +266,18 @@
 
 	.flex-none{
 		flex: none !important;
+	}
+
+	* + .del-cont{
+	    margin-top: 20px;
+	}
+	.del-cont{
+	    position: relative;
+	}
+	.del-cont > .underline-btn{
+	    position: absolute;
+	    top: 0;
+	    right: 0;
 	}
 
 	/* 상하 보더 */
@@ -851,10 +851,10 @@
 	}
 	.input-text .sub-txt{
 		flex: none;
-		/*padding: 0 0 0 12px;*/
 		font-weight: 400;
 		font-size: 15px;
 		line-height: 18px;
+		color: #888;
 		transition: 0.5s;
 		white-space: nowrap;
 	}
@@ -1304,8 +1304,8 @@
 	    margin-left: 12px;
 	}
 
-	.underline-link,
-	a.underline-link{
+	.underline-btn,
+	a.underline-btn{
 		font-weight: 400;
 		font-size: 15px;
 		line-height: 22px;
