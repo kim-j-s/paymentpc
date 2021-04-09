@@ -799,17 +799,9 @@
 		padding: 4px;
 		text-align: center;
 	}
-	/*
-	.input-checkbox.box > span:before{
-		content: none;
-	}
-	*/
 	.input-checkbox.box > span:after{
 		content: none;
 	}
-
-
-
 
 	* + .input-checkbox{
 		margin-top: 9px;
@@ -1763,6 +1755,25 @@
 		}
 
 	/* 첨부파일 */
+
+	/* 지역 목록 */
+
+		.area-wrap{
+		    margin: 9px -6px;
+		}
+		.area-list{
+		    font-size: 0;
+		}
+		.area-list > li{
+		    display: inline-block;
+		    width: 25%;
+		    padding: 9px 6px 0 6px;
+		}
+		.area-list > li:nth-child(-n + 4){
+		    padding-top: 0;
+		}
+		
+	/* // 지역 목록 */
 
 	/* 날짜선택 - display */
 	.date-dp{
