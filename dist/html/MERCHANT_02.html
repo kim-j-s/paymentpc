@@ -73,7 +73,7 @@
                                     </label>
                                 </h2>
 
-                                <div class="brd-ele ty1">
+                                <div class="brd-ele ty1" style="display: none;">
                                     <dl class="txt-cont">
                                         <dt>배달 및 픽업(포장)서비스</dt>
                                         <dd>지역화폐 내 배달 가능 가맹점으로 등록하여 배달과 픽업(포장) 서비스를 신청할 수 있습니다.</dd>
@@ -98,7 +98,7 @@
                                     </div>
                                 </div>
 
-                                <div class="brd-ele">
+                                <div class="brd-ele" style="display: none;">
                                     <h2 class="tit-h2">매장 기본 정보</h2>
                                     <div class="n-ele">
                                         <div class="eles">
@@ -213,7 +213,7 @@
                                     </div>
                                 </div>
 
-                                <div class="brd-ele">
+                                <div class="brd-ele" style="display: none;">
                                     <h2 class="tit-h2">매장 운영 정보 <small class="color02"><span class="star-mark"></span>최조 등록 이후 가맹점 포탈 &gt; 주문관리에서 설정 가능합니다.</small></h2>
 
                                     <div class="c-title"><span class="star-mark"></span>운영시간</div>
@@ -1549,7 +1549,7 @@
                                         <input type="text" placeholder="ex) 둘째, 넷째 일요일 휴무입니다.">
                                     </div>
 
-                                    <div class="del-cont">
+                                    <div class="del-cont" style="display: none;">
                                         <div class="c-title">배달팁</div>
                                         <div class="n-ele">
                                             <div class="eles flex-none text" style="width: 40px;"><span class="star-mark"></span>기본</div>
@@ -1597,10 +1597,113 @@
 
                                     <div class="del-cont">
                                         <div class="c-title">지역별 할증 배달팁 <small>아래에 설정된 지역으로 주문 시 할증금액(배달팁이 추가됩니다.)</small></div>
-                                        <div style="line-height: 60px; background: #ddd; text-align: center; font-size: 15px;">
-                                            디자인 필요 구간
+                                        <div class="n-ele normal">
+                                            <div class="input-radio normal">
+                                                <input type="radio" name="deliarea">
+                                                <span>행정동으로 추가</span>
+                                            </div>
+                                            <div class="input-radio normal">
+                                                <input type="radio" name="deliarea">
+                                                <span>법정동으로 추가</span>
+                                            </div>
                                         </div>
 
+                                        <div class="n-ele">
+                                            <div class="eles flex-none text">할증배달팁 기본</div>
+                                            <div class="eles">
+                                                <div class="input-text">
+                                                    <input type="text" class="t-right" style="width: 100px;">
+                                                    <span class="sub-txt">원</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="n-ele">
+                                            <div class="eles">
+                                                <div class="selectbox">
+                                                    <select name="" id="">
+                                                        <option value="">인천광역시</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="eles">
+                                                <div class="selectbox">
+                                                    <select name="" id="">
+                                                        <option value="">서구</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-text">
+                                            <input type="text" value="가정1동,가정2동" disabled="disabled">
+                                        </div>
+                                        <div class="area-wrap">
+                                            <ul class="area-list">
+                                                <li>
+                                                    <label class="input-checkbox box">
+                                                        <input type="checkbox" name="" id="">
+                                                        <span>가정1동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="input-checkbox box">
+                                                        <input type="checkbox" name="" id="">
+                                                        <span>가정2동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="input-checkbox box">
+                                                        <input type="checkbox" name="" id="">
+                                                        <span>가정3동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="input-checkbox box">
+                                                        <input type="checkbox" name="" id="">
+                                                        <span>가좌1동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="input-checkbox box">
+                                                        <input type="checkbox" name="" id="">
+                                                        <span>가좌2동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="input-checkbox box">
+                                                        <input type="checkbox" name="" id="">
+                                                        <span>가좌3동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="input-checkbox box">
+                                                        <input type="checkbox" name="" id="">
+                                                        <span>가좌4동</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+                                        <style>
+                                            .area-wrap {
+                                                margin: 0 -6px;
+                                            }
+
+                                            .area-list {
+                                                display: flex;
+                                                flex-flow: wrap;
+                                            }
+
+                                            .area-list>li {
+                                                flex-basis: 25%;
+                                                padding: 9px 6px 0 6px;
+                                            }
+
+                                            .area-list>li:nth-child(-n + 4) {
+                                                padding-top: 0;
+                                            }
+                                        </style>
 
 
                                         <button type="button" class="underline-btn">전체삭제</button>

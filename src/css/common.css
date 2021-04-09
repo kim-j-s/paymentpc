@@ -153,7 +153,6 @@
 	.tit-h2 + .n-ele{
 		margin-top: 12px;
 	}
-	.n-ele + .n-ele,
 	.btn-area + .n-ele,
 	.n-txt01 + .n-ele{
 		margin-top: 20px;
@@ -703,7 +702,6 @@
 		vertical-align: bottom;
 		margin-left: 12px;
 	}
-
 	.input-checkbox.single{
 		display: inline-block;
 		vertical-align: middle;
@@ -793,6 +791,26 @@
 	.input-checkbox.mini > span:after{
 		content: none;
 	}
+
+	.input-checkbox.box{
+
+	}
+	.input-checkbox.box > span{
+		padding: 4px;
+		text-align: center;
+	}
+	/*
+	.input-checkbox.box > span:before{
+		content: none;
+	}
+	*/
+	.input-checkbox.box > span:after{
+		content: none;
+	}
+
+
+
+
 	* + .input-checkbox{
 		margin-top: 9px;
 	}
