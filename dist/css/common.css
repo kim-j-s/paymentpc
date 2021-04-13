@@ -183,6 +183,14 @@
 	.n-txt01 + .n-ele{
 		margin-top: 20px;
 	}
+	.c-title + .n-ele{
+		margin-top: 12px;
+	}
+	.c-title + .n-ele .c-title{
+		padding-top: 0;
+	}
+
+
 	.n-ele > *{
 	    -webkit-box-flex: 1;
 	    -webkit-flex-grow: 1;
@@ -705,6 +713,7 @@
 		width: auto;
 		min-width: 0;
 	}
+	.input-checkbox.normal + .input-checkbox.normal,
 	.input-radio.normal + .input-radio.normal{
 		margin-left: 30px;
 	}
@@ -1955,6 +1964,76 @@
 		}
 		
 	/* // 지역 목록 */
+
+	/* 매장 사진 등록 */
+
+		.photo-list{
+		    margin: 0 -6px;
+		    margin-top: 9px;
+		    font-size: 0;
+		}
+		.photo-items{
+		    position: relative;
+		    display: inline-block;
+		    vertical-align: top;
+		    width: 25%;
+		    padding: 0 6px 12px 6px;
+		    border-radius: 5px;
+		    overflow: hidden;
+		    text-align: center;
+		}
+		.photo-items > em{
+		    display: block;
+		    margin-top: 3px;
+		    font-weight: 400;
+		    font-size: 12px;
+		    line-height: 18px;
+		    color: #888;
+		}
+		.photo-items > em + em{
+		    margin-top: 0;
+		}
+		.photo-items > .underline-btn{
+		    margin-top: 3px;
+		}
+
+		.photo-items > img{
+		    display: block;
+		    width: 100%;
+		    height: 119px;
+		    border-radius: 5px;
+		}
+		.img-upload{
+		    position: relative;
+		    display: block;
+		    height: 119px;
+		    border: 1px solid #acb8cf;
+		    border-radius: 5px;
+		}
+		.img-upload > input[type="file"]{
+		    position: absolute;
+		    top: -999px;
+		    left: 0;
+		    opacity: 0;
+		}
+		.img-upload > span{
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    width: 100%;
+		    text-align: center;
+		    padding-bottom: 34px;
+		    font-weight: 400;
+		    font-size: 15px;
+		    line-height: 22px;
+		    color: #5f6879;
+		    background: url(../img/ico-plus.png) no-repeat center bottom;
+		    -webkit-transform: translate(-50%, -50%);
+		        -ms-transform: translate(-50%, -50%);
+		            transform: translate(-50%, -50%);
+		}
+
+	/* // 매장 사진 등록 */
 
 	/* 날짜선택 - display */
 	.date-dp{

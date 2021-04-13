@@ -213,6 +213,43 @@ function autoEmail() {
     }
 }
 
+// 매장 사진 등록
+function imgUpload() {
+    $(document).on('change', '.img-upload > input', function(){
+        var $this = $(this);
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            var btn = '<button type="button" class="underline-btn photo-remove">삭제</button>';
+            var name = $this.get(0).files.item(0).name;
+            var name = '<em>' + name + '</em>';
+            var filesize = $this.get(0).files.item(0).size;
+            var fs = filesize.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            var fs = '<em>(' + fs + 'KB)</em>';
+            reader.onload = function (e) {
+                src = e.target.result;
+                img = '<img src="' + src + '" alt="">';
+                $this.closest('.photo-items').find('label').hide();
+                $(img).appendTo($this.closest('.photo-items'));
+                $(name).appendTo($this.closest('.photo-items'));
+                $(fs).appendTo($this.closest('.photo-items'));
+                $(btn).appendTo($this.closest('.photo-items'));
+            }
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+}
+
+// 매장 사진 삭제
+function photoRemove() {
+    $(document).on('click', '.photo-remove', function(){
+        $(this).closest('.photo-items').find('label').show();
+        $(this).closest('.photo-items').find('img').remove();
+        $(this).closest('.photo-items').find('em').remove();
+        $(this).remove();
+        //$(this).closest('.photo-items').find('label').show();
+    });
+}
+
 $(window).on('resize', function(){
     jQuery('.scrollbar-outer').scrollbar();
 });
@@ -270,6 +307,12 @@ $(function(){
 
     // auto Email
     autoEmail();
+
+    // 매장 사진 등록
+    imgUpload();
+
+    // 매장 사진 삭제
+    photoRemove();
 
     //script
 })
