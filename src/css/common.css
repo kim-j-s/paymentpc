@@ -444,11 +444,9 @@
 	* + .c-title{
 		padding-top: 20px;
 	}
-	/*
 	.eles > .c-title{
 		padding-top: 11px;
 	}
-	*/
 	.input-text + .c-title{
 		padding-top: 20px;
 	}
