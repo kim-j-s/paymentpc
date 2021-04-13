@@ -591,8 +591,9 @@
 	.selectbox > select{
 	    display: block;
 	    width: 100%;
+	    min-width: 116px;
 	    height: 50px;
-	    padding: 0 42px 0 18px;
+	    padding: 0 32px 0 18px;
 	    font-size: 15px;
 	    color: #000;    
 	    border: 1px solid #acb8cf;
@@ -677,9 +678,11 @@
 	    -webkit-box-sizing: border-box;
 	            box-sizing: border-box;
 	}
+	/*
 	.input-radio > input:checked + span{
 		color: #e15d5d;	
 	}
+	*/
 	.input-radio > input:checked + span::before {
 	    background: url(../img/radio-on.png) no-repeat 0 0;
 	}
@@ -781,9 +784,11 @@
 	    -webkit-box-sizing: border-box;
 	            box-sizing: border-box;
 	}
+	/*
 	.input-checkbox > input:checked + span{
 	    color: #e15d5d; 
 	}
+	*/
 	.input-checkbox > input:checked + span::after {
 	    background: url(../img/check-on.png) no-repeat 0 0;
 	}
@@ -838,6 +843,7 @@
 	.n-ele + .input-checkbox.normal{
 		margin-top: 9px;
 	}
+	.c-title + .input-radio.normal,
 	.c-title + .input-checkbox.normal{
 		margin-top: 12px;
 	}
@@ -961,7 +967,7 @@
 		margin-left: 12px;
 	}
 	.input-text > input.inp-date{
-		padding-right: 50px;
+		padding-right: 37px;
 		background: url(../img/ico-calender.png) no-repeat right 18px center;
 	}
 	.input-text > input.inp-date:disabled{

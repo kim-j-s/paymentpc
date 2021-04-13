@@ -57,6 +57,20 @@ function disChk(){
     });
 }
 
+// 요일별 활성화 체크
+function crossChk() {
+    $('[data-cross]').on('change', function(){
+        var data = $(this).data('cross');
+        var $crossEle = $('[data-cross="'+ data +'"]');
+        var lng = $('[data-cross="'+ data +'"]').length;
+        var cnt = $('[data-cross="'+ data +'"]:checked').length;
+        if (cnt == lng) {
+            var disData = $crossEle.data('dischk');
+            $('[data-disabled="'+ disData +'"]').prop('disabled',true);
+        }
+    });
+}
+
 function dpchk() {
     var $dpon = $('.dp-onoff');
     $dpon.on('change', function() {
@@ -313,6 +327,9 @@ $(function(){
 
     // 매장 사진 삭제
     photoRemove();
+
+    // 요일별 활성화 체크
+    crossChk();
 
     //script
 })
