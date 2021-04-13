@@ -68,17 +68,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="n-ele">
-                                        <div class="eles flex-none text color01 inp-width02">
-                                            <span class="star-mark"></span>최소 결제금액
-                                        </div>
-                                        <div class="eles flex-none">
-                                            <div class="input-text">
-                                                <input type="text" class="t-right" style="width: 100px">
-                                                <span class="sub-txt color03">원 이상 결제 시 스탬프 발행</span>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                     <div class="c-title"><span class="star-mark"></span>스탬프 유효기간</div>
                                     <div class="n-ele">
@@ -110,7 +99,28 @@
                                         </div>
                                         <div class="eles">
                                             <div class="input-text">
-                                                <input type="text" class="inp-width01 t-right" data-disabled="range02" disabled="disabled">
+                                                <input type="text" class="inp-width01 inp-date" data-disabled="range02" disabled="disabled">
+                                                <span class="sub-txt color03">일 까지</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="c-title"><span class="star-mark"></span>지급 기준 - 기능추가해야함</div>
+                                    <div class="n-ele">
+                                        <div class="eles flex-none text inp-width01">
+                                            <div class="selectbox">
+                                                <select name="" id="" class="select-dp">
+                                                    <option value="dp1">결제금액</option>
+                                                    <option value="dp2">결제건당</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="eles flex-none text color03">
+                                            발급일로부터
+                                        </div>
+                                        <div class="eles">
+                                            <div class="input-text">
+                                                <input type="text" class="inp-width01 inp-date" data-disabled="range02" disabled="disabled">
                                                 <span class="sub-txt color03">일 까지</span>
                                             </div>
                                         </div>
@@ -118,7 +128,7 @@
                                 </div>
 
                                 <div class="brd-ele">
-                                    <h2 class="tit-h2">쿠폰 정책</h2>
+                                    <h2 class="tit-h2">쿠폰 설정</h2>
                                     <div class="c-title"><span class="star-mark"></span>쿠폰명</div>
                                     <div class="input-text">
                                         <input type="text" placeholder="최대 40글자까지 입력 가능합니다.">

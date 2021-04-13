@@ -480,6 +480,7 @@
 	    font-size: 12px;
 	    line-height: 1;
 	}
+	.eles > .star-mark:before,
 	.c-title > .star-mark:before{
 		font-size: 15px;
 	}
