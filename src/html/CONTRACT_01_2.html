@@ -58,14 +58,11 @@
                                 <div class="n-ele">
                                     <div class="eles">
                                         <div class="c-title"><span class="star-mark"></span>사업자등록번호</div>
-                                        <div class="n-ele ty2">
+                                        <div class="n-ele">
                                             <div class="eles">
                                                 <div class="input-text">
                                                     <input type="text" placeholder="사업자등록번호">
                                                 </div>
-                                            </div>
-                                            <div class="eles">
-                                                <button type="button" class="btn" onclick="popOpen(this);" data-openpop="pop2">조회</button>
                                             </div>
                                         </div>                                        
                                     </div>
@@ -115,18 +112,14 @@
                                 <div class="n-ele">
                                     <div class="eles">
                                         <div class="c-title"><span class="star-mark"></span>업종</div>
-                                        <div class="selectbox">
-                                            <select name="" id="">
-                                                <option value="">업종을 선택해주세요.</option>
-                                            </select>
+                                        <div class="input-text">
+                                            <input type="text" placeholder="업종을 입력해주세요.">
                                         </div>
                                     </div>
                                     <div class="eles">
                                         <div class="c-title"><span class="star-mark"></span>업태</div>
-                                        <div class="selectbox">
-                                            <select name="" id="">
-                                                <option value="">업태를 선택해주세요.</option>
-                                            </select>
+                                        <div class="input-text">
+                                            <input type="text" placeholder="업태를 입력해주세요.">
                                         </div>
                                     </div>
                                 </div>
@@ -192,12 +185,8 @@
                                         </div>
                                         <div class="eles">
                                             <div class="c-title">대표자명(영문)</div>
-                                            <div class="selectbox">
-                                                <select name="" id="">
-                                                    <option value="">성별을 선택해주세요.</option>
-                                                    <option value="">남자</option>
-                                                    <option value="">여자</option>
-                                                </select>
+                                            <div class="input-text">
+                                                <input type="text" placeholder="외국인 일 경우 필수로 입력">
                                             </div>
                                         </div>
                                     </div>
@@ -206,7 +195,64 @@
                                         <div class="eles">
                                             <div class="c-title"><span class="star-mark"></span>생년월일</div>
                                             <div class="input-text">
-                                                <input type="text" placeholder="생년월일">
+                                                <input type="text" value="2000.01.01" disabled="disabled">
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="c-title">성별</div>
+                                            <div class="input-text">
+                                                <input type="text" placeholder="외국인 일 경우 필수로 입력">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="n-ele">
+                                        <div class="eles">
+                                            <div class="c-title"><span class="star-mark"></span>전화번호</div>
+                                            <div class="input-text">
+                                                <input type="text" placeholder="전화번호">
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="c-title"><span class="star-mark"></span>휴대폰번호</div>
+                                            <div class="input-text">
+                                                <input type="text" placeholder="휴대폰번호">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="c-title"><span class="star-mark"></span>거주지 주소</div>
+                                    @@include('addr.html')
+                                </div><div class="brd-ele ty1 pt0">
+                                    <h2 class="tit-h2">대표자 정보 <small><span class="star-mark"></span>표시는 필수 입력 사항입니다.</small></h2>
+
+                                    <div class="c-title"><span class="star-mark"></span>국적</div>
+                                    <div class="selectbox">
+                                        <select name="" id="">
+                                            <option value="">KR : 대한민국</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="n-ele">
+                                        <div class="eles">
+                                            <div class="c-title"><span class="star-mark"></span>대표자명</div>
+                                            <div class="input-text">
+                                                <input type="text" placeholder="대표자명">
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="c-title">대표자명(영문)</div>
+                                            <div class="input-text">
+                                                <input type="text" placeholder="외국인 일 경우 필수로 입력">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="n-ele">
+                                        <div class="eles">
+                                            <div class="c-title"><span class="star-mark"></span>생년월일</div>
+                                            <div class="input-text">
+                                                <input type="text" value="2000.01.01" disabled="disabled">
                                             </div>
                                         </div>
                                         <div class="eles">
