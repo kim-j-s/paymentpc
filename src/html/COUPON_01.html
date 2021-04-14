@@ -42,8 +42,6 @@
                                     </label>
                                 </h2>
 
-                                <div style="display: none;">
-
                                 <div class="brd-ele">
                                     <p class="desc color01">코나아이(주)는 지역화폐 운영대행사이며, 아래 정보를 수집받아 쿠폰을 발행합니다.</p>
                                     <p class="desc color01">발행된 쿠폰은 가맹점 번호 기준으로 사용 가능한 쿠폰입니다.</p>
@@ -84,8 +82,6 @@
                                 <div class="c-title">매장주소</div>
                                 @@include('addr.html')
 
-                                </div>
-
                                 <div class="brd-ele">
                                     <h2 class="tit-h2">쿠폰정보</h2>
                                     <div class="c-title">쿠폰명</div>
@@ -124,7 +120,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="n-txt01">충전 금액만큼 카드 잔액으로 충전하여 사용할 수 있습니다.</p>
+                                    <p class="n-txt01 red">충전 금액만큼 카드 잔액으로 충전하여 사용할 수 있습니다.</p>
 
                                     <label class="input-radio normal">
                                         <input type="radio" name="cpncase" class="dischk-radio" data-dischk="cpncase02">
@@ -141,7 +137,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="n-txt01">직원에게 쿠폰을 보여주고 확인버튼을 누른 후 가맹점에서 금액만큼 물품을 제공하는 쿠폰입니다. </p>
+                                    <p class="n-txt01 red">직원에게 쿠폰을 보여주고 확인버튼을 누른 후 가맹점에서 금액만큼 물품을 제공하는 쿠폰입니다. </p>
 
                                     <label class="input-radio normal">
                                         <input type="radio" name="cpncase" class="dischk-radio" data-dischk="cpncase03">
@@ -158,7 +154,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="n-txt01">충전 금액만큼 카드 잔액으로 충전하여 사용할 수 있습니다.</p>
+                                    <p class="n-txt01 red">충전 금액만큼 카드 잔액으로 충전하여 사용할 수 있습니다.</p>
 
                                     <div class="c-title"><span class="star-mark"></span>발급 설정</div>
                                     <div class="n-ele">
@@ -303,10 +299,158 @@
                                     </label>
 
                                     <div class="c-title">사용 가능 시간 설정</div>
-                                    <div style="font-size: 15px; line-height: 50px; background: #ddd; text-align: center;">
-                                        사용 가능 시간 설정
+                                    <div class="n-ele normal">
+                                        <label class="input-radio normal">
+                                            <input type="radio" name="timeset" checked="checked">
+                                            <span>미설정</span>
+                                        </label>
+                                        <label class="input-radio normal">
+                                            <input type="radio" name="timeset">
+                                            <span>시간 할인</span>
+                                        </label>
+                                    </div>
+                                    <p class="n-txt01 red">시간 할인을 설정하시면, 선택한 요일 및 시간에만 쿠폰 사용이 가능합니다.</p>
+
+                                    <div class="n-ele normal">
+                                        <label class="input-radio normal">
+                                            <input type="radio" name="timeset02">
+                                            <span>미설정</span>
+                                        </label>
+                                        <label class="input-radio normal">
+                                            <input type="radio" name="timeset02" checked="checked">
+                                            <span>시간 할인</span>
+                                        </label>
                                     </div>
 
+                                    <div class="n-ele">
+                                        <div class="eles flex-none text color03">
+                                            적용요일
+                                        </div>
+                                        <div class="eles">
+                                            <label class="input-checkbox mini">
+                                                <input type="checkbox">
+                                                <span class="sub-txt">월</span>
+                                            </label>
+                                            <label class="input-checkbox mini">
+                                                <input type="checkbox">
+                                                <span class="sub-txt">화</span>
+                                            </label>
+                                            <label class="input-checkbox mini">
+                                                <input type="checkbox">
+                                                <span class="sub-txt">수</span>
+                                            </label>
+                                            <label class="input-checkbox mini">
+                                                <input type="checkbox">
+                                                <span class="sub-txt">목</span>
+                                            </label>
+                                            <label class="input-checkbox mini">
+                                                <input type="checkbox">
+                                                <span class="sub-txt">금</span>
+                                            </label>
+                                            <label class="input-checkbox mini">
+                                                <input type="checkbox">
+                                                <span class="sub-txt">토</span>
+                                            </label>
+                                            <label class="input-checkbox mini">
+                                                <input type="checkbox">
+                                                <span class="sub-txt">일</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="n-ele timeset">
+                                        <div class="eles">
+                                            <div class="selectbox">
+                                                <select name="" id="">
+                                                    <option value="">01</option>
+                                                    <option value="">02</option>
+                                                    <option value="">03</option>
+                                                    <option value="">04</option>
+                                                    <option value="">05</option>
+                                                    <option value="">06</option>
+                                                    <option value="">07</option>
+                                                    <option value="">08</option>
+                                                    <option value="" selected="selected">09</option>
+                                                    <option value="">10</option>
+                                                    <option value="">11</option>
+                                                    <option value="">12</option>
+                                                    <option value="">13</option>
+                                                    <option value="">14</option>
+                                                    <option value="">15</option>
+                                                    <option value="">16</option>
+                                                    <option value="">17</option>
+                                                    <option value="">18</option>
+                                                    <option value="">19</option>
+                                                    <option value="">20</option>
+                                                    <option value="">21</option>
+                                                    <option value="">22</option>
+                                                    <option value="">23</option>
+                                                    <option value="">24</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="selectbox">
+                                                <select name="" id="">
+                                                    <option value="">00</option>
+                                                    <option value="">10</option>
+                                                    <option value="">20</option>
+                                                    <option value="">30</option>
+                                                    <option value="">40</option>
+                                                    <option value="">50</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="eles wave">~</div>
+                                        <div class="eles">
+                                            <div class="selectbox">
+                                                <select name="" id="">
+                                                    <option value="">01</option>
+                                                    <option value="">02</option>
+                                                    <option value="">03</option>
+                                                    <option value="">04</option>
+                                                    <option value="">05</option>
+                                                    <option value="">06</option>
+                                                    <option value="">07</option>
+                                                    <option value="">08</option>
+                                                    <option value="">09</option>
+                                                    <option value="">10</option>
+                                                    <option value="">11</option>
+                                                    <option value="">12</option>
+                                                    <option value="">13</option>
+                                                    <option value="">14</option>
+                                                    <option value="">15</option>
+                                                    <option value="">16</option>
+                                                    <option value="">17</option>
+                                                    <option value="">18</option>
+                                                    <option value="">19</option>
+                                                    <option value="">20</option>
+                                                    <option value="" selected="selected">21</option>
+                                                    <option value="">22</option>
+                                                    <option value="">23</option>
+                                                    <option value="">24</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="selectbox">
+                                                <select name="" id="">
+                                                    <option value="">00</option>
+                                                    <option value="">10</option>
+                                                    <option value="">20</option>
+                                                    <option value="">30</option>
+                                                    <option value="">40</option>
+                                                    <option value="">50</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="t-right mt9">
+                                        <button type="button" class="underline-btn">삭제</button>
+                                    </div>
+
+                                    <button type="button" class="btn mt12">시간 할인 추가</button>
 
                                     <div class="c-title">쿠폰 소개</div>
                                     <div class="textarea">

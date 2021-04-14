@@ -542,6 +542,9 @@
 	.tit-h2 + .c-title{
 		padding-top: 12px;
 	}
+	.tit-h2 + .n-ele .c-title{
+		padding-top: 0;
+	}
 	.c-title > small{
 		padding-left: 12px;
 		font-size: 12px;
@@ -602,6 +605,9 @@
 		letter-spacing: -0.5px;
 		-webkit-transition: .3s;
 		transition: .3s;
+	}
+	.timeset .selectbox > select{
+		min-width: 0;
 	}
 	.selectbox > select:focus{
 		border: 1px solid #000;
