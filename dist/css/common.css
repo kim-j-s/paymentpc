@@ -190,7 +190,6 @@
 		padding-top: 0;
 	}
 
-
 	.n-ele > *{
 	    -webkit-box-flex: 1;
 	    -webkit-flex-grow: 1;
@@ -273,7 +272,6 @@
 		vertical-align: top;
 		width: auto;
 	}
-
 
 	.n-ele.addr{
 		display: block;
@@ -390,6 +388,12 @@
 		.brd-ele.ty2{
 			padding-bottom: 0;
 			border-bottom: 0;
+		}
+		.brd-ele.ty3{
+			margin-top: 9px;
+			padding-bottom: 0;
+			border-bottom: 0;
+			border-top: 1px solid #acb8cf;
 		}
 		.tit-h2.brd + .brd-ele{
 			margin-top: 0;
@@ -1257,8 +1261,6 @@
 		margin-top: 3px;
 	}
 
-	
-
 	.t-cell{
 	    display: table;
 	    width: 100%;
@@ -1380,13 +1382,12 @@
 	}
 	.tbl-div table {}
 	.tbl-div table thead th {
-	    height: 20px;
-	    padding: 6px 0;
-	    border: 1px solid #acb8cf;
+	    padding: 9px 0;
+	    border-bottom: 1px solid #eee;
 	    font-weight: 400;
-	    font-size: 15px;
+	    font-size: 12px;
+	    line-height: 18px;
 	    color: #000;
-	    word-break: break-all;
 	}
 	.tbl-div table tr th:first-child,
 	.tbl-div table tr td:first-child {
@@ -1398,14 +1399,17 @@
 	    border-right: none;
 	}
 	.tbl-div table td {
-	    padding: 8px 20px;
-	    border: 1px solid #acb8cf;
-	    border-bottom: none;
-	    word-break: break-all;
+	    padding: 10px 5px;
+	    font-weight: 400;
+	    font-size: 12px;
+	    color: #888;
 	    text-align: center;
 	}
-	.tbl-div table thead tr:first-child th {
-	    border-top: none;
+	.tbl-div table tr:first-child td {
+		padding-top: 20px;
+	}
+	.tbl-div table tr:last-child td {
+		padding-bottom: 20px;
 	}
 
 	.top-title + .tbl-div02{
@@ -1429,7 +1433,7 @@
 	    font-weight: 400;
 	    font-size: 15px;
 	    color: #888;
-	    line-height: 19px;
+	    line-height: 22px;
 	    letter-spacing: -0.25px;
 	}
 

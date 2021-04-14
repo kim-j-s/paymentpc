@@ -20,7 +20,7 @@
                 </nav>
                 <div class="contents">
                     <div class="scrollbar-outer">
-                        <section class="content">
+                        <section class="content" style="display: none;">
                             <div class="inner">
                                 <div class="top-title">
                                     <h1 class="tit-h1">계약 정보</h1>
@@ -38,12 +38,6 @@
                                             <tr>
                                                 <th scope="row">계약 최초 신청일</th>
                                                 <td>2021.03.11 14:58</td>
-                                                <th scope="row">계약서 접수번호</th>
-                                                <td>1111111111111</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">계약서 승인일</th>
-                                                <td>승인대기</td>
                                                 <th scope="row">계약 최종 업데이트일</th>
                                                 <td>2021.03.12 18:58</td>
                                             </tr>
@@ -315,93 +309,32 @@
                                         </div>
                                     </div>
 
-                                    <div class="brd-ele">
-                                        <h2 class="tit-h2">(주) 코나아이</h2>
-                                        <div class="n-ele">
-                                            <div class="eles">
-                                                <div class="c-title"><span class="star-mark"></span>상호명</div>
-                                                <div class="input-text">
-                                                    <input type="text" value="(주)코나아이" disabled="disabled">
-                                                </div>
-                                            </div>
-                                            <div class="eles">
-                                                <div class="c-title"><span class="star-mark"></span>사업자 번호</div>
-                                                <div class="input-text">
-                                                    <input type="text" value="109-81-53365" disabled="disabled">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="c-title"><span class="star-mark"></span>사업장 주소</div>
-                                        <div class="input-text">
-                                            <input type="text" value="서울시 영등포구 여의도동 은행로 3(익스콘벤처타워) 8층" disabled="disabled">
-                                        </div>
-                                        <div class="input-text">
-                                            <input type="text" value="서울시 영등포구 여의도동 은행로 3(익스콘벤처타워) 8층" disabled="disabled">
-                                        </div>
-                                        <div class="c-title"><span class="star-mark"></span>대표자명</div>
-                                        <div class="n-ele">
-                                            <div class="eles">
-                                                <div class="input-text">
-                                                    <input type="text" value="김코나" disabled="disabled">
-                                                </div>
-                                            </div>
-                                            <div class="eles t-right">
-                                                <div class="stamp">
-                                                    <img src="../img/temp/@stamp.png" alt="도장">
-                                                    <span class="txt">서명/인</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="brd-ele">
-                                        <h2 class="tit-h2">가맹점</h2>
-                                        <div class="n-ele">
-                                            <div class="eles">
-                                                <div class="c-title"><span class="star-mark"></span>상호명</div>
-                                                <div class="input-text">
-                                                    <input type="text" value="스타벅스" disabled="disabled">
-                                                </div>
-                                            </div>
-                                            <div class="eles">
-                                                <div class="c-title"><span class="star-mark"></span>사업자 번호</div>
-                                                <div class="input-text">
-                                                    <input type="text" value="109-81-53365" disabled="disabled">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="c-title"><span class="star-mark"></span>사업장 주소</div>
-                                        <div class="input-text">
-                                            <input type="text" value="서울시 영등포구 여의도동 은행로 3(익스콘벤처타워) 8층" disabled="disabled">
-                                        </div>
-                                        <div class="input-text">
-                                            <input type="text" value="서울시 영등포구 여의도동 은행로 3(익스콘벤처타워) 8층" disabled="disabled">
-                                        </div>
-                                        <div class="c-title"><span class="star-mark"></span>대표자명</div>
-                                        <div class="n-ele">
-                                            <div class="eles">
-                                                <div class="input-text">
-                                                    <input type="text" value="김가맹" disabled="disabled">
-                                                </div>
-                                            </div>
-                                            <div class="eles t-right">
-                                                <div class="stamp">
-                                                    <img src="../img/temp/@stamp.png" alt="도장">
-                                                    <span class="txt">서명/인</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="brd-ele">
+                                    <div class="brd-ele ty2">
                                         <div class="n-ele">
                                             <div class="eles text">
-                                                <div class="c-title pt0">계약 신청일</div>
+                                                <div class="c-title pt0">계약 최초 신청일</div>
                                             </div>
                                             <div class="eles text t-right">
                                                 <span class="sub-txt">2021년 3월 4일 12:34</span>
                                             </div>
                                         </div>
+
+                                        <div class="c-title">계약 기간</div>
+                                        <div class="n-ele">
+                                            <div class="eles">
+                                                <div class="input-text">
+                                                    <span class="sub-txt">계약 시작일</span>
+                                                    <input type="text" value="2021년 3월 4일" disabled="disabled">
+                                                </div>
+                                            </div>
+                                            <div class="eles">
+                                                <div class="input-text">
+                                                    <span class="sub-txt">계약 종료일</span>
+                                                    <input type="text" value="2021년 3월 4일" disabled="disabled">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="n-txt01 red">계약해지 의사를  별도 통지(유선, 서면등) 하지 않으면 계약기간은 자동으로 1년씩 연장 됩니다.</p>
                                     </div>
                                 </div>
                                 <!-- // 공동 대표자 가맹점 가입 -->
@@ -411,42 +344,106 @@
                         <section class="content">
                             <div class="inner">
                                 <h2 class="tit-h2">전자 계약 서비스 신청 내역</h2>
-                                <ul class="list03">
-                                    <li>
-                                        <div class="c-title">코나아이 가맹점 가입</div>
-                                        <div class="flex-none text">승인대기</div>
-                                        <div class="flex-none">
-                                            <button type="button" class="btn small">계약 재신청</button>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="c-title">배달 서비스 가입</div>
-                                        <div class="flex-none text">승인대기</div>
-                                    </li>
-                                    <li>
-                                        <div class="c-title">스탬프 서비스 가입</div>
-                                        <div class="flex-none text">승인대기</div>
-                                    </li>
-                                    <li>
-                                        <div class="c-title">혜택 가맹점 가입 신청</div>
-                                        <div class="flex-none text">승인완료</div>
-                                        <div class="flex-none">
-                                            <button type="button" class="btn small">계약서 확인</button>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="c-title">가맹점 쿠폰 서비스 가입 신청</div>
-                                        <div class="flex-none text">미신청</div>
-                                        <div class="flex-none">
-                                            <button type="button" class="btn small">계약 신청</button>
-                                        </div>
-                                    </li>
-                                </ul>
 
-                                <h2 class="tit-h2">모집인 정보</h2>
-                                <div class="c-title">모집인 코드</div>
-                                <div class="input-text">
-                                    <input type="text" value="YENFP23U84" disabled="disabled">
+                                <div class="brd-ele ty3">
+                                    <p class="desc color01">
+                                        신청하신 계약서는 승인상태에따라 계약서 확인 및 거절 시 재심사 요청을 하실 수 있습니다.<br>
+                                        부가 서비스 추가 계약 신청 시 계약 신청/변경을 통해 계약을 변경 요청하실 수 있습니다.
+                                    </p>
+                                    <p class="desc mt9">
+                                       신청한 계약서 조회 또는 계약서 다운로드는 계약서 상세에서 확인하실 수 있습니다.  
+                                    </p>
+                                </div>
+
+                                <h2 class="tit-h2">계약 신청 내역</h2>
+                                <div class="n-ele">
+                                    <div class="eles">
+                                        <div class="selectbox">
+                                            <select name="" id="">
+                                                <option value="">계약서 전체</option>
+                                                <option value="">코나아이 가맹점 신청</option>
+                                                <option value="">배달 및 픽업(포장)서비스 입점 신청서</option>
+                                                <option value="">스탬프 서비스 가입 신청</option>
+                                                <option value="">혜택 가맹점 가입 신청</option>
+                                                <option value="">가맹점 쿠폰 신청</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="eles">
+                                        <div class="selectbox">
+                                            <select name="" id="">
+                                                <option value="">전체</option>
+                                                <option value="">승인</option>
+                                                <option value="">승인대기</option>
+                                                <option value="">승인반려</option>
+                                                <option value="">계약해지</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="background: #ddd; font-size: 15px; line-height: 50px; text-align: center; margin-top: 20px;">
+                                    스크롤 테이블 위치
+                                </div>
+
+                                <p class="tit-h2 t-center">
+                                    동일한 사업자/대표자 정보로<br>
+                                    계약 및 부가서비스 신청을 추가하실 수 있습니다.<br>
+                                    계약 및 서비스를 추가로 신청하시겠습니까?
+                                </p>
+
+                                <div class="brd-ele">
+                                    <dl class="txt-cont">
+                                        <dt>코나아이 가맹점 서비스 신청</dt>
+                                        <dd>
+                                            코나아이와 직접 가맹 계약을 체결하여 지역화폐 내 다양한 부가서비스를 신청하고 이용하실 수 있습니다.<br>
+                                            계약 체결 시 코나아이에서 결제 수수료가 정산됩니다.
+                                        </dd>
+                                    </dl>
+                                    <label class="input-checkbox">
+                                        <input type="checkbox" checked="checked">
+                                        <span>코나아이 가맹점 서비스를 신청하시겠습니까?</span>
+                                    </label>
+                                </div>
+                                <div class="brd-ele">
+                                    <dl class="txt-cont">
+                                        <dt>배달 및 픽업(포장)서비스 입점 신청서</dt>
+                                        <dd>지역화폐 내 배달 가능 가맹점으로 등록하여 배달과 픽업(포장) 서비스를 신청할 수 있습니다.</dd>
+                                    </dl>
+                                    <label class="input-checkbox">
+                                        <input type="checkbox" checked="checked">
+                                        <span>배달 및 픽업(포장) 서비스를 신청하시겠습니까?</span>
+                                    </label>
+                                </div>
+                                <div class="brd-ele">
+                                    <dl class="txt-cont">
+                                        <dt>스탬프 서비스 신청 여부 확인</dt>
+                                        <dd>온오프라인에서 고객들의 결제 횟수에 따라 스탬프를 적립해주고  쿠폰을 발행할 수 있는 서비스입니다.</dd>
+                                    </dl>
+                                    <label class="input-checkbox">
+                                        <input type="checkbox" checked="checked">
+                                        <span>스탬프 서비스를 신청하시겠습니까?</span>
+                                    </label>
+                                </div>
+                                <div class="brd-ele">
+                                    <dl class="txt-cont">
+                                        <dt>혜택 가맹점 가입 신청 여부 확인</dt>
+                                        <dd>코나카드&amp;지역화폐를 사용 시에 해당 가맹점에서 할인 혜택을 제공할 수 있는 서비스 입니다.</dd>
+                                    </dl>
+                                    <label class="input-checkbox">
+                                        <input type="checkbox" checked="checked">
+                                        <span>혜택 가맹점을 신청하시겠습니까?</span>
+                                    </label>
+                                </div>
+                                <div class="brd-ele">
+                                    <dl class="txt-cont">
+                                        <dt>가맹점 쿠폰 신청 여부 확인</dt>
+                                        <dd>코나카드&amp;지역화폐 사용 시에 해당 가맹점에서 쿠폰을 발행할 수 있는 서비스 입니다.</dd>
+                                    </dl>
+                                    <label class="input-checkbox">
+                                        <input type="checkbox" checked="checked">
+                                        <span>가맹점 쿠폰 신청을 신청하시겠습니까?</span>
+                                    </label>
                                 </div>
                             </div>
                         </section>
@@ -459,8 +456,7 @@
         <div class="f-btn-area">
             <div class="inner">
                 <div class="btn-area">
-                    <button type="button" class="btn ty1">이전</button>
-                    <button type="button" class="btn ty2">다음</button>
+                    <button type="button" class="btn ty2">계약서 추가 신청</button>
                 </div>
             </div>
         </div>
