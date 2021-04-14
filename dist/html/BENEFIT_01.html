@@ -130,19 +130,19 @@
                                 <div class="n-ele">
                                     <div class="eles">
                                         <div class="selectbox">
-                                            <select name="" id="" class="dp-select">
-                                                <option value="1">0%</option>
-                                                <option value="2">1%</option>
-                                                <option value="3">3%</option>
-                                                <option value="4">5%</option>
-                                                <option value="5">7%</option>
-                                                <option value="6">10%</option>
-                                                <option value="display">직접입력</option>
+                                            <select name="" id="" class="dp-select" data-sdpg="dp01">
+                                                <option value="">0%</option>
+                                                <option value="">1%</option>
+                                                <option value="">3%</option>
+                                                <option value="">5%</option>
+                                                <option value="">7%</option>
+                                                <option value="">10%</option>
+                                                <option value="" data-sdp="dp0101">직접입력</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="eles">
-                                        <div class="input-text dp-trg" style="display: none;">
+                                        <div class="input-text" data-sdpge="dp01" data-sdpe="dp0101" style="display: none;">
                                             <input type="text" class="t-right">
                                             <span class="sub-txt">%</span>
                                         </div>
@@ -189,46 +189,409 @@
                                     <span>할인 비용 내용을 이해하고, 이에 동의합니다.</span>
                                 </label>
 
-                                <div class="brd-box scroll-in scrollbar-outer">
-                                    <div class="inner">
-                                        <dl class="txt-cont">
-                                            <dt>개인정보 수집 및 이용동의</dt>
-                                            <dd>
-                                                수집 및 이용목적 : 자동이체 출금 서비스 제공<br>
-                                                수집항목 : 예금주 이름,생년월일,은행명,계좌번호,예금주연락처,신청인(대표자),이름,예금주와 관계,이메일주소<br>
-                                                보유 및 이용기간 : 서비스 이용 계약 해지시 까지
-                                            </dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                                <label class="input-checkbox">
-                                    <input type="checkbox">
-                                    <span>서비스 이용 약관 내용을 이해하고, 이에 동의합니다.</span>
-                                </label>
+                                <div class="terms-cont">
+                                    <h2 class="tit-h2 brd">코나카드 가맹점 가입특약서</h2>
+                                    <p class="desc">
+                                        [사업자명](이하 “갑”이라 한다)과 비씨카드주식회사(이하 “을”이라 한다)<br>
+                                        및 코나아이주식회사(이하 “병”이라 한다)는 다음과 같이 특약(이하 “본 특약”이라 한다)을 체결합니다.
+                                    </p>
+                                    <div class="terms">
+                                        <div class="inner scrollbar-outer">
+                                            <dl class="txt-cont">
+                                                <dt>제1조 (목적)</dt>
+                                                <dd>
+                                                    본 특약은 “갑”과 “을”사이에 체결한 신용카드가맹점 계약을 바탕으로 “병”의 회원들에게 혜택을 제공하기 위하여 “갑”과 “을”, “병” 사이에 필요한 제반사항을 규정하고 상호 공동 이익 증진을 도모함에 그 목적이 있다.
+                                                </dd>
+                                            </dl>
 
-                                <div class="brd-box scroll-in scrollbar-outer">
-                                    <div class="inner">
-                                        <dl class="txt-cont">
-                                            <dt>개인정보 제 3자 제공 동의</dt>
-                                            <dd>
-                                                본인은 신용 정보의 이용 및 보호에 관한 법률 제 3조 제 1항,정보통신망 이용 촉진 및 정보보호 등에 관한 법률 제24조의 2 개인정보보호법 제 17조 등의 관련 법규에 따라 아래와 같은 내용으로 본인의 개인 정보를 제공하는 것에 동의합니다.<br><br>
-                                                제 1조 (개인 정보를 제공받는 자)<br>
-                                                배달 서비스 운영을 위한 "코나아이"협력업체<br><br>
-                                                제 2조 (개인 정보를 제공받은 자의 이용목적)<br>
-                                                배달 서비스 시스템 이용<br><br>
-                                                제 3조 (제공 대상 개인정보)<br>
-                                                이름,상점명,상점전화번호,상점주소,사업자등록번호,지역화폐 직가맹 ID<br><br>
-                                                제 4조 (보유 및 이용기간)<br>
-                                                개인(신용)정보 제공 동의 철회 시 또는 제공된 목적이 달성된 시점까지 신청인은 동의를 거부하실 권리가 있으며, 동의 후에도 언제든지 동의 철회가 가능합니다.<br>
-                                                다만, 동의 거부 및 동의 철회 시, 제 2조에 명시된 서비스 이용이 제한될 수 있습니다.
-                                            </dd>
-                                        </dl>
+                                            <dl class="txt-cont">
+                                                <dt>제2조 (용어의 정의)</dt>
+                                                <dd>
+                                                    <ul class="list04">
+                                                        <li>
+                                                            <span class="front">①</span>
+                                                            <div class="cont">
+                                                                “회원”이란, “병”의 서비스약관에 동의한 후 “병”이 발급하는 “코나카드”를 소지하여 “병”으로부터 정상적으로 이를 사용할 수 있는 권한을 부여 받은 자를 말한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">②</span>
+                                                            <div class="cont">
+                                                                “가맹점”이란, “갑”이 직접 운영 및 관리하는 직영매장 또는 “갑”과 프랜차이즈가맹계약 또는 대리점계약을 체결하고 “갑”의 재화 또는 용역을 취급하는 프랜차이즈가맹점 또는 대리점으로 등록된 매장 등 “갑”의 브랜드∙상호를 이용하여 영업하는 모든 사업장∙매장∙점포로서 “병”과의 제휴관계에 따라 “코나카드”를 이용한 결제가 가능하며 “을”의 신용카드가맹점에 해당하는 곳을 말한다. 본 특약 체결 후 신규 개업하는 가맹점 역시 본 특약의 “가맹점”에 자동적으로 포함되며 본 특약의 적용을 받는다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">③</span>
+                                                            <div class="cont">
+                                                                “프로모션”이란, 회원이 가맹점에서 구매 또는 제공받는 재화 또는 용역의 결제대금 중 ‘일정비율에 해당하는 금액만큼을 공제받고 그 나머지 금액만큼을 청구받는 것’ 또는 ‘일정 비율에 해당하는 금액만큼을 결제수단으로 적립해주는 것’을 말한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">④</span>
+                                                            <div class="cont">
+                                                                ”코나카드”란 이를 이용하여 “병”과 제휴한 가맹점에서 재화와 용역을 제공받은 대가를 결제할 수 있도록 “병”이 발급하는 선불전자지급수단인 “코나머니 선불(gift)카드”를 말한다.
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제3조 (업무제휴 내용)</dt>
+                                                <dd>
+                                                    <ul class="list04">
+                                                        <li>
+                                                            <span class="front">①</span>
+                                                            <div class="cont">
+                                                                “갑”과 “병”은 회원이 가맹점에서 재화 또는 용역을 구매 또는 제공받고 코나카드를 이용하여 그 대가를 결제하는 경우, 아래와 같은 프로모션 비용을 부담하고 혜택을 회원에게 제공한다.
+                                                                <ul class="list04">
+                                                                    <li>
+                                                                        <span class="front">가.</span>
+                                                                        <div class="cont">
+                                                                            프로모션 제공율 : 원결제금액의 ( )%
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="front">나.</span>
+                                                                        <div class="cont">
+                                                                            프로모션 기간 : 본 특약의 유효기간
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="front">다.</span>
+                                                                        <div class="cont">
+                                                                            대상 : 코나카드를 소지한 “병”의 모든 회원
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="front">라.</span>
+                                                                        <div class="cont">
+                                                                            프로모션 비용 부담주체별 부담율 : “갑” 내지 “갑”의 가맹점 ( )% , “병” ( )%
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                (위 비용부담비율은 당사자들간의 협의에 따라 변경할 수 있다)
+                                                                </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">②</span>
+                                                            <div class="cont">
+                                                                본 조에 따른 프로모션은 원칙적으로 “갑”의 모든 가맹점에서 제공되어야 하나, 예외적으로 “을”과 “병”의 관리필요에 따라 제한될 수 있다. 이 때 “을”과 “병”은 회원이 코나카드 사용에 불편이 없도록 “갑”에게 프로모션 제한 가맹점을 통지하여 “갑”으로 하여금 당해 가맹점에서 프로모션 제한을안내할 수 있도록 하여야 한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">③</span>
+                                                            <div class="cont">
+                                                                “갑”은 “갑”의 모든 가맹점에서 본 특약에 따른 프로모션 혜택을 제공함에 동의하며, 각 가맹점에게 본 특약을 체결한 사실 및 본 특약상 프로모션 혜택을 비롯한 주요내용을 고지하고 각 가맹점으로부터 본 특약에 따른 프로모션 혜택의 제공에 관한 동의서를 징구하여 “을”과 “병”에게 제출하여야 한다. 만일 “갑”이 이를 해태하여 가맹점이 “을” 또는 “병”에게 이의 또는 분쟁을 제기하는 경우 “갑”은 그의 비용과 책임으로 “을” 또는 “병”을 면책시켜야 한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">④</span>
+                                                            <div class="cont">
+                                                                “병”은, “갑”, “을”과의 업무제휴 내용을 회원 정보지, 홈페이지 등 자체 광고매체를 통하여 지속적으로 홍보하며, “갑”은 “병”이 제공하는 각종 광고·홍보물을 매장에 게시·비치하는 등 홍보에 협조하기로 한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">⑤</span>
+                                                            <div class="cont">
+                                                                “갑” 과 “을” 사이에서 본 특약에 따른 프로모션 제공 등과 직접적인 관련이 없는 일반적인 신용 판매 거래에 관한 사항은 “비씨카드 가맹점 약관”에 따라 처리한다.
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제4조 (정산)</dt>
+                                                <dd>
+                                                    <ul class="list04">
+                                                        <li>
+                                                            <span class="front">①</span>
+                                                            <div class="cont">
+                                                                본 특약에 따른 거래의 가맹점수수료율은 “갑”과 “을”사이에 체결한 신용카드가맹점 계약에 따라 겸영체크카드 가맹점수수료율에 따른다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">②</span>
+                                                            <div class="cont">
+                                                                “을”은 본 특약에 따른 거래에 대하여 “갑”과 “을”사이에 체결한 신용카드가맹점 계약상 정산주기에 맞추어 아래와 같이 대금을 정산한다.<br>
+					“갑”의 가맹점이 정산받는 거래대금<br>
+					원결제금액 – (원결제금액 X 가맹점수수료율) – (원결제금액 X 가맹점 프로모션 비용 부담율)
+				</div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">③</span>
+                                                            <div class="cont">
+                                                                “갑”이 “을”에게 부담하는 가맹점수수료율은 프로모션 적용 전의 원결제금액을 기준으로 산정한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">④</span>
+                                                            <div class="cont">
+                                                                “병”은 본 특약에 따른 거래에 관하여 제3조 제1항 라목에 따라 “병”이 프로모션 비용 중 일부를 부담하는 경우 “병”이 부담하는 프로모션 비용 부담율에 따른 대금은 “을”과 “병”사이에 체결한 매입대행업무제휴계약상 업무수수료 지급 시 함께 정산하여 “을”을 통해 “갑”또는 “갑”의 가맹점에 지급한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">⑤</span>
+                                                            <div class="cont">
+                                                                본 특약이 적용되는 결제의 부분 매출취소는 불가하다.
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제5조 (가맹점 정보제공 동의)</dt>
+                                                <dd>
+                                                    <ul class="list04">
+                                                        <li>
+                                                            <span class="front">①</span>
+                                                            <div class="cont">
+                                                                “갑”은 “갑”의 가맹점의 결제, 정산, 취소 등 거래에 관한 정보 및 정산내역을 “병”에게 제공한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">②</span>
+                                                            <div class="cont">
+                                                                “갑”은 “갑”의 가맹점정보(사업자번호, BC가맹점 ID 등) 및 “갑”과 “을”사이에 체결한 신용카드가맹점 계약에 따라 정해진 가맹점수수료율을 “병”에게 제공한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">③</span>
+                                                            <div class="cont">
+                                                                “갑”은 “갑”의 가맹점 상태 정보(신규개점, 중도변경, 폐점 등)를 “병”에게 제공한다.
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제6조 (사후 관리)</dt>
+                                                <dd>
+                                                    <ul class="list04">
+                                                        <li>
+                                                            <span class="front">①</span>
+                                                            <div class="cont">
+                                                                “갑”은 “갑”의 직원에 대하여 지속적인 교육을 통해 “병”의 회원이 불편 없이 본 특약에 따라 코나카드를 사용하여 혜택을 받을 수 있도록 지원한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">②</span>
+                                                            <div class="cont">
+                                                                “갑”은 본 특약에 따른 프로모션 비용 부담을 고의 또는 과실로 누락하거나, 혜택 제공을 거부할 수 없으며, 본 특약에 따른 프로모션 비용 부담에 관련된 어떠한 수수료도 “병”의 회원에게 전가하여서는 안되며, 이로 인하여 “병”의 회원에게 발생하는 일체의 손해는 “갑”이 보상하여야 한다.
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제7조 (민원)</dt>
+                                                <dd>
+                                                    <ul class="list04">
+                                                        <li>
+                                                            <span class="front">①</span>
+                                                            <div class="cont">
+                                                                회원이 “갑” 또는 “갑”의 가맹점에서 프로모션 혜택에 관한 민원을 제기하는 경우, “갑”과 “병”이 귀책부분에 따라 이를 책임지고 해결하기로 하며, 민원 해결을 위해 필요한 경우 “을”은 이에 협조한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">②</span>
+                                                            <div class="cont">
+                                                                “갑” 또는 “갑”의 가맹점이 본 특약과 관련하여 이의 분쟁을 제기하거나 본 특약의 무효를 주장하는 경우 “병”은 이를 책임지고 해결하기로 하며, 필요한 경우 “을”은 이에 협조한다.
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제8조 (업무제휴의 변경)</dt>
+                                                <dd>
+                                                    “갑”, “을”, “병” 당사자들은 필요한 경우 제3조 상의 업무제휴 내용을 상호 서면합의에 따라 변경할 수 있으며, 이러한 별도의 서면합의가 있는 경우 이는 본 특약에 우선한다.
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제9조 (신의성실)</dt>
+                                                <dd>
+                                                    “갑”, “을”, “병” 당사자들은 본 특약의 이행에 있어 상호 이미지와 명성을 손상시키는 일체의 행위를 하여서는 안되며, 상호 계약 내용을 신의성실의 원칙에 따라 이행하여야 한다.
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제10조 (변동사항 통보)</dt>
+                                                <dd>
+                                                    <ul class="list04">
+                                                        <li>
+                                                            <span class="front">①</span>
+                                                            <div class="cont">
+                                                                “갑”은 본인 또는 가맹점의 영업정보(상호, 주소, 대표자, 사업자등록번호, 전화번호 등)의 변동이 있을 경우 이를 즉시 “을”과 “병”에게 통보하여야 한다.
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">②</span>
+                                                            <div class="cont">
+                                                                “갑”, “을”, “병”은 전항의 변동사항 이후에도 동 계약은 계속 유효한 것으로 한다.
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제 11조(기밀유지)</dt>
+                                                <dd>
+                                                    “갑”, “을”, “병” 각 당사자들은 본 특약상의 업무와 관련하여 알게 된 상대방의 영업상 기밀 및 회원의 개인(신용)정보에 대하여 상대방의 서면 동의없이 제3자에게 유출하거나, 본 특약상의 업무 이외의 목적으로 이용하여서는 안되며, 이를 위반하여 발생하는 모든 손해에 대해서는 그 위반에 책임이 있는 자가 민∙형사상의 모든 책임을 진다.
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제 12조(계약의 유효기간)</dt>
+                                                <dd>
+                                                    본 특약은 체결일로부터 ‘1년’간 유효하며, 일방 당사자가 각 당사자에 대하여 계약을 연장할 의사가 없음을 계약기간 만료일 ‘45일’ 전까지 서면으로 통지하지 않는 한 동일한 조건으로 ‘1년’씩 연장된다.
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제13조(계약의 해지)</dt>
+                                                <dd>
+                                                    <ul class="list04">
+                                                        <li>
+                                                            <span class="front">①</span>
+                                                            <div class="cont">
+                                                                “갑”, “을”, “병” 당사자들은 다음 각 호의 사유가 발생한 경우에는 특약기간에 관계없이 본 특약을 해지할 수 있으며 해지의 효력은 해지일자 익일부터 발생한다.
+                                                                <ul class="list04">
+                                                                    <li>
+                                                                        <span class="front">1.</span>
+                                                                        <div class="cont">
+                                                                            본 특약상 의무를 불이행하거나 이행을 현저히 태만히 하거나 지연하여 상대방이 서면으로 그 시정을 요청하였음에도 불구하고 의무를 이행하지 않거나 시정하지 않는 경우
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="front">2.</span>
+                                                                        <div class="cont">
+                                                                            파산, 회생, 부도처리, 회사 정리절차, 영업정지 처분 등 관계법령상의 하자 발생으로 그 신용에 위협이 있어 계약의 정상적인 이행이 곤란하다고 판단되는 경우
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="front">3.</span>
+                                                                        <div class="cont">
+                                                                            일방의 고의 또는 과실로 인하여 상대방에게 손해가 발생한 경우
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="front">4.</span>
+                                                                        <div class="cont">
+                                                                            “갑”과 “을” 사이의 비씨카드 가맹점 계약이 해지 또는 종료된 경우
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="front">5.</span>
+                                                                        <div class="cont">
+                                                                            “을”과 “병” 사이의 매입대행 업무제휴계약이 해지 또는 종료된 경우
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="front">6.</span>
+                                                                        <div class="cont">
+                                                                            기타 본 특약을 이행하기 어려운 중대한 사유가 발생한 경우
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="front">②</span>
+                                                            <div class="cont">
+                                                                “갑”은 본 특약이 해지된 경우에는 회원에게 기 제공한 혜택비용에 대하여 “을” 또는 “병” 에게 그 반환을 주장할 수 없다.
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제 14조(계약의 해석)</dt>
+                                                <dd>
+                                                    본 특약상에서 정하지 않은 사항이나 해석상 내용이 불분명한 사항에 대해서는 비씨카드 가맹점 약관을 적용하며, 기타 사항은 관계법령 및 일반 상관례에 따라 상호 호혜적 입장에서 협의하여 결정한다.
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제 15조(관할법원)</dt>
+                                                <dd>
+                                                    본 특약과 관련하여 소송의 분쟁이 발생하는 경우 관할법원은 “갑”의 본점 소재지 관할법원으로 한다.
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="txt-cont">
+                                                <dt>제 16조(기타)</dt>
+                                                <dd>
+                                                    본 특약에서 정한 사항 이외에 필요한 사항에 대하여는 당사자간의 합의하에 추가로 정할 수 있으며, 별도 협약서로 처리할 수도 있다.<br>
+		상기 계약의 체결을 증명하기 위하여 계약서 3부를 작성하여 “갑”, “을”, “병”이 날인한 후, 각각 1부씩 보관한다.
+	</dd>
+                                            </dl>
+                                        </div>
                                     </div>
+                                    <p class="desc">
+                                        [사업자명]과 코나아이는 회원이 가맹점에서 재화 또는 용역을 구매 또는 제공받고 코나카드를 이용하여 그 대가를 결제하는 경우, 아래와 같은 프로모션 비용을 부담하고 혜택을 회원에게 제공합니다.
+                                    </p>
+
+                                    <div class="c-title">프로모션 제공율</div>
+                                    <div class="input-text">
+                                        <input type="text" class="t-right" value="10" disabled="disabled">
+                                        <span class="sub-txt">%</span>
+                                    </div>
+
+                                    <div class="c-title">프로모션 기간</div>
+                                    본 특약의 유효기간
+
+                                    <div class="c-title">프로모션 비용 부담주체별 부담율</div>
+                                    <div class="n-ele al-bottom">
+                                        <div class="eles">
+                                            <div class="c-title">[사업자명] 또는 [사업자명] 가맹점</div>
+                                            <div class="input-text">
+                                                <input type="text" class="t-right" value="100" disabled="disabled">
+                                                <span class="sub-txt">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="c-title">코나아이</div>
+                                            <div class="input-text">
+                                                <input type="text" class="t-right" value="0" disabled="disabled">
+                                                <span class="sub-txt">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="n-txt01 red">(위 비용부담비율은 당사자들간의 협의에 따라 변경할 수 있습니다.)</p>
+
+
+
+
+
+
+
+
+                                    <div class="bg-box ty1">
+                                        <p class="desc">본인은 귀사가 상기 목적으로 위와 같은 본인의 정보를 처리하는 것에 동의합니다.</p>
+                                        <p class="n-txt01 bl">상기 내용이 변동되는 경우 인터넷 홈페이지 게시 등을 통해 그 내용을 안내해드리며, 본 동의서는 본 계약이 성립되지 않는 경우 그 시점으로부터 효력을 상실합니다.</p>
+                                        <p class="n-txt01 bl">귀하는 동의를 거부할 권리가 있으나, 상기 동의사항은 상거래관계의 설정·유지에 필수적인 것으로 위 사항에 동의하지 않으실 경우 가맹점 가입 또는 유지가 불가능할 수 있음을 알려드립니다.</p>
+                                    </div>
+                                    <label class="input-checkbox">
+                                        <input type="checkbox">
+                                        <span>위의 내용에 동의합니다.</span>
+                                    </label>
                                 </div>
-                                <label class="input-checkbox">
-                                    <input type="checkbox">
-                                    <span>서비스 이용 약관 내용을 이해하고, 이에 동의합니다.</span>
-                                </label>
+
+
+
+
+
+
+
                             </div>
                         </section>
                         <button type="button" class="btn small temp-storage">임시 저장</button>

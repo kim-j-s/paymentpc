@@ -99,19 +99,19 @@
                                 <div class="n-ele">
                                     <div class="eles">
                                         <div class="selectbox">
-                                            <select name="" id="" class="dp-select">
-                                                <option value="1">0%</option>
-                                                <option value="2">1%</option>
-                                                <option value="3">3%</option>
-                                                <option value="4">5%</option>
-                                                <option value="5">7%</option>
-                                                <option value="6">10%</option>
-                                                <option value="display">직접입력</option>
+                                            <select name="" id="" class="dp-select" data-sdpg="dp01">
+                                                <option value="">0%</option>
+                                                <option value="">1%</option>
+                                                <option value="">3%</option>
+                                                <option value="">5%</option>
+                                                <option value="">7%</option>
+                                                <option value="">10%</option>
+                                                <option value="" data-sdp="dp0101">직접입력</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="eles">
-                                        <div class="input-text dp-trg" style="display: none;">
+                                        <div class="input-text" data-sdpge="dp01" data-sdpe="dp0101" style="display: none;">
                                             <input type="text" class="t-right">
                                             <span class="sub-txt">%</span>
                                         </div>
@@ -158,46 +158,73 @@
                                     <span>할인 비용 내용을 이해하고, 이에 동의합니다.</span>
                                 </label>
 
-                                <div class="brd-box scroll-in scrollbar-outer">
-                                    <div class="inner">
-                                        <dl class="txt-cont">
-                                            <dt>개인정보 수집 및 이용동의</dt>
-                                            <dd>
-                                                수집 및 이용목적 : 자동이체 출금 서비스 제공<br>
-                                                수집항목 : 예금주 이름,생년월일,은행명,계좌번호,예금주연락처,신청인(대표자),이름,예금주와 관계,이메일주소<br>
-                                                보유 및 이용기간 : 서비스 이용 계약 해지시 까지
-                                            </dd>
-                                        </dl>
+                                <div class="terms-cont">
+                                    <h2 class="tit-h2 brd">코나카드 가맹점 가입특약서</h2>
+                                    <p class="desc">
+                                        [사업자명](이하 “갑”이라 한다)과 비씨카드주식회사(이하 “을”이라 한다)<br>
+                                        및 코나아이주식회사(이하 “병”이라 한다)는 다음과 같이 특약(이하 “본 특약”이라 한다)을 체결합니다.
+                                    </p>
+                                    <div class="terms">
+                                        <div class="inner scrollbar-outer">
+                                            @@include('BENEFIT_01_01.html')
+                                        </div>
                                     </div>
-                                </div>
-                                <label class="input-checkbox">
-                                    <input type="checkbox">
-                                    <span>서비스 이용 약관 내용을 이해하고, 이에 동의합니다.</span>
-                                </label>
+                                    <p class="desc">
+                                        [사업자명]과 코나아이는 회원이 가맹점에서 재화 또는 용역을 구매 또는 제공받고 코나카드를 이용하여 그 대가를 결제하는 경우, 아래와 같은 프로모션 비용을 부담하고 혜택을 회원에게 제공합니다.
+                                    </p>
 
-                                <div class="brd-box scroll-in scrollbar-outer">
-                                    <div class="inner">
-                                        <dl class="txt-cont">
-                                            <dt>개인정보 제 3자 제공 동의</dt>
-                                            <dd>
-                                                본인은 신용 정보의 이용 및 보호에 관한 법률 제 3조 제 1항,정보통신망 이용 촉진 및 정보보호 등에 관한 법률 제24조의 2 개인정보보호법 제 17조 등의 관련 법규에 따라 아래와 같은 내용으로 본인의 개인 정보를 제공하는 것에 동의합니다.<br><br>
-                                                제 1조 (개인 정보를 제공받는 자)<br>
-                                                배달 서비스 운영을 위한 "코나아이"협력업체<br><br>
-                                                제 2조 (개인 정보를 제공받은 자의 이용목적)<br>
-                                                배달 서비스 시스템 이용<br><br>
-                                                제 3조 (제공 대상 개인정보)<br>
-                                                이름,상점명,상점전화번호,상점주소,사업자등록번호,지역화폐 직가맹 ID<br><br>
-                                                제 4조 (보유 및 이용기간)<br>
-                                                개인(신용)정보 제공 동의 철회 시 또는 제공된 목적이 달성된 시점까지 신청인은 동의를 거부하실 권리가 있으며, 동의 후에도 언제든지 동의 철회가 가능합니다.<br>
-                                                다만, 동의 거부 및 동의 철회 시, 제 2조에 명시된 서비스 이용이 제한될 수 있습니다.
-                                            </dd>
-                                        </dl>
+                                    <div class="c-title">프로모션 제공율</div>
+                                    <div class="input-text">
+                                        <input type="text" class="t-right" value="10" disabled="disabled">
+                                        <span class="sub-txt">%</span>
                                     </div>
+
+                                    <div class="c-title">프로모션 기간</div>
+                                    본 특약의 유효기간
+
+                                    <div class="c-title">프로모션 비용 부담주체별 부담율</div>
+                                    <div class="n-ele al-bottom">
+                                        <div class="eles">
+                                            <div class="c-title">[사업자명] 또는 [사업자명] 가맹점</div>
+                                            <div class="input-text">
+                                                <input type="text" class="t-right" value="100" disabled="disabled">
+                                                <span class="sub-txt">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="c-title">코나아이</div>
+                                            <div class="input-text">
+                                                <input type="text" class="t-right" value="0" disabled="disabled">
+                                                <span class="sub-txt">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="n-txt01 red">(위 비용부담비율은 당사자들간의 협의에 따라 변경할 수 있습니다.)</p>
+
+
+
+
+
+                                    
+
+
+                                    <div class="bg-box ty1">
+                                        <p class="desc">본인은 귀사가 상기 목적으로 위와 같은 본인의 정보를 처리하는 것에 동의합니다.</p>
+                                        <p class="n-txt01 bl">상기 내용이 변동되는 경우 인터넷 홈페이지 게시 등을 통해 그 내용을 안내해드리며, 본 동의서는 본 계약이 성립되지 않는 경우 그 시점으로부터 효력을 상실합니다.</p>
+                                        <p class="n-txt01 bl">귀하는 동의를 거부할 권리가 있으나, 상기 동의사항은 상거래관계의 설정·유지에 필수적인 것으로 위 사항에 동의하지 않으실 경우 가맹점 가입 또는 유지가 불가능할 수 있음을 알려드립니다.</p>
+                                    </div>
+                                    <label class="input-checkbox">
+                                        <input type="checkbox">
+                                        <span>위의 내용에 동의합니다.</span>
+                                    </label>
                                 </div>
-                                <label class="input-checkbox">
-                                    <input type="checkbox">
-                                    <span>서비스 이용 약관 내용을 이해하고, 이에 동의합니다.</span>
-                                </label>
+
+                                
+                                
+
+
+
+
                             </div>
                         </section>
                         <button type="button" class="btn small temp-storage">임시 저장</button>

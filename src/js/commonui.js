@@ -111,13 +111,12 @@ function fileLoad(){
 // dp select
 function dpSelect() {
     var $dps = $('.dp-select');
-    var $dpnone = $('.dp-trg');
     $dps.on('change', function(){
-        var val = $(this).val();
-        if (val == 'display') {
-            $dpnone.show();
-        } else {
-            $dpnone.hide();
+        var thisdata = $(this).data('sdpg');
+        var data = $(this).find(':selected').data('sdp');
+        $('[data-sdpge="'+ thisdata +'"]').hide();
+        if ( data !== undefined) {
+            $('[data-sdpe="'+ data +'"]').show();
         }
     })
 }
