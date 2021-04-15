@@ -147,6 +147,7 @@
 	* + .n-ele{
 		margin-top: 9px;
 	}
+	.slide-cont + .n-ele,
 	.txt-cont + .n-ele{
 		margin-top: 20px;
 	}
@@ -322,6 +323,11 @@
 		}
 		.top-title + .brd-ele{
 			margin-top: 20px;
+		}
+
+		.slide-cont + .brd-ele{
+			margin-top: 0;
+			border-top: none;
 		}
 
 	/* // 상하 보더 */
