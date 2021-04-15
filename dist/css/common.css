@@ -177,6 +177,10 @@
 	.txt-cont + .n-ele{
 		margin-top: 20px;
 	}
+	.slide-cont + .n-ele .eles .c-title,
+	.txt-cont + .n-ele .eles .c-title{
+		padding-top: 0;
+	}
 	.tit-h2 + .n-ele{
 		margin-top: 12px;
 	}
@@ -526,6 +530,32 @@
 	    font-size: 12px;
 	    color: #e15d5d;
 	    letter-spacing: -0.4px;
+	}
+	.tit-h2.i{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+	.tit-h2.i > *{
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		    -ms-flex: 1 1 auto;
+		        flex: 1 1 auto;
+	}
+	.tit-h2 .sub-i{
+		-webkit-box-flex: 0;
+		-webkit-flex: none;
+		    -ms-flex: none;
+		        flex: none;
+		text-align: right;
+		font-size: 12px;
+		color: #888;
 	}
 	* + .tit-h2{
 		margin-top: 20px;
@@ -1336,8 +1366,9 @@
 	.bg-box + .txt-cont{
 		margin-top: 20px;
 	}
+	.n-ele + .txt-cont,
 	.txt-cont + .txt-cont{
-	    margin-top: 18px;
+	    margin-top: 20px;
 	}
 	.txt-cont > dt{
 	    font-weight: 400;
@@ -1439,7 +1470,7 @@
 		padding-bottom: 20px;
 	}
 
-	.top-title + .tbl-div02{
+	* + .tbl-div02{
 	    margin-top: 20px;
 	}
 	.tbl-div02{

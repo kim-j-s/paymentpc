@@ -151,6 +151,10 @@
 	.txt-cont + .n-ele{
 		margin-top: 20px;
 	}
+	.slide-cont + .n-ele .eles .c-title,
+	.txt-cont + .n-ele .eles .c-title{
+		padding-top: 0;
+	}
 	.tit-h2 + .n-ele{
 		margin-top: 12px;
 	}
@@ -445,6 +449,19 @@
 	    font-size: 12px;
 	    color: #e15d5d;
 	    letter-spacing: -0.4px;
+	}
+	.tit-h2.i{
+		display: flex;
+		flex-direction: row;
+	}
+	.tit-h2.i > *{
+		flex: 1 1 auto;
+	}
+	.tit-h2 .sub-i{
+		flex: none;
+		text-align: right;
+		font-size: 12px;
+		color: #888;
 	}
 	* + .tit-h2{
 		margin-top: 20px;
@@ -1173,8 +1190,9 @@
 	.bg-box + .txt-cont{
 		margin-top: 20px;
 	}
+	.n-ele + .txt-cont,
 	.txt-cont + .txt-cont{
-	    margin-top: 18px;
+	    margin-top: 20px;
 	}
 	.txt-cont > dt{
 	    font-weight: 400;
@@ -1275,7 +1293,7 @@
 		padding-bottom: 20px;
 	}
 
-	.top-title + .tbl-div02{
+	* + .tbl-div02{
 	    margin-top: 20px;
 	}
 	.tbl-div02{
