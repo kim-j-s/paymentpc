@@ -42,15 +42,19 @@ textarea{-webkit-appearance:none;}
 
 /* placeholder */
 :disabled::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 0;
   color: transparent;
 }
 :disabled::-moz-placeholder { /* Firefox 19+ */
+  font-size: 0;
   color: transparent;
 }
 :disabled:-ms-input-placeholder { /* IE 10+ */
+  font-size: 0;
   color: transparent !important;
 }
 :disabled:-moz-placeholder { /* Firefox 18- */
+  font-size: 0;
   color: transparent;
 }
 input[type="date"]::-webkit-inner-spin-button,    
