@@ -194,6 +194,9 @@
 	.c-title + .n-ele .c-title{
 		padding-top: 0;
 	}
+	.eles .c-title + .n-ele{
+		margin-top: 9px;
+	}
 
 	.n-ele > *{
 	    -webkit-box-flex: 1;
@@ -688,7 +691,7 @@
 	.input-radio > span {
 	    display: block;
 	    position: relative;
-	    padding: 14px 60px 14px 18px;
+	    padding: 14px 50px 14px 18px;
 	    font-weight: 400;
 	    font-size: 15px;
 	    line-height: 22px;
@@ -1545,13 +1548,13 @@
 	.badge{
 	    display: inline-block;
 	    vertical-align: middle;
-	    padding: 0 12px;
+	    padding: 0 10px;
 	    font-weight: 400;
-	    font-size: 15px;
-	    color: #e15d5d;
-	    line-height: 28px;
-	    border: 1px solid #e15d5d;
-	    border-radius: 5px;
+	    font-size: 13px;
+	    color: #fff;
+	    line-height: 24px;
+	    border-radius: 12px;
+	    background: #e15d5d;
 	}
 	.tit-h2 + .badge{
 	    margin-left: 12px;
@@ -1738,6 +1741,7 @@
 		line-height: 28px;
 		padding: 0 12px;
 		font-size: 15px;
+		letter-spacing: -1px;
 	}
 	.c-title + .btn.reg{
 	    margin-top: 9px;
@@ -1799,6 +1803,11 @@
 	.top-title.brd{
 		padding-bottom: 20px;
 		border-bottom: 1px solid #f3f5f9;
+	}
+	.top-title .btn.small{
+		position: absolute;
+	    top: 0;
+	    right: 0;
 	}
 
 	.desc{

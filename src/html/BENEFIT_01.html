@@ -14,7 +14,6 @@
                         <li class="passed">개인 사업자 계약</li>
                         <li class="passed">휴대폰 본인 인증</li>
                         <li class="passed">공동 대표자 가입 확인</li>
-                        <li class="passed">사업자 등록 번호 조회</li>
                     </ol>
                     <h2 class="nav-tit">계약 정보</h2>
                     <ol class="nav-list">
@@ -86,6 +85,33 @@
                                     </div>
                                 </div>
 
+                                <div class="brd-ele">
+                                    <h2 class="tit-h2">매장 기본 정보</h2>
+                                    <div class="c-title"><span class="star-mark"></span>매장명</div>
+                                    <div class="input-text">
+                                        <input type="text" placeholder="매장명">
+                                    </div>
+
+                                    <div class="c-title"><span class="star-mark"></span>매장 전화번호</div>
+                                    <div class="n-ele ty4">
+                                        <div class="eles">
+                                            <div class="selectbox">
+                                                <select name="" id="">
+                                                    <option value="">02</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="input-text">
+                                                <input type="text" placeholder="전화번호 입력">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="c-title"><span class="star-mark"></span>매장주소</div>
+                                    @@include('addr.html')                                    
+                                </div>
+
                                 <h2 class="tit-h2">혜택</h2>
                                 <div class="c-title"><span class="star-mark"></span>혜택 방식</div>
                                 <div class="selectbox">
@@ -116,11 +142,6 @@
                                             <span class="sub-txt">%</span>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="c-title"><span class="star-mark"></span>매장명</div>
-                                <div class="input-text">
-                                    <input type="text" value="(주)코나아이">
                                 </div>
 
                                 <div class="brd-box scroll-in scrollbar-outer">

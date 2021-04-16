@@ -95,41 +95,44 @@
                                     </div>
                                 </div>
 
-                                <div class="n-ele">
-                                    <div class="eles">
-                                        <div class="c-title">매장명</div>
-                                        <div class="input-text">
-                                            <input type="text" value="(주)코나아이">
+                                <div class="brd-ele">
+                                    <h2 class="tit-h2">매장 기본 정보</h2>
+                                    <div class="n-ele">
+                                        <div class="eles">
+                                            <div class="c-title">매장명</div>
+                                            <div class="input-text">
+                                                <input type="text" value="(주)코나아이">
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="c-title"><span class="star-mark"></span>매장전화번호</div>
+                                            <div class="input-text">
+                                                <input type="text" value="02-2168-7500">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="eles">
-                                        <div class="c-title"><span class="star-mark"></span>매장전화번호</div>
-                                        <div class="input-text">
-                                            <input type="text" value="02-2168-7500">
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="c-title">매장주소</div>
-                                <div class="n-ele addr">
-                                    <div class="addr-top">
-                                        <div class="eles">
-                                            <div class="input-text">
-                                                <input type="text" readonly="readonly">
+                                    <div class="c-title">매장주소</div>
+                                    <div class="n-ele addr">
+                                        <div class="addr-top">
+                                            <div class="eles">
+                                                <div class="input-text">
+                                                    <input type="text" readonly="readonly">
+                                                </div>
+                                            </div>
+                                            <div class="eles">
+                                                <div class="input-text">
+                                                    <input type="text" readonly="readonly">
+                                                </div>
+                                            </div>
+                                            <div class="eles">
+                                                <button type="button" class="btn">우편번호 검색</button>
                                             </div>
                                         </div>
-                                        <div class="eles">
+                                        <div class="addr-detail">
                                             <div class="input-text">
-                                                <input type="text" readonly="readonly">
+                                                <input type="text" placeholder="상세주소를 입력해주세요.">
                                             </div>
-                                        </div>
-                                        <div class="eles">
-                                            <button type="button" class="btn">우편번호 검색</button>
-                                        </div>
-                                    </div>
-                                    <div class="addr-detail">
-                                        <div class="input-text">
-                                            <input type="text" placeholder="상세주소를 입력해주세요.">
                                         </div>
                                     </div>
                                 </div>
@@ -162,17 +165,17 @@
                                         <div class="eles" data-sdpge="dp01" data-sdpe="dp0101">
                                             <div class="input-text">
                                                 <input type="text" class="t-right" style="width: 100px;" data-disabled="cpncase01">
-                                                <span class="sub-txt color03">원 ex) N% 할인쿠폰</span>
+                                                <span class="sub-txt color03">원</span>
                                             </div>
                                         </div>
                                         <div class="eles" data-sdpge="dp01" data-sdpe="dp0102" style="display: none;">
                                             <div class="input-text">
                                                 <input type="text" class="t-right" style="width: 100px;" data-disabled="cpncase01">
-                                                <span class="sub-txt color03">% ex) N% 할인쿠폰</span>
+                                                <span class="sub-txt color03">%</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="n-txt01 red">충전 금액만큼 카드 잔액으로 충전하여 사용할 수 있습니다.</p>
+                                    <p class="n-txt01 red">결제 시 복합결제 가능하며, 할인 금액 또는 할인율 만큼 할인됩니다.</p>
 
                                     <label class="input-radio normal">
                                         <input type="radio" name="cpncase" class="dischk-radio" data-dischk="cpncase02">
@@ -185,36 +188,28 @@
                                         <div class="eles">
                                             <div class="input-text">
                                                 <input type="text" class="t-right" placeholder="할인금액(원가)입력" data-disabled="cpncase02" disabled="disabled" style="width: 160px;">
-                                                <span class="sub-txt">원 ex) N원 할인쿠폰, N원 물품 교환권</span>
+                                                <span class="sub-txt">원</span>
                                             </div>
                                         </div>
                                     </div>
                                     <p class="n-txt01 red">직원에게 쿠폰을 보여주고 확인버튼을 누른 후 가맹점에서 금액만큼 물품을 제공하는 쿠폰입니다. </p>
 
-                                    <label class="input-radio normal">
-                                        <input type="radio" name="cpncase" class="dischk-radio" data-dischk="cpncase03">
-                                        <span>충전형 (정액)</span>
-                                    </label>
-                                    <div class="n-ele">
-                                        <div class="eles text flex-none">
-                                            충전금액
-                                        </div>
-                                        <div class="eles">
-                                            <div class="input-text">
-                                                <input type="text" class="t-right" placeholder="충전금액(원가)입력" data-disabled="cpncase03" disabled="disabled" style="width: 160px;">
-                                                <span class="sub-txt">원 ex) N원 충전쿠폰</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="n-txt01 red">충전 금액만큼 카드 잔액으로 충전하여 사용할 수 있습니다.</p>
-
                                     <div class="c-title"><span class="star-mark"></span>발급 설정</div>
                                     <div class="n-ele">
-                                        <div class="eles flex-none text">최소거래금액</div>
+                                        <div class="eles flex-none text">최소결제금액</div>
                                         <div class="eles flex-none">
                                             <div class="input-text">
                                                 <input type="text" class="inp-width01 t-right">
                                                 <span class="sub-txt">원 이상 결제 시</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n-ele">
+                                        <div class="eles flex-none text">최대할인금액</div>
+                                        <div class="eles flex-none">
+                                            <div class="input-text">
+                                                <input type="text" class="inp-width01 t-right">
+                                                <span class="sub-txt">원 까지 할인</span>
                                             </div>
                                         </div>
                                     </div>

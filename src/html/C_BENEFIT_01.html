@@ -38,7 +38,7 @@
                                 <h2 class="tit-h2 brd chk-add">
                                     혜택 가맹점 서비스 이용 신청
                                     <label class="input-checkbox single">
-                                        <input type="checkbox" checked="checked">
+                                        <input type="checkbox">
                                         <span>확인</span>
                                     </label>
                                 </h2>
@@ -52,6 +52,74 @@
                                             가맹점 결제 시 설정된 할인율 기준으로 원결제 금액에서 할인율 만큼 현장할인 적용됩니다.
                                         </dd>
                                     </dl>
+
+                                    <div class="n-ele">
+                                        <div class="eles">
+                                            <div class="c-title"><span class="star-mark"></span>사업자등록번호</div>
+                                            <div class="input-text">
+                                                <input type="text" value="109-81-53365" disabled="disabled">
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="c-title"><span class="star-mark"></span>가맹점ID</div>
+                                            <div class="selectbox">
+                                                <select name="" id="">
+                                                    <option value="">가맹점 ID를 선택해주세요.</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="n-ele">
+                                        <div class="eles">
+                                            <div class="c-title"><span class="star-mark"></span>사업자등록번호</div>
+                                            <div class="input-text">
+                                                <input type="text" value="109-81-53365" disabled="disabled">
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="c-title"><span class="star-mark"></span>가맹점ID</div>
+                                            <div class="input-text">
+                                                <input type="text" placeholder="가맹점 ID를 입력해주세요.">
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="brd-ele">
+                                    <h2 class="tit-h2">매장 기본 정보</h2>
+                                    <div class="c-title"><span class="star-mark"></span>매장명</div>
+                                    <div class="input-text">
+                                        <input type="text" placeholder="매장명">
+                                    </div>
+
+                                    <div class="c-title"><span class="star-mark"></span>매장 전화번호</div>
+                                    <div class="n-ele ty4">
+                                        <div class="eles">
+                                            <div class="selectbox">
+                                                <select name="" id="">
+                                                    <option value="">02</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="eles">
+                                            <div class="input-text">
+                                                <input type="text" placeholder="전화번호 입력">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="c-title"><span class="star-mark"></span>매장주소</div>
+                                    @@include('addr.html')                                    
+                                </div>
+
+                                <h2 class="tit-h2">혜택</h2>
+                                <div class="c-title"><span class="star-mark"></span>혜택 방식</div>
+                                <div class="selectbox">
+                                    <select name="" id="">
+                                        <option value="">할인</option>
+                                        <option value="">캐시적립</option>
+                                    </select>
                                 </div>
 
                                 <div class="c-title"><span class="star-mark"></span>가맹점 부담 할인율</div>
@@ -80,58 +148,103 @@
                                 <div class="brd-box scroll-in scrollbar-outer">
                                     <div class="inner">
                                         <dl class="txt-cont">
-                                            <dt>가맹점 할인 비용</dt>
-                                            <dd>본인은 가맹점 할인 금액 설정 시 점주의 비용으로 고객의 지역화폐 결제 요청 건에 대해서 설정된 할인율만큼 원결제 금액에서 할인 제공하는 것에 동의합니다.</dd>
+                                            <dt>혜택 부담 안내 및 서비스 이용 동의</dt>
+                                            <dd>
+                                                혜택 부담은 가맹점에서 100% 부담합니다.<br>
+                                                정산받는 거래 대금은 원결제금액에서 가맹점 수수료, 혜택부담금을 제외한 기준으로 산정됩니다.<br>
+                                                가맹점 수수료는 혜택적용 전 원결제금액 기준으로 산정됩니다.<br>
+                                                혜택 제공을 중단하실 경우, 고객센터로 접수해주셔야 해지 처리 가능합니다.<br>
+                                                별도 의사가 없을 경우, 1년씩 자동 연장됩니다.<br>
+                                                아래와 같은 경우, 계약기간에 관계없이 해지할 수 있습니다.<br>
+                                                <ul class="list04">
+                                                    <li>
+                                                        <span class="front">1.</span>
+                                                        <span class="cont">영업정지, 부도처리, 파산 등 계약이 정상적인 이행이 곤란하다고 판단되는 경우</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="front">2.</span>
+                                                        <span class="cont">일방의 고의 또는 과실로 인하여 상대방에게 손해가 발생한 경우</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="front">3.</span>
+                                                        <span class="cont">매입대행 또는 코나아이와 계약이 종료된 경우</span>
+                                                    </li>
+                                                </ul>
+                                                회원이 가맹점의 혜택에 대하여 민원을 제기하는 경우 귀책에 따라 해결, 보상 처리해야합니다.
+                                            </dd>
                                         </dl>
                                     </div>
                                 </div>
                                 <label class="input-checkbox">
-                                    <input type="checkbox" checked="checked">
+                                    <input type="checkbox">
                                     <span>할인 비용 내용을 이해하고, 이에 동의합니다.</span>
                                 </label>
 
-                                <div class="brd-box scroll-in scrollbar-outer">
-                                    <div class="inner">
-                                        <dl class="txt-cont">
-                                            <dt>개인정보 수집 및 이용동의</dt>
-                                            <dd>
-                                                수집 및 이용목적 : 자동이체 출금 서비스 제공<br>
-                                                수집항목 : 예금주 이름,생년월일,은행명,계좌번호,예금주연락처,신청인(대표자),이름,예금주와 관계,이메일주소<br>
-                                                보유 및 이용기간 : 서비스 이용 계약 해지시 까지
-                                            </dd>
-                                        </dl>
+                                <div class="terms-cont">
+                                    <h2 class="tit-h2 brd">코나카드 가맹점 가입특약서</h2>
+                                    <p class="desc">
+                                        [사업자명](이하 “갑”이라 한다)과 비씨카드주식회사(이하 “을”이라 한다)<br>
+                                        및 코나아이주식회사(이하 “병”이라 한다)는 다음과 같이 특약(이하 “본 특약”이라 한다)을 체결합니다.
+                                    </p>
+                                    <div class="terms">
+                                        <div class="inner scrollbar-outer">
+                                            @@include('BENEFIT_01_01.html')
+                                        </div>
                                     </div>
-                                </div>
-                                <label class="input-checkbox">
-                                    <input type="checkbox" checked="checked">
-                                    <span>서비스 이용 약관 내용을 이해하고, 이에 동의합니다.</span>
-                                </label>
+                                    <p class="desc">
+                                        [사업자명]과 코나아이는 회원이 가맹점에서 재화 또는 용역을 구매 또는 제공받고 코나카드를 이용하여 그 대가를 결제하는 경우, 아래와 같은 프로모션 비용을 부담하고 혜택을 회원에게 제공합니다.
+                                    </p>
 
-                                <div class="brd-box scroll-in scrollbar-outer">
-                                    <div class="inner">
-                                        <dl class="txt-cont">
-                                            <dt>개인정보 제 3자 제공 동의</dt>
-                                            <dd>
-                                                본인은 신용 정보의 이용 및 보호에 관한 법률 제 3조 제 1항,정보통신망 이용 촉진 및 정보보호 등에 관한 법률 제24조의 2 개인정보보호법 제 17조 등의 관련 법규에 따라 아래와 같은 내용으로 본인의 개인 정보를 제공하는 것에 동의합니다.<br><br>
-                                                제 1조 (개인 정보를 제공받는 자)<br>
-                                                배달 서비스 운영을 위한 "코나아이"협력업체<br><br>
-                                                제 2조 (개인 정보를 제공받은 자의 이용목적)<br>
-                                                배달 서비스 시스템 이용<br><br>
-                                                제 3조 (제공 대상 개인정보)<br>
-                                                이름,상점명,상점전화번호,상점주소,사업자등록번호,지역화폐 직가맹 ID<br><br>
-                                                제 4조 (보유 및 이용기간)<br>
-                                                개인(신용)정보 제공 동의 철회 시 또는 제공된 목적이 달성된 시점까지 신청인은 동의를 거부하실 권리가 있으며, 동의 후에도 언제든지 동의 철회가 가능합니다.<br>
-                                                다만, 동의 거부 및 동의 철회 시, 제 2조에 명시된 서비스 이용이 제한될 수 있습니다.
-                                            </dd>
-                                        </dl>
+                                    <div class="n-ele">
+                                        <div class="eles">
+                                            <div class="c-title">프로모션 제공율</div>
+                                            <div class="input-text">
+                                                <input type="text" class="t-right" value="10" disabled="disabled" style="width: 80px;">
+                                                <span class="sub-txt">%</span>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+
+                                    <div class="c-title">프로모션 비용 부담주체별 부담율</div>
+                                    <div class="n-ele al-bottom">
+                                        <div class="eles">
+                                            <div class="input-text">
+                                                <span class="sub-txt">[사업자명] 또는 [사업자명] 가맹점</span>
+                                                <input type="text" class="t-right" value="100" disabled="disabled" style="width: 80px;">
+                                                <span class="sub-txt">%</span>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="n-ele">
+                                        <div class="eles">
+                                            <div class="input-text">
+                                                <span class="sub-txt">코나아이</span>
+                                                <input type="text" class="t-right" value="0" disabled="disabled" style="width: 80px;">
+                                                <span class="sub-txt">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="n-txt01 red">(위 비용부담비율은 당사자들간의 협의에 따라 변경할 수 있습니다.)</p>
+
+                                    <dl class="txt-cont mt18">
+                                        <dt>프로모션 기간</dt>
+                                        <dd>본 특약의 유효기간</dd>
+                                    </dl>
+                                    <dl class="txt-cont">
+                                        <dt>프로모션 대상</dt>
+                                        <dd>코나아이가 운영하고 있는 지역화폐 회원 중 코나아이에서 발급한 카드를 소지한 고객</dd>
+                                    </dl>
+                                    <p class="desc">
+                                        [사업자명]과 코나아이는 회원이 가맹점에서 재화 또는 용역을 구매 또는 제공받고 코나카드를 이용하여 그 대가를 결제하는 경우, 아래와 같은 프로모션 비용을 부담하고 혜택을 회원에게 제공합니다.
+                                    </p>
+                                    <label class="input-checkbox">
+                                        <input type="checkbox">
+                                        <span>위의 내용에 동의합니다.</span>
+                                    </label>
                                 </div>
-                                <label class="input-checkbox">
-                                    <input type="checkbox" checked="checked">
-                                    <span>서비스 이용 약관 내용을 이해하고, 이에 동의합니다.</span>
-                                </label>
                             </div>
                         </section>
+                        <button type="button" class="btn small temp-storage">임시 저장</button>
                     </div>
                 </div>
             </div>
