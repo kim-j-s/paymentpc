@@ -880,6 +880,7 @@
 		display: inline-block;
 		vertical-align: middle;
 		width: 26px;
+		min-width: 0;
 		height: 26px;
 		font-size: 0;
 	}
@@ -929,6 +930,7 @@
 		display: inline-block;
 		vertical-align: middle;
 		width: 30px;
+		min-width: 0;
 		height: 30px;
 		font-size: 0;
 	}
@@ -1182,16 +1184,21 @@
 	    text-align: center;
 	    vertical-align: middle;
 	}
-	.c-title + .bg-box{
+	.c-title + .bg-box,
+	.txt-cont + .bg-box{
 		margin-top: 9px;
 	}
 	.bg-box{
 	    padding: 20px 18px;
 	    border-radius: 5px;
 	}
+	.bg-box + .bg-box{
+		margin-top: 9px;
+	}
 	.bg-box.ty1{
 	    background: #f3f5f9;
-	}	
+	}
+
 
 /* common */
 
@@ -1219,6 +1226,7 @@
 	    font-size: 12px;
 	    line-height: 18px;
 	    color: #000;
+	    text-align: left;
 	}
 	.list01 > li:before{
 	    content: '';
@@ -1269,7 +1277,10 @@
 	.list03 > li > * + *{
 	    margin-left: 12px;
 	}
-	
+
+	.c-title + .list04{
+		margin-top: 9px;
+	}	
 	.list04{width: 100%;}
 	.list04 > li{
 	    position: relative;
@@ -1286,6 +1297,7 @@
 	    font-size: 12px;
 	    line-height: 18px;
 	    color: #888;
+	    text-align: left;
 	}
 	.list04 > li > .front{
 		-webkit-box-flex: 0;
@@ -1451,11 +1463,15 @@
 	.tbl-div table thead th {
 	    padding: 9px 0;
 	    border-bottom: 1px solid #eee;
+	    border-left: 1px solid #eee;
 	    font-weight: 400;
 	    font-size: 12px;
 	    line-height: 18px;
 	    color: #000;
 	    background: #fff;
+	}
+	.tbl-div table thead th:first-child{
+		border-left: none;
 	}
 	.tbl-div table tr th:first-child,
 	.tbl-div table tr td:first-child {
@@ -1475,6 +1491,8 @@
 	    text-align: center;
 	    word-wrap: break-word;
 	    word-break: keep-all;
+	    border-left: 1px solid #eee;
+	    border-bottom: 1px solid #eee;
 	}
 	.tbl-div table tr:first-child td {
 		padding-top: 20px;
